@@ -8,9 +8,9 @@ permalink:        pretty
 # Setup
 title:            blm.io
 tagline:
-url:              http://blm.io/blog
+url:              http://blm.io
 paginate:         1
-baseurl:          http://blm.io
+baseurl:          /blog
 author:
   name:           Ben Moore
   url:            https://twitter.com/benjaminlmoore
