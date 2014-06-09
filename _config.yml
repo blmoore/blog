@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            blm.io
 tagline:
-url:              http://blm.io
+url:              http://blmoore.github.io
 paginate:         1
 baseurl:          /blog
 author:
