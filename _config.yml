@@ -10,7 +10,7 @@ title:            blm.io
 tagline:
 url:              http://blm.io
 paginate:         1
-baseurl:          /
+baseurl:          http://blm.io/blog
 author:
   name:           Ben Moore
   url:            https://twitter.com/benjaminlmoore
