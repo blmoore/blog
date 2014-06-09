@@ -1,0 +1,17 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            blm.io
+tagline:
+url:              http://blm.io
+paginate:         1
+baseurl:          /
+author:
+  name:           Ben Moore
+  url:            https://twitter.com/benjaminlmoore
+  email:          root@blm.io
