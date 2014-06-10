@@ -4,13 +4,30 @@
  <title>blm.io</title>
  <link href="http://blmoore.github.ioatom.xml" rel="self"/>
  <link href="http://blmoore.github.io"/>
- <updated>2014-06-09T20:36:56+01:00</updated>
+ <updated>2014-06-10T22:54:35+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
    <email>root@blm.io</email>
  </author>
 
+ 
+ <entry>
+   <title>This is a test post</title>
+   <link href="http://blmoore.github.io/2014/06/10/testpost/"/>
+   <updated>2014-06-10T00:00:00+01:00</updated>
+   <id>http://blmoore.github.io/2014/06/10/testpost</id>
+   <content type="html">&lt;p&gt;How does this look&lt;/p&gt;
+
+&lt;h1&gt;Does it even render&lt;/h1&gt;
+
+&lt;p&gt;Can i do:
+* bullets
+* etcs&lt;/p&gt;
+
+&lt;hr&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing Poole</title>
