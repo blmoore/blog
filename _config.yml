@@ -9,7 +9,7 @@ permalink:        pretty
 title:            blm.io
 tagline:
 url:              http://blmoore.github.io
-paginate:         1
+paginate:         7
 baseurl:          /blog
 author:
   name:           Ben Moore
