@@ -41,6 +41,205 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="/r/2014/02/24/slidify-presentations-in-r-markdown/">
+        Slidify: Modern, simple presentations written in R Markdown
+      </a>
+    </h1>
+
+    <span class="post-date">24 Feb 2014</span>
+
+    <p>As a LaTeX fan I'm used to using Beamer for presentations, but the built-in <a href="http://www.hartwork.org/beamer-theme-matrix/" target="_blank">themes</a> are definitely starting to show their age --- and writing a custom <code>.sty</code> file looks like a nightmare --- so for a while I've been looking at trying out an HTML5 framework.</p>
+
+<p>[caption id="attachment_442" align="alignright" width="150"]<a href="http://lab.hakim.se/reveal-js/" target="_blank"><img class="size-thumbnail wp-image-442" alt="Reveal.js is a great looking HTML presentation framework from Hakim El Hattab." src="img/screen-shot-2014-02-24-at-19-55-11.png?w=150" width="150" height="102" /></a> Reveal.js is a great looking HTML presentation framework from <a href="http://hakim.se/" target="_blank">Hakim El Hattab</a>.[/caption]</p>
+
+<p>The first nice option I noticed was <a href="http://lab.hakim.se/reveal-js/" target="_blank">reveal.js</a> which seems to find a solid balance between looking sleek and modern, but not generating a prezi-like rollercoaster of a talk. Another project I came across, <a href="http://bartaz.github.io/impress.js/" target="_blank">impress.js</a>, probably leans towards the latter, and needs a decent array of web-dev skills to really customise.</p>
+
+<p>These are both nice solutions but require decent web development skills to take advantage of, else offer limited web UI front-ends. An ideal solution for me would be simple to write and look great from the outset, needing only minor CSS, Javascript and HTML tweaks to build a good-looking and functional slide deck.</p>
+
+<h2>Slidify</h2>
+
+<p>Enter <a href="http://slidify.org/" target="_blank">slidify</a> written by Ramnath Vaidyanathan (<a href="https://github.com/ramnathv" target="_blank">github</a>), a wrapper of several libraries which allows you to go from simple R Markdown to slick HTML presentations. The <a href="http://slidify.org/samples/intro/" target="_blank">introductory presentation</a> gives a nice overview of what's possible and how simple these slide decks can be to write.</p>
+
+<p>As the author modestly points out, slidify really is a go-between to other R packages:</p>
+
+<ul>
+<li><code>knitr</code> (<a href="http://yihui.name/knitr/" target="_blank">link</a>) — (a replacement for Sweave) think IPython notebook for R and other languages</li>
+<li><code>whisker</code> (<a href="https://github.com/edwindj/whisker" target="_blank">link</a>) — for making use of <a href="http://mustache.github.io/mustache.5.html" target="_blank">mustache</a> (geddit?) "logic-less templating", which reminds me a lot of MediaWiki markup templates with extended functionality</li>
+<li>R Markdown — the markdown extension introduced by the <a href="http://www.rstudio.com/" target="_blank">RStudio</a> team</li>
+</ul>
+
+<p>Together with slidify these packages make writing and customising presentations a breeze, so install the library from github (using Hadley Wickham's <code>devtools</code>) per the instructions <a href="http://slidify.org/start.html" target="_blank">here</a>. It also comes with some great default themes, like Google's io2012 (my favourite) and <a href="http://imakewebthings.com/deck.js/" target="_blank">deck.js</a>. The video below shows how to get started authoring presentations much better than I could:</p>
+
+<p>http://www.youtube.com/watch?v=I95GOmLc7TA</p>
+
+<h2>Features</h2>
+
+<p>There's a tonne of cool things slidify can do that I haven't even explored yet, but that look great. Of course, through knitr you can embed R code, including analysis and plot generation, in your presentation, bringing together reproducible analysis and neat presentation of your results. Even cooler, it plays nice with <a href="http://rcharts.io/" target="_blank">rCharts</a> — from the same author — allowing interactive charts to be embedded in presentations; oh and Shiny applications can be added too, according to <a href="http://slidify.github.io/dcmeetup/demos/interactive/" target="_blank">this</a>.</p>
+
+<p>Slidify enables straightforward github publishing (just <code>author()</code>) and RStudio allows quick upload to <a href="http://rpubs.com/" target="_blank">RPubs</a>, both make it trivial to have an online and archived copy of your presentation.</p>
+
+<h3>Convert to PDF</h3>
+
+<p>A PDF is a nice security blanket to have if you're worried about unforeseeable display issues on presentation day — it's a format designed to be environment independent after all. With the io2012 theme, this can be done natively from chrome using the print dialogue, <em>however </em>I<em> </em>consistently found that for my presentation at least, the active slide you are viewing and and sometimes an adjacent slide is glitched in the PDF output.</p>
+
+<p>[caption id="attachment_473" align="alignleft" width="240"]<a href="http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png"><img class=" wp-image-473 " alt="Chrome print PDF reproducibly bugs out on the active slide each time." src="img/screen-shot-2014-02-24-at-22-37-58.png?w=300" width="240" height="118" /></a> Chrome print PDF reproducibly bugs out on the active slide, for my presentation at least.[/caption]</p>
+
+<p>The hacky fix for this was to go to the final slide of the talk, print all but the last slide to PDF, then go back to an earlier slide and only print to file that remaining last slide. Then <a href="http://support.apple.com/kb/ht4075" target="_blank">stitch these files together</a> in Preview (assuming OS X), or <code>Imagemagick</code> or whatever.</p>
+
+<p>Other than this active-slide glitch the PDF conversion worked surprisingly well and the output is passable as a decent presentation, albeit without the finesse of the subtle default transitions.</p>
+
+<h4>Update:</h4>
+
+<p>On twitter Ramnath <a href="https://twitter.com/ramnath_vaidya/status/438466893931094016" target="_blank">points out</a> that this is a recent problem with the Chrome browser, and Safari or Firefox should be able to export to PDF without issue. A quick check with Safari confirms that's the case for my presentation.</p>
+
+<h2>Issues</h2>
+
+<p>There were a couple of things that either can't be done (without digging deep into the js) or at least things I couldn't figure out after some (non-extensive) googling.</p>
+
+<h3>Image features</h3>
+
+<p>First, making things appear sequentially (like PowerPoint bullet points) is achieved simply with:</p>
+
+<p>[code language="r" gutter="false"]<br />
+---</p>
+
+<p>## Slide title</p>
+
+<p>&gt; * First bullet point to appear</p>
+
+<p>&gt; * Second...<br />
+[/code]</p>
+
+<p>But for an image to then appear in the same way seems to require a continuation of the <code>ul</code>, i.e. your image needs a bullet point (?). Maybe I'm wrong on this but when included without the bullet point, the image seems to then precede the other bulleted content.</p>
+
+<p>Another issue was resizing and centering images. I made use of the code from <a href="http://stackoverflow.com/a/18640582/1274516" target="_blank">this answer</a> on SO to add the quick and dirty CSS / jQuery to auto-centre / reduce oversized images for the slideshow. For me it would be nice for this to be default behaviour, but I suppose for a web developer this is trivial everyday stuff:</p>
+
+<p>[code language="CSS" gutter="false"]<br />
+&lt;!-- Limit image width and height --&gt;<br />
+&lt;style type=&quot;text/css&quot;&gt;<br />
+img {<br />
+  max-height: 560px;<br />
+  max-width: 964px;<br />
+}<br />
+&lt;/style&gt;</p>
+
+<p>&lt;!-- Center image on slide --&gt;<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js&quot;&gt;&lt;/script&gt;<br />
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+$(function() {<br />
+  $(&quot;p:has(img)&quot;).addClass('centered');<br />
+});<br />
+&lt;/script&gt;<br />
+[/code]</p>
+
+<h3>RStudio integration</h3>
+
+<p>This caused some confusion for me, but RStudio actually has its own presentation framework and uses slightly different markdown syntax to create it. On reviewing the two, it doesn't seem as developed as Slidify yet, and the defaults aren't as polished as the io2012 deck. The confusing part is, somewhere between the packages <code>slidify</code> and <code>slidifyLibraries</code> a function overloads RStudio's <code>Knit HTML</code> button, faking seamless integration.</p>
+
+<p>The result is that the IDE is a great place to write the presentation, but I can't help thinking, as was mentioned <a href="https://twitter.com/kohske/status/436355371498618880" target="_blank">on twitter recently</a>, that the slidify framework would make a nice alternative or replacement for RStudio's current offering.</p>
+
+<h3>Customising the title slide</h3>
+
+<p>One of the problems I had was editing the theme's title slide. Most of the presentation is amenable to CSS hacking but the title slide is stubbornly hardcoded. (Well, it's not of course but the file is buried in the library install.)</p>
+
+<p>The way I got at this file was by changing the presentation mode (within the YAML frontmatter) to <code>selfcontained</code>, and run slidify, copying the libraries folder to the same directory as your <code>.Rmd</code> file. Then, for the io2012 deck, the title slide template is at (<a href="http://stackoverflow.com/questions/15251751/adding-an-image-to-title-slide-using-slidify" target="_blank">thanks</a> Ramnath):</p>
+
+<p><code>libraries/frameworks/io2012/partials/titleslide.html</code></p>
+
+<h2>Conclusion</h2>
+
+<p>I found slidify to be a great package and I ended up with, what I consider to be, the cleanest and nicest-looking presentation I've made to date. Also I've learnt a bit of web-programming along the way! I expect I'll be switching from beamer to slidify for future talks too.</p>
+
+<p>[caption id="attachment_472" align="aligncenter" width="500"]<a href="http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png"><img class="size-large wp-image-472" alt="The final(ish) presentation in all its glory. Link may not work for long." src="img/screen-shot-2014-02-24-at-22-20-531.png?w=500" width="500" height="318" /></a> The final(ish) presentation in all its glory. Link may not work for long.[/caption]</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/r/wikipedia/2014/02/03/meticulously-recreating-bitmap-plots-in-r/">
+        Meticulously recreating bitmap plots in R
+      </a>
+    </h1>
+
+    <span class="post-date">03 Feb 2014</span>
+
+    <p>There's a hard-fought drive on Wikimedia commons to convert those images that should be in vector format (i.e. graphs, diagrams) from their current bitmap form. At the time of writing, the relevant category has over <a href="https://commons.wikimedia.org/wiki/Category:Images_that_should_use_vector_graphics" target="_blank">7000</a> images in the category "Images that should use vector graphics".</p>
+
+<p>The usual way people move between the two is by tracing over the raster, and great tools like <a href="http://www.inkscape.org/en/" target="_blank">Inkscape</a> (free open-source software) can help a lot with this. But in the case of graphs I thought it'd be fun to try and rebuild a carbon copy from scratch in R.</p>
+
+<h2>The original</h2>
+
+<p>[caption id="attachment_400" align="aligncenter" width="500"]<a href="http://benjaminlmoore.files.wordpress.com/2014/02/original.png"><img class="size-large wp-image-400" alt="This is the original bitmap plot I wanted to recreate." src="img/original.png?w=500" width="500" height="343" /></a> This is the original bitmap plot I wanted to recreate. <em>(Courtesy of <a href="https://commons.wikimedia.org/wiki/File:US_EmpStatsBLS_Jan09-Feb13.png" target="_blank">Wikimedia Commons</a>)</em>[/caption]</p>
+
+<p>The file that first caught my eye was this nice graph of US employment stats, currently used on the highly-trafficked <a href="https://en.wikipedia.org/wiki/Barack_Obama" target="_blank">Obama article</a>. I'm not sure what drew this originally, it doesn't look like Excel because of the broken axis and annotations, but maybe it is. It's currently a png at about 700 × 500 so should be an easy target for improvement.</p>
+
+<h2>Figure 2.0</h2>
+
+<p>The two raw data files are available <a href="http://data.bls.gov/timeseries/LNS14000000" target="_blank">here</a> and <a href="http://data.bls.gov/timeseries/CES0000000001?output_view=net_1mth" target="_blank">here</a> as Excel spreadsheets. They have some weird unnecessary formatting so the various xls parsers for R won't work; save the tables from Excel as csv. I won't talk through the code as it wasn't too taxing (or clean) but it'll be at the end of the post. Here's what I came up with:</p>
+
+<p>[caption id="attachment_427" align="aligncenter" width="500"]<a href="https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg"><img class="size-large wp-image-427 " alt="I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG." src="img/recre_v5.png?w=500" width="500" height="349" /></a> I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.[/caption]</p>
+
+<p>I expanded my plot to include the 2013 data, so it inescapably has slightly different proportions to the original. And I was working on a single monitor at the time so I didn't have a constant comparison. I can see now a few things are still off, the fonts are different sized for one and I ditched the broken axis, but overall I think it's a decent similarity!</p>
+
+<h2>ggplot2 version</h2>
+
+<p>Two y-axes on the same graph is bad, bad, bad and unsurprisingly forbidden with ggplot2 but I did come across <a href="http://rwiki.sciviews.org/doku.php?id=tips:graphics-ggplot2:aligntwoplots" target="_blank">this</a> method of dummy-facetting and then plotting separate layers per facet. An obvious problem is now the y-axis are representing different things and you only have one label. A hacky fix is to write your ylabs into the facet header (I'm 100% confident Hadley Wickham and Leland Wilkinson would not be impressed with this). Another alternative would be to use map a colour aesthetic to your y-axis values and label it in the legend (again, pretty far from recommended practice).</p>
+
+<p>This is what I ended up with, I still think it's a reasonable alternative to the above, and the loess fitted model nicely shows the unemployment rate trend without the seasonality effects:</p>
+
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png"><img class="aligncenter size-large wp-image-413" alt="ggplot_bitmap" src="img/ggplot_bitmap.png?w=500" width="500" height="432" /></a></p>
+
+<h2>Article version</h2>
+
+<p>While mimicking the original exactly was fun (for me at least), I tried to improve upon it for the actual final figure for use on Wikipedia. For instance, it now uses unambiguous month abbreviations, and I swapped the legend for colour-coded text labels. It still has some of the original's charm though. Looks like after a bit of a rough patch, your employment statistics are starting to look pretty good Mr. President.</p>
+
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png"><img class="aligncenter size-large wp-image-431" alt="new_v2" src="img/new_v2.png?w=500" width="500" height="332" /></a></p>
+
+<p>Next up, the other <em>much</em> less attractive figures on that page ([<a href="https://en.wikipedia.org/wiki/File:U.S._Total_Deficits_vs._National_Debt_Increases_2001-2010.png" target="_blank">1</a>], [<a href="https://en.wikipedia.org/wiki/File:PPACA_Premium_Chart.jpg" target="_blank">2</a>]).</p>
+
+<hr />
+
+<p>https://gist.github.com/blmoore/8794075</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia/">
+        Wikipedia is dead, long live the 'pedia
+      </a>
+    </h1>
+
+    <span class="post-date">09 Jan 2014</span>
+
+    <p>I was a bit surprised when looking at the Wikipedia pageviews for 2013 (nicely presented <a href="http://reportcard.wmflabs.org/" target="_blank">here</a>). After 5 years of consistent and reasonably stable growth, over 2013 monthly pageviews actually dropped, and to the tune of 2 *billion* views  (10%) from their peak early in the year.</p>
+
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png"><img class="aligncenter size-full wp-image-378" alt="pviews" src="img/pviews.png" width="500" height="352" /></a>This was surprising to me. The problem Wikipedia has attracting new editors has been <a href="http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/" target="_blank">well-publicised</a>, but it's never had trouble with PageRank or increasing its reach to casual viewers.</p>
+
+<p>Well, it turns out one area seeing consistent and healthy growth is, as you would guess, mobile views, which are showing gains of about 150k pageviews a month on English Wikipedia. This makes up for almost half a billion of those lost over 2013 in the graph above, but still leaves some explaining to do.</p>
+
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png"><img class="aligncenter size-full wp-image-383" alt="mobile" src="img/mobile1.png" width="500" height="352" /></a></p>
+
+<p>Interestingly, another useful metric of web traffic, unique visitors per month, continues to <a href="http://reportcard.wmflabs.org/" target="_blank">grow considerably</a>. Maybe this reflects how mobile visitors use the site differently, just looking something up (e.g. to settle an argument) and closing their browser as opposed to a few hours going from topic to topic and ending up admiring a <a href="https://en.wikipedia.org/wiki/List_of_Eiffel_Tower_replicas" target="_blank">list of Eiffel tower replicates</a>.</p>
+
+<p><img class="alignright  wp-image-386" alt="mvvu" src="img/mvvu.png" width="360" height="254" /></p>
+
+<p>A quick graph of mean monthly pageviews per visitor gives this theory some support, but the data seems pretty noisy and has varied a lot over the past few years.</p>
+
+<p>Another possibility is that this data is telling us what we already know: the unique visitors with the highest total page views must be the article writers and the <a href="https://en.wikipedia.org/wiki/Wikipedia:WikiGnome" target="_blank">Wikignomes</a> that built the place — and they've been in precipitous decline for nearly <a href="https://en.wikipedia.org/wiki/File:Wikipedia_editor_numbers.svg" target="_blank">6 years now</a>. I'm speculating of course, but maybe that's starting to show through on the page views site-wide, emphasising how much work a small group of people have been putting in, and the dent they're leaving in Wikipedia as they leave.</p>
+
+<hr />
+
+<p>Have I missed something, do you have a better idea of why en.wiki pageviews fell over 2013? Let me know!</p>
+
+<h5>Full <code>R</code> code to reproduce the graphs shown in this post is here:</h5>
+
+<p>https://gist.github.com/blmoore/8343067</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="/2014/01/02/introducing-poole/">
         Introducing Poole
       </a>
@@ -90,11 +289,180 @@
 
   </div>
   
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2014/01/01/example-content/">
+        Example content
+      </a>
+    </h1>
+
+    <span class="post-date">01 Jan 2014</span>
+
+    <div class="message">
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+</div>
+
+<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+<blockquote>
+<p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<h2>Inline HTML elements</h2>
+
+<p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+
+<ul>
+<li><strong>To bold text</strong>, use <code>&lt;strong&gt;</code>.</li>
+<li><em>To italicize text</em>, use <code>&lt;em&gt;</code>.</li>
+<li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code>&lt;abbr&gt;</code>, with an optional <code>title</code> attribute for the full phrase.</li>
+<li>Citations, like <cite>&mdash; Mark otto</cite>, should use <code>&lt;cite&gt;</code>.</li>
+<li><del>Deleted</del> text should use <code>&lt;del&gt;</code> and <ins>inserted</ins> text should use <code>&lt;ins&gt;</code>.</li>
+<li>Superscript <sup>text</sup> uses <code>&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code>&lt;sub&gt;</code>.</li>
+</ul>
+
+<p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+<h2>Heading</h2>
+
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<h3>Code</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus mus.</p>
+
+<div class="highlight"><pre><code class="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+
+<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;return a + b&quot;</span><span class="p">);</span>
+
+<span class="c1">// Call the function</span>
+<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span></code></pre></div>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+
+<h3>Gists via GitHub Pages</h3>
+
+<p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+
+<script src="https://gist.github.com/5555251.js?file=gist.md"> </script>
+
+<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.</p>
+
+<h3>Lists</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+<li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+<li>Donec id elit non mi porta gravida at eget metus.</li>
+<li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+<ol>
+<li>Vestibulum id ligula porta felis euismod semper.</li>
+<li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+</ol>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+<dl>
+  <dt>HyperText Markup Language (HTML)</dt>
+  <dd>The language used to describe and define the content of a Web page</dd>
+
+  <dt>Cascading Style Sheets (CSS)</dt>
+  <dd>Used to describe the appearance of Web content</dd>
+
+  <dt>JavaScript (JS)</dt>
+  <dd>The programming language used to build advanced Web sites and applications</dd>
+</dl>
+
+<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<h3>Images</h3>
+
+<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
+
+<p><img src="http://placehold.it/800x400" alt="placeholder" title="Large example image">
+<img src="http://placehold.it/400x200" alt="placeholder" title="Medium example image">
+<img src="http://placehold.it/200x200" alt="placeholder" title="Small example image"></p>
+
+<h3>Tables</h3>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<hr>
+
+<p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/12/31/whats-jekyll/">
+        What's Jekyll?
+      </a>
+    </h1>
+
+    <span class="post-date">31 Dec 2013</span>
+
+    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/jekyll/jekyll/blob/master/README.markdown">the project&#39;s readme</a>:</p>
+
+<blockquote>
+<p>Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
+</blockquote>
+
+<p>It&#39;s an immensely useful tool. Find out more by <a href="https://github.com/jekyll/jekyll">visiting the project on GitHub</a>.</p>
+
+  </div>
+  
 </div>
 
 <div class="pagination">
   
-    <a class="pagination-item older" href="page3">Older</a>
+    <span class="pagination-item older">Older</span>
   
   
     
@@ -102,6 +470,7 @@
     
   
 </div>
+
 
       <div class="footer">
         <p>
