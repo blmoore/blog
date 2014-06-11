@@ -4,7 +4,7 @@
  <title>blm.io</title>
  <link href="http://blmoore.github.ioatom.xml" rel="self"/>
  <link href="http://blmoore.github.io"/>
- <updated>2014-06-11T23:14:09+01:00</updated>
+ <updated>2014-06-11T23:36:45+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
@@ -161,17 +161,17 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 
 &lt;p&gt;In theory this grows your set of films at a reasonable pace, but in reality the number of unique films being returned was significantly lower (&lt;em&gt;shown below&lt;/em&gt;). I guess this was due to pulling in &quot;&lt;a title=&quot;Walled garden wikipedia&quot; href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Walled_garden&quot; target=&quot;_blank&quot;&gt;walled gardens&lt;/a&gt;&quot; to my dataset, e.g. if a Harry Potter film was hit, each further round would pull in the 5 other films as most similar.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-689&quot; src=&quot;img/rottentomatohits.png?w=300&quot; alt=&quot;Films returned&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-689&quot; src=&quot;img/rottentomatohits.png&quot; alt=&quot;Films returned&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Results&lt;/h2&gt;
 
 &lt;p&gt;Here&#39;s an overview of the critic and audience scores I collected through the Rotten Tomatoes API, with some outliers labelled.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-697&quot; src=&quot;img/rt_plot.png?w=500&quot; alt=&quot;Most over- and underrated films&quot; width=&quot;500&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-697&quot; src=&quot;img/rt_plot.png&quot; alt=&quot;Most over- and underrated films&quot; width=&quot;500&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;On the whole it should be noted that critics and audience agree most of the time, as shown by the Pearson correlation coefficient between the two scores (0.71 across &amp;gt;1200 films).&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_712&quot; align=&quot;alignright&quot; width=&quot;187&quot;]&lt;a href=&quot;http://blm.io/movies&quot;&gt;&lt;img class=&quot;wp-image-712&quot; src=&quot;img/screen-shot-2014-05-08-at-02-11-47.png?w=300&quot; alt=&quot;&quot; width=&quot;187&quot; height=&quot;176&quot; /&gt;&lt;/a&gt; Click for interactive version.[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blm.io/movies&quot;&gt;&lt;img class=&quot;wp-image-712&quot; src=&quot;img/screen-shot-2014-05-08-at-02-11-47.png&quot; alt=&quot;&quot; width=&quot;187&quot; height=&quot;176&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;Update:&lt;/h3&gt;
 
@@ -181,7 +181,7 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 
 &lt;p&gt;Using our earlier definition it&#39;s easy to build a table of those films where the audience ending up really liking a film that was panned by critics.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_691&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png&quot;&gt;&lt;img class=&quot;wp-image-691 size-large&quot; src=&quot;img/under_table.png?w=500&quot; alt=&quot;Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.&quot; width=&quot;500&quot; height=&quot;366&quot; /&gt;&lt;/a&gt; Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png&quot;&gt;&lt;img class=&quot;wp-image-691 size-large&quot; src=&quot;img/under_table.png&quot; alt=&quot;Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.&quot; width=&quot;500&quot; height=&quot;366&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Somewhat surprisingly, the top of the table is &lt;a title=&quot;Facing the Giants&quot; href=&quot;http://www.rottentomatoes.com/m/facing_the_giants/&quot; target=&quot;_blank&quot;&gt;Facing the Giants (2006)&lt;/a&gt;, an evangelical Christian film. I guess non-Christians might have stayed away, and presumably it struck a chord within its target demographic — but after watching &lt;a title=&quot;Facing the Giants&quot; href=&quot;https://www.youtube.com/watch?v=4xneiV7Ru6Q&quot; target=&quot;_blank&quot;&gt;the trailer&lt;/a&gt;, I&#39;d probably agree with the critics on this one.&lt;/p&gt;
 
@@ -189,7 +189,9 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 
 &lt;p&gt;In addition the Rotten Tomatoes &lt;a href=&quot;http://www.rottentomatoes.com/m/facing_the_giants/&quot; target=&quot;_blank&quot;&gt;page&lt;/a&gt; for the film, shows a &quot;want to see&quot; percentage, rather than an audience score. This came up a few times and I&#39;ve seen no explanation for it, presumably &quot;want to see&quot; rating is for unreleased films, but the API returns a separate (and undisclosed?) audience score for these films also.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_693&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_films.png&quot;&gt;&lt;img class=&quot;size-large wp-image-693&quot; src=&quot;img/rt_films.png?w=500&quot; alt=&quot;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below&quot; width=&quot;500&quot; height=&quot;355&quot; /&gt;&lt;/a&gt; Above shows a &quot;want to see&quot; rating, different to the &quot;liked it&quot; rating returned by the API and shown below. Note: these screenshots from RottenTomatoes.com are not CC licensed and is shown here under a claim of Fair Use, reproduced for comment/criticism.[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_films.png&quot;&gt;&lt;img class=&quot;size-large wp-image-693&quot; src=&quot;img/rt_films.png&quot; alt=&quot;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below&quot; width=&quot;500&quot; height=&quot;355&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below. Note: these screenshots from RottenTomatoes.com are not CC licensed and is shown here under a claim of Fair Use, reproduced for comment/criticism.&lt;/p&gt;
 
 &lt;p&gt;Looking over the rest of the table, it seems the public is more fond of gross-out or slapstick comedies (such as &lt;a href=&quot;http://www.rottentomatoes.com/m/diary_of_a_mad_black_woman/&quot; target=&quot;_blank&quot;&gt;Diary of a Mad Black Woman (2005)&lt;/a&gt;, &lt;a href=&quot;http://www.rottentomatoes.com/m/grandmas_boy/&quot; target=&quot;_blank&quot;&gt;Grandma&#39;s boy (2006)&lt;/a&gt;) than the critics. Again, not films I&#39;d jump to defend as underrated. Bad Boys II however...&lt;/p&gt;
 
@@ -197,7 +199,7 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 
 &lt;p&gt;Here we&#39;re looking at those films which the critics loved, but paying audiences were then less enthused.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_696&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/over_table.png&quot;&gt;&lt;img class=&quot;size-large wp-image-696&quot; src=&quot;img/over_table.png?w=500&quot; alt=&quot;As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.&quot; width=&quot;500&quot; height=&quot;400&quot; /&gt;&lt;/a&gt; As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/over_table.png&quot;&gt;&lt;img class=&quot;size-large wp-image-696&quot; src=&quot;img/over_table.png?w=500&quot; alt=&quot;As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.&quot; width=&quot;500&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Strangely the top 15 (by difference) contains both the original 2001 &lt;a title=&quot;Spy Kids&quot; href=&quot;http://www.rottentomatoes.com/m/spy_kids/&quot; target=&quot;_blank&quot;&gt;Spy Kids&lt;/a&gt; and the sequel &lt;a title=&quot;Spy Kids 2&quot; href=&quot;http://www.rottentomatoes.com/m/spy_kids_2_island_of_lost_dreams/&quot; target=&quot;_blank&quot;&gt;Spy Kids 2&lt;/a&gt;: The Island of Lost Dreams (2002). What did critics see in these films that the public didn&#39;t? A possibility is bias in the audience reviews collected, the target audience is young children for these films and they probably are underrepresented amongst Rotten Tomatoes reviewers. Maybe there&#39;s even an enrichment for disgruntled parent chaperones.&lt;/p&gt;
 
@@ -215,13 +217,9 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 &lt;li&gt;The Rotten Tomatoes API provides an IMDB id for cross-referencing, maybe that&#39;s a path to getting more data and building a better film list.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5&gt;Full code to reproduce analysis&lt;/h5&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Note: If you&#39;re viewing this on r-bloggers, you may need to visit &lt;a href=&quot;http://benjaminlmoore.wordpress.com/2014/05/05/what-are-the-most-overrated-films/&quot;&gt;the Benomics version&lt;/a&gt; to see the attached gist.&lt;/p&gt;
-
-&lt;p&gt;https://gist.github.com/blmoore/dc3bfa9a3ad0857ac796&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;text-align:right;&quot;&gt;Full code to reproduce analysis is available in &lt;a href=&quot;https://gist.github.com/blmoore/dc3bfa9a3ad0857ac796&quot; target=&quot;_blank&quot;&gt;gist&lt;/a&gt; form.&lt;/p&gt;
 </content>
  </entry>
  

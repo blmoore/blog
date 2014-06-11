@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #888; 
+  color: #888;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -346,7 +346,8 @@ tbody tr:nth-child(odd) th {
 
 /* Meta data line below post title */
 .post-date {
-  display: block;
+  display: inline;
+  float: left;
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
@@ -433,4 +434,8 @@ a.pagination-item:hover {
 /* Additions */
 div .footer{
   float: right;
+}
+
+div .addthis_sharing_toolbox{
+  margin-left:70%;
 }
