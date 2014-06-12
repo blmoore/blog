@@ -28,7 +28,7 @@ author:
 <h3>Google BigQuery</h3>
 <p>One way of building a list is through <a href="http://www.githubarchive.org/" title="Github archive" target="_blank">Github archive</a>. The dev (<a href="http://www.igvita.com/" title="Ilya Grigorik" target="_blank">Ilya Grigorik</a>) has put up a public dataset with <a href="https://developers.google.com/bigquery/" title="BigQuery" target="_blank">Google BigQuery</a>, which is a neat cloud-based platform for querying huge datasets. My SQL isn't all that, but the Google BigQuery interface is really functional (e.g. it autocompletes table fields) and makes it easy to get the data you're looking for.</p>
 
-<img src="img/screen-shot-2014-03-06-at-12-21-52.png" alt="Fishing for prolific R users via Google BigQuery." width="500" height="499" class="size-large wp-image-500" />
+<img src="{{ site.baseurl }}/img/screen-shot-2014-03-06-at-12-21-52.png" alt="Fishing for prolific R users via Google BigQuery." width="500" height="499" class="size-large wp-image-500" />
 
 <p>In this case I pulled out R code repositories ordered by repo pushes (as a heuristic for codebase size and activity, I guess) with their owner's username. It was this list of names I then used for the API query.</p>
 <h3>Github API</h3>
@@ -67,12 +67,12 @@ getPRNGseeds <- function(user){
 
 <h2>The data</h2>
 <p>Despite the harsh search limitations I ended up with 27 users who owned the top 100 R repositories, and of those 15 used <code>set.seed()</code> somewhere (or at least something like it). However the regex fails in some cases &mdash; where a variable is being passed to the function instead of an integer, for one. Long story short, I scraped together 187 lines of <code>set.seed(\d+)</code> from some of the big names in the R community and here's how the counts looked:</p>
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/prng.png"><img src="img/prng.png?w=500" alt="RNG seeds" width="500" height="833" class="aligncenter size-large wp-image-514" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/prng.png"><img src="{{ site.baseurl }}/img/prng.png" alt="RNG seeds" width="500" height="833" class="aligncenter size-large wp-image-514" /></a></p>
 <p>So plain old <strong>1</strong> is the stand-out winner! </p>
 <p>There's a few sequences in there (<strong>123</strong>, <strong>321</strong>, <strong>1234</strong>, <strong>12345</strong>) and some date references (<strong>2011</strong>, <strong>20051028</strong>), but surprisingly few programmer in-jokes or web-culture references, save a lone <strong>1337</strong> and I guess some binary. </p>
 <p><strong>1410</strong> (or <strong>1014</strong> in less-sensible countries) and <strong>141079</strong> look like they could be a certain R developer's birthday and birth year, but that's pure speculation :)</p>
 <p>Here's one of those awful wordle / wordcloud things too.</p>
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/wordle_crop.png"><img src="img/wordle_crop.png?w=300" alt="wordle_crop" width="300" height="287" class="aligncenter size-medium wp-image-516" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/wordle_crop.png"><img src="{{ site.baseurl }}/img/wordle_crop.png" alt="wordle_crop" width="300" height="287" class="aligncenter size-medium wp-image-516" /></a></p>
 <p>Hopefully as the roll-out of the v3 Github API progresses the current search restriction will be lifted, still this was a fun glimpse at other programmer's conventions!</p>
 <hr />
 <p style="text-align:right;">Full code to reproduce in this <a href="https://gist.github.com/blmoore/9400832">gist</a>.</p>
