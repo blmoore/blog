@@ -4,7 +4,7 @@
  <title>blm.io</title>
  <link href="http://blmoore.github.ioatom.xml" rel="self"/>
  <link href="http://blmoore.github.io"/>
- <updated>2014-06-12T22:33:21+01:00</updated>
+ <updated>2014-06-12T23:04:15+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
@@ -19,7 +19,7 @@
    <id>http://blmoore.github.io/2014/06/07/hollywood-action-heroes</id>
    <content type="html">&lt;p&gt;I&#39;ve taken a look at the movie careers of a few of the most famous Hollywood action stars: Arnie, Sly Stallone, Bruce Willis and lots more, both older and more modern. The analysis and write-up is hosted on &lt;a href=&quot;http://blm.io/action&quot; title=&quot;blm.io&quot; target=&quot;_blank&quot;&gt;my new website&lt;/a&gt;, so that I can embed the interactive charts and make use of javascript.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://benjaminlmoore.files.wordpress.com/2014/06/arnie.png&quot;&gt;&lt;img src=&quot;img/arnie.png&quot; alt=&quot;Incomplete overview of Arnold Schwarzenegger&amp;#039;s movie career.&quot; width=&quot;500&quot; height=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;imagewhite&quot; src=&quot;/img/arnie.png&quot; alt=&quot;Incomplete overview of Arnold Schwarzenegger&amp;#039;s movie career.&quot; width=&quot;500&quot; height=&quot;250&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you&#39;re interested in seeing the full post, &lt;a href=&quot;http://blm.io/action&quot; title=&quot;blm.io&quot; target=&quot;_blank&quot;&gt;check it out&lt;/a&gt;!&lt;/p&gt;
 </content>
@@ -251,8 +251,8 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;Before looking at inflation we can compare the distribution of author counts per paper between the journals:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-605&quot; src=&quot;img/beans_overall.png?w=500&quot; alt=&quot;Distribution of author counts&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/journal_ecdf.png&quot;&gt;&lt;img class=&quot;alignright size-medium wp-image-608&quot; src=&quot;img/journal_ecdf.png?w=300&quot; alt=&quot;ECDF per journal&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-605&quot; src=&quot;/img/beans_overall.png&quot; alt=&quot;Distribution of author counts&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/journal_ecdf.png&quot;&gt;&lt;img class=&quot;alignright size-medium wp-image-608&quot; src=&quot;/img/journal_ecdf.png&quot; alt=&quot;ECDF per journal&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Possibly more usefully — but less pretty — the same data be plotted as empirical cumulative distribution functions (ECDF). From these we can see that PLOS Biology had the highest proportion of single-author papers in my sample (n = ~22,500 articles overall) followed by PLOS Medicine, with PLOS Genetics showing more high-author papers at the long-tail of the distribution, including the paper with the most authors in the sample (&lt;a title=&quot;couch&quot; href=&quot;http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003212&quot; target=&quot;_blank&quot;&gt;Couch et al., 2013&lt;/a&gt; with 270 authors).&lt;/p&gt;
 
@@ -260,23 +260,23 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;So, in these 6 different journals published by PLOS, how has the mean number of authors per paper varied across the past 7 years?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/alltrends.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-603&quot; src=&quot;img/alltrends.png?w=500&quot; alt=&quot;PLOS author inflation&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/alltrends.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-603&quot; src=&quot;/img/alltrends.png&quot; alt=&quot;PLOS author inflation&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Above I&#39;ve shown yearly means plus their 95% confidence intervals, as estimated by a non-parametric bootstrap method implemented in &lt;a title=&quot;ggplot2&quot; href=&quot;http://ggplot2.org/&quot; target=&quot;_blank&quot;&gt;ggplot2&lt;/a&gt;. Generally from this graph it does look like there&#39;s a slight upward trend on average, though arguably the mean is not the best summary statistic to use for this data, which I&#39;ve shown is not normally distributed, and may better fit an extreme value distribution.&lt;/p&gt;
 
 &lt;p&gt;The relationship between publication date and number of authors per paper become clearer if it&#39;s broken down by journal:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/plot_lm.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-621&quot; src=&quot;img/plot_lm.png?w=500&quot; alt=&quot;Author inflation regression&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/plot_lm.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-621&quot; src=&quot;/img/plot_lm.png&quot; alt=&quot;Author inflation regression&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Here linear regression reveals a significant positive coefficient for year against mean author count per paper, as high as .52 extra authors per year on average, down to just .06 a year for PLOS ONE. Surprisingly the mega-journal which published around 80,000 papers over this time period seems least susceptible to author inflation.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/authinflation_bars.png&quot;&gt;&lt;img class=&quot;alignleft size-medium wp-image-661&quot; src=&quot;img/authinflation_bars.png?w=214&quot; alt=&quot;Author inflation per journal&quot; width=&quot;214&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;The explained variance in mean number of authors per paper (per year) ranges from .28 (PLOS ONE) up to an impressive .87 for PLOS Medicine, with PLOS Computational Biology not far behind on .83. However, PLOS Computational Biology had the second lowest regression coefficient, and the lowest average number of authors of the six journals — maybe us introverted computer types should be collaborating more widely!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/authinflation_bars.png&quot;&gt;&lt;img class=&quot;alignleft size-medium wp-image-661&quot; src=&quot;/img/authinflation_bars.png&quot; alt=&quot;Author inflation per journal&quot; width=&quot;214&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;The explained variance in mean number of authors per paper (per year) ranges from .28 (PLOS ONE) up to an impressive .87 for PLOS Medicine, with PLOS Computational Biology not far behind on .83. However, PLOS Computational Biology had the second lowest regression coefficient, and the lowest average number of authors of the six journals — maybe us introverted computer types should be collaborating more widely!&lt;/p&gt;
 
 &lt;h2&gt;Journal effects&lt;/h2&gt;
 
 &lt;p&gt;It&#39;s interesting to speculate on what drives the observed differences in author inflation between journals. A possible covariate is the roundly-condemned &quot;Impact Factor&quot; journal-level metric — are &quot;high impact&quot; journals seeing more author creep than lesser publications?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/corr_authif.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-665&quot; src=&quot;img/corr_authif.png?w=300&quot; alt=&quot;Correlation of author inflation and impact factor&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/corr_authif.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-665&quot; src=&quot;/img/corr_authif.png&quot; alt=&quot;Correlation of author inflation and impact factor&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If estimate of author inflation is plotted against respective journals&#39; recent impact factors, there does indeed appear to be a positive correlation. However, this comparison only has 6 data points so there&#39;s not enough evidence to reject the null hypothesis that there is no relationship between these two variables (p = 0.18).&lt;/p&gt;
 
