@@ -4,6 +4,17 @@
 {% include head.html %}
 
 <body>
+<div id="header">
+  <nav>
+    <ul>
+      <li><a href="http://blm.io">front</a></li>
+      <li><a href="http://blm.io/projects">projects</a></li>
+      <li><a href="http://benjaminlmoore.wordpress.com" target="_blank">blog</a></li>
+      <li><a href="http://blm.io/contact">contact</a></li>
+    </ul>
+  </nav>
+</div>  
+
 <div class="container content">
   <!--
 
@@ -15,16 +26,6 @@
 </div>
 -->
 
-<div id="header">
-  <nav>
-    <ul>
-      <li><a href="http://blm.io">front</a></li>
-      <li><a href="http://blm.io/projects">projects</a></li>
-      <li><a href="http://benjaminlmoore.wordpress.com" target="_blank">blog</a></li>
-      <li><a href="http://blm.io/contact">contact</a></li>
-    </ul>
-  </nav>
-</div>
 
 {{ content }}
 
@@ -34,9 +35,6 @@
     <a href="https://creativecommons.org/licenses/by/4.0/"
     target="_blank">CC-BY 4.0</a> {{ site.time | date: '%Y' }}.
   -->
-  <a href="https://twitter.com/benjaminlmoore" class="twitter-follow-button"
-  data-show-count="false">Follow @benjaminlmoore</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </p>
   </div>
   </div>

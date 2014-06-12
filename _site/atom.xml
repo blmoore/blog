@@ -4,7 +4,7 @@
  <title>blm.io</title>
  <link href="http://blmoore.github.ioatom.xml" rel="self"/>
  <link href="http://blmoore.github.io"/>
- <updated>2014-06-12T22:00:14+01:00</updated>
+ <updated>2014-06-12T22:33:21+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
@@ -39,22 +39,17 @@
 &lt;h2&gt;Top 100 twitter accounts by followers&lt;/h2&gt;
 
 &lt;p&gt;A top 100 list is made available by &lt;a title=&quot;Twitter Counter&quot; href=&quot;http://twittercounter.com/pages/100&quot; target=&quot;_blank&quot;&gt;Twitter Counter&lt;/a&gt;. It&#39;s not clear that they have made this list available through their API, but thanks to the markup, a quick hack is to scrape the usernames using &lt;a title=&quot;RCurl&quot; href=&quot;http://www.omegahat.org/RCurl/&quot; target=&quot;_blank&quot;&gt;RCurl&lt;/a&gt; and some &lt;a title=&quot;Regex&quot; href=&quot;https://en.wikipedia.org/wiki/Regular_expression&quot; target=&quot;_blank&quot;&gt;regex&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;[code gutter=&quot;False&quot; language=&quot;r&quot;]&lt;br /&gt;
-require(&amp;quot;RCurl&amp;quot;)&lt;br /&gt;
-top.100 &amp;lt;- getURL(&amp;quot;http://twittercounter.com/pages/100&amp;quot;)&lt;/p&gt;
-
-&lt;p&gt;# split into lines&lt;br /&gt;
-top.100 &amp;lt;- unlist(strsplit(top.100, &amp;quot;\n&amp;quot;))&lt;br /&gt;
-# Get only those lines with an @&lt;br /&gt;
-top.100 &amp;lt;- top.100[sapply(top.100, grepl, pattern=&amp;quot;@&amp;quot;)]&lt;/p&gt;
-
-&lt;p&gt;# Grep out anchored usernames: &amp;lt;a ...&amp;gt;@username&amp;lt;/a&amp;gt;&lt;br /&gt;
-top.100 &amp;lt;- gsub(&amp;quot;.*&amp;gt;@(.+)&amp;lt;.*&amp;quot;, &amp;quot;\\1&amp;quot;, top.100)[2:101]&lt;br /&gt;
-head(top.100)&lt;br /&gt;
-# [1] &amp;quot;katyperry&amp;quot;  &amp;quot;justinbieber&amp;quot;  &amp;quot;BarackObama&amp;quot;  ...&lt;br /&gt;
-[/code]&lt;/p&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;require&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;RCurl&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+top.100 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; getURL&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://twittercounter.com/pages/100&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# split into lines&lt;/span&gt;
+top.100 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; unlist&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;strsplit&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;top.100&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Get only those lines with an @&lt;/span&gt;
+top.100 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; top.100&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;sapply&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;top.100&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; grepl&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; pattern&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Grep out anchored usernames: &amp;lt;a ...&amp;amp;gt;@username&amp;lt;/a&amp;gt;;&lt;/span&gt;
+top.100 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; gsub&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;.*&amp;gt;@(.+)&amp;lt;.*&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;\\1&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; top.100&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+head&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;top.100&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# [1] &amp;quot;katyperry&amp;quot;  &amp;quot;justinbieber&amp;quot;  &amp;quot;BarackObama&amp;quot;  ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;R package twitteR&lt;/h2&gt;
 
 &lt;p&gt;Getting data from the &lt;a title=&quot;twitter API&quot; href=&quot;https://dev.twitter.com/&quot; target=&quot;_blank&quot;&gt;twitter API&lt;/a&gt; is made simple by the twitteR package. I made use of &lt;a title=&quot;twitteR&quot; href=&quot;http://davetang.org/muse/2013/04/06/using-the-r_twitter-package/&quot; target=&quot;_blank&quot;&gt;Dave Tang&#39;s worked example&lt;/a&gt; for the initial OAuth setup, once that&#39;s complete the twitteR package is really easy to use.&lt;/p&gt;
@@ -62,30 +57,24 @@ head(top.100)&lt;br /&gt;
 &lt;p&gt;The difficulty getting data from the API, as ever, is to do with &lt;a title=&quot;rate limits&quot; href=&quot;https://dev.twitter.com/docs/rate-limiting/1.1&quot; target=&quot;_blank&quot;&gt;rate limits&lt;/a&gt;. Twitter allows 15 requests for follower information per 15 minute window. (Number of followers can be queried by a much more generous 180 requests per window.) This means that to get a sample of followers for each of the top 100 twitter accounts, it&#39;ll take &lt;em&gt;at a minimum&lt;/em&gt; 1 hour 40 mins to stay on the right side of the rate limit. I ended up using 90 second sleep windows between requests to be safe, making a total query time of two and a half hours!&lt;/p&gt;
 
 &lt;p&gt;Another issue is possibly to do with strange characters being returned and breaking the JSON import. This error crops up a lot and meant that I had to lower the sample size of followers to avoid including these problem accounts. After some highly unscientific tests, I settled on about 1000 followers per account which seemed a good trade-off between maximising sample size but minimising failure rate.&lt;/p&gt;
-
-&lt;p&gt;[code language=&quot;r&quot; gutter=&quot;False&quot;]&lt;br /&gt;
-# Try to sample 3000 followers for a user:&lt;br /&gt;
-username$getFollowers(n=3000)&lt;br /&gt;
-# Error in twFromJSON(out) :&lt;br /&gt;
-#  Error: Malformed response from server, was not JSON.&lt;br /&gt;
-# The most likely cause of this error is Twitter returning&lt;br /&gt;
-# a character which can&#39;t be properly parsed by R. Generally&lt;br /&gt;
-# the only remedy is to wait long enough for the offending&lt;br /&gt;
-# character to disappear from searches.&lt;br /&gt;
-[/code]&lt;/p&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Try to sample 3000 followers for a user:&lt;/span&gt;
+username&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;getFollowers&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Error in twFromJSON(out) :&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  Error: Malformed response from server, was not JSON.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# The most likely cause of this error is Twitter returning&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# a character which can&amp;#39;t be properly parsed by R. Generally&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# the only remedy is to wait long enough for the offending&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# character to disappear from searches.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Gender inference&lt;/h2&gt;
 
 &lt;p&gt;Here I used a relatively new R package, &lt;a title=&quot;gender package&quot; href=&quot;https://github.com/ropensci/gender&quot; target=&quot;_blank&quot;&gt;rOpenSci&#39;s gender&lt;/a&gt; (kudos for resisting gendR and the like). This uses U.S. social security data to probabilistically link first names with genders, e.g.:&lt;/p&gt;
-
-&lt;p&gt;[code language=&quot;r&quot; gutter=&quot;False&quot;]&lt;br /&gt;
-devtools::install_github(&amp;quot;ropensci/gender&amp;quot;)&lt;br /&gt;
-require(&amp;quot;gender&amp;quot;)&lt;br /&gt;
-gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
-#   name proportion_male proportion_female gender&lt;br /&gt;
-# 1  ben          0.9962            0.0038   male&lt;br /&gt;
-[/code]&lt;/p&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;devtools&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;install_github&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ropensci/gender&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+require&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;gender&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ben&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#   name proportion_male proportion_female gender&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 1  ben          0.9962            0.0038   male&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;So chances are good that I&#39;m male. But the package also returns proportional data based on the frequency of appearances in the SSA database. Naively these can be interpreted as the probability a given name is either male or female. So in terms of converting a list of 1000 first names to genders, there are a few options:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -119,8 +108,8 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 &lt;h3&gt;Caveats&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;A lot of the time genders can&#39;t be called from an account&#39;s first name. Maybe they haven&#39;t given a first name, maybe it&#39;s a business account or some pretty unicode symbols, maybe it&#39;s a spammy egg account. This means my realised sample size is &amp;lt;&amp;lt;1000, sometimes the majority of usernames had no gender (e.g. &lt;a href=&quot;https://twitter.com/UberSoc&quot; target=&quot;_blank&quot;&gt;@UberSoc&lt;/a&gt;, fake followers?).
-&lt;p&gt;[caption id=&quot;attachment_747&quot; align=&quot;alignright&quot; width=&quot;107&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-747&quot; src=&quot;img/with_missing.png?w=107&quot; alt=&quot;This (big) chart includes % for those that couldn&#39;t be assigned (NA)&quot; width=&quot;107&quot; height=&quot;150&quot; /&gt;&lt;/a&gt; This (big) chart includes % for those that couldn&#39;t be assigned (NA)[/caption]&lt;/li&gt;
+&lt;li&gt;A lot of the time genders can&#39;t be called from an account&#39;s first name. Maybe they haven&#39;t given a first name, maybe it&#39;s a business account or some pretty unicode symbols, maybe it&#39;s a spammy egg account. This means my realised sample size is &lt;&lt;1000, sometimes the majority of usernames had no gender (e.g. &lt;a href=&quot;https://twitter.com/UberSoc&quot; target=&quot;_blank&quot;&gt;@UberSoc&lt;/a&gt;, fake followers?).
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-747&quot; src=&quot;img/with_missing.png?w=107&quot; alt=&quot;This (big) chart includes % for those that couldn&#39;t be assigned (NA)&quot; width=&quot;107&quot; height=&quot;150&quot; /&gt;&lt;/a&gt; This (big) chart includes % for those that couldn&#39;t be assigned (NA)&lt;/li&gt;
 &lt;li&gt;The SSA data is heavily biased towards Western (esp. US) and non-English names are likely to not be assigned a gender throughout. This is a shame, if you know of a more international gender DB please let me know.&lt;/li&gt;
 &lt;li&gt;I&#39;m sampling most recent followers, so maybe accounts like Justin Bieber have a much higher female ratio in earlier followers than those which have only just hit the follow button.&lt;/li&gt;
 &lt;li&gt;The sample size of 1000 followers per account is smaller than I&#39;d like, especially for accounts with 50 million followers.&lt;/li&gt;
@@ -242,36 +231,27 @@ gender(&amp;quot;ben&amp;quot;)&lt;br /&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The only strange part of the search was at the PLOS API end. To search by the &lt;code&gt;publication_year&lt;/code&gt; field you need to supply both a beginning and end date range, in the form:&lt;/p&gt;
-
-&lt;p&gt;[code gutter=&quot;False&quot;]&lt;br /&gt;
-publication_date:[2001-01-01T00:00:00Z TO 2013-12-31T23:59:59Z]&lt;br /&gt;
-[/code]&lt;/p&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;publication_date&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2001-01-01&lt;/span&gt;T00&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;00&lt;/span&gt;Z TO &lt;span class=&quot;m&quot;&gt;2013-12-31&lt;/span&gt;T23&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;59&lt;/span&gt;Z&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;A tad verbose, right? I can&#39;t imagine wanting to search for things published at a particular time of day. A full PLOS API query using the rplos package looks something like this:&lt;/p&gt;
-
-&lt;p&gt;[code gutter=&quot;False&quot; language=&quot;r&quot;]&lt;br /&gt;
-searchplos(&lt;br /&gt;
-  # Query: publication date in 2012&lt;br /&gt;
-  q  = &#39;publication_date:[2012-01-01T00:00:00Z TO 2012-12-31T23:59:59Z]&#39;, &lt;/p&gt;
-
-&lt;p&gt;  # Fields to return: id (doi) and author list&lt;br /&gt;
-  fl = &amp;quot;id,author&amp;quot;, &lt;/p&gt;
-
-&lt;p&gt;  # Filter: only actual articles in journal PLOS ONE&lt;br /&gt;
-  fq = list(&amp;quot;doc_type:full&amp;quot;,&lt;br /&gt;
-            &amp;quot;cross_published_journal_key:PLoSONE&amp;quot;), &lt;/p&gt;
-
-&lt;p&gt;  # 500 results (max 1000 per query)&lt;br /&gt;
-  start=0, limit=500, sleep=6)&lt;br /&gt;
-[/code]&lt;/p&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;searchplos&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# Query: publication date in 2012&lt;/span&gt;
+  q  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;publication_date:[2012-01-01T00:00:00Z TO 2012-12-31T23:59:59Z]&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# Fields to return: id (doi) and author list&lt;/span&gt;
+  fl &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;id,author&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# Filter: only actual articles in journal PLOS ONE&lt;/span&gt;
+  fq &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; list&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;doc_type:full&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&amp;quot;cross_published_journal_key:PLoSONE&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# 500 results (max 1000 per query)&lt;/span&gt;
+  start&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; limit&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; sleep&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;A downside of using the PLOS API is that the set of journals are quite recent, PLOS ONE started in 2006 and PLOS Biology was only a few years before in 2003, so it&#39;ll only give us a limited window into any long-term trends.&lt;/p&gt;
 
 &lt;h2&gt;Distribution of author counts&lt;/h2&gt;
 
 &lt;p&gt;Before looking at inflation we can compare the distribution of author counts per paper between the journals:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-605&quot; src=&quot;img/beans_overall.png?w=500&quot; alt=&quot;Distribution of author counts&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-605&quot; src=&quot;img/beans_overall.png?w=500&quot; alt=&quot;Distribution of author counts&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/journal_ecdf.png&quot;&gt;&lt;img class=&quot;alignright size-medium wp-image-608&quot; src=&quot;img/journal_ecdf.png?w=300&quot; alt=&quot;ECDF per journal&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Possibly more usefully — but less pretty — the same data be plotted as empirical cumulative distribution functions (ECDF). From these we can see that PLOS Biology had the highest proportion of single-author papers in my sample (n = ~22,500 articles overall) followed by PLOS Medicine, with PLOS Genetics showing more high-author papers at the long-tail of the distribution, including the paper with the most authors in the sample (&lt;a title=&quot;couch&quot; href=&quot;http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003212&quot; target=&quot;_blank&quot;&gt;Couch et al., 2013&lt;/a&gt; with 270 authors).&lt;/p&gt;
@@ -326,9 +306,7 @@ searchplos(&lt;br /&gt;
 
 &lt;hr /&gt;
 
-&lt;h4&gt;Full code to reproduce analysis&lt;/h4&gt;
-
-&lt;p&gt;https://gist.github.com/blmoore/9998523&lt;/p&gt;
+&lt;p style=&quot;text-align:right;&quot;&gt;The full code to reproduce this analysis is &lt;a href=&quot;https://gist.github.com/blmoore/9998523&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  

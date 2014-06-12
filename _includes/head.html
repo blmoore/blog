@@ -31,6 +31,22 @@
   <!-- add this -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5398cddd3691288f"></script>
 
+  <!-- Custom JS, charting libs and jquery -->
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+  <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+  <script>
+  $(document).ready( function() {
+
+    $('.gallery-item').hover( function() {
+      $(this).find('.img-title').fadeIn(300);
+    }, function() {
+      $(this).find('.img-title').fadeOut(100);
+    });
+
+  });
+  </script>
+
 
   <!-- begin analytics -->
   <script>

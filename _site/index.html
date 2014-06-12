@@ -32,6 +32,22 @@
   <!-- add this -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5398cddd3691288f"></script>
 
+  <!-- Custom JS, charting libs and jquery -->
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+  <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+  <script>
+  $(document).ready( function() {
+
+    $('.gallery-item').hover( function() {
+      $(this).find('.img-title').fadeIn(300);
+    }, function() {
+      $(this).find('.img-title').fadeOut(100);
+    });
+
+  });
+  </script>
+
 
   <!-- begin analytics -->
   <script>
@@ -49,6 +65,17 @@
 
 
 <body>
+<div id="header">
+  <nav>
+    <ul>
+      <li><a href="http://blm.io">front</a></li>
+      <li><a href="http://blm.io/projects">projects</a></li>
+      <li><a href="http://benjaminlmoore.wordpress.com" target="_blank">blog</a></li>
+      <li><a href="http://blm.io/contact">contact</a></li>
+    </ul>
+  </nav>
+</div>  
+
 <div class="container content">
   <!--
 
@@ -60,16 +87,6 @@
 </div>
 -->
 
-<div id="header">
-  <nav>
-    <ul>
-      <li><a href="http://blm.io">front</a></li>
-      <li><a href="http://blm.io/projects">projects</a></li>
-      <li><a href="http://benjaminlmoore.wordpress.com" target="_blank">blog</a></li>
-      <li><a href="http://blm.io/contact">contact</a></li>
-    </ul>
-  </nav>
-</div>
 
 <div class="posts">
   
@@ -108,22 +125,17 @@
 <h2>Top 100 twitter accounts by followers</h2>
 
 <p>A top 100 list is made available by <a title="Twitter Counter" href="http://twittercounter.com/pages/100" target="_blank">Twitter Counter</a>. It's not clear that they have made this list available through their API, but thanks to the markup, a quick hack is to scrape the usernames using <a title="RCurl" href="http://www.omegahat.org/RCurl/" target="_blank">RCurl</a> and some <a title="Regex" href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regex</a>:</p>
-
-<p>[code gutter="False" language="r"]<br />
-require(&quot;RCurl&quot;)<br />
-top.100 &lt;- getURL(&quot;http://twittercounter.com/pages/100&quot;)</p>
-
-<p># split into lines<br />
-top.100 &lt;- unlist(strsplit(top.100, &quot;\n&quot;))<br />
-# Get only those lines with an @<br />
-top.100 &lt;- top.100[sapply(top.100, grepl, pattern=&quot;@&quot;)]</p>
-
-<p># Grep out anchored usernames: &lt;a ...&gt;@username&lt;/a&gt;<br />
-top.100 &lt;- gsub(&quot;.*&gt;@(.+)&lt;.*&quot;, &quot;\\1&quot;, top.100)[2:101]<br />
-head(top.100)<br />
-# [1] &quot;katyperry&quot;  &quot;justinbieber&quot;  &quot;BarackObama&quot;  ...<br />
-[/code]</p>
-
+<div class="highlight"><pre><code class="language-r" data-lang="r">require<span class="p">(</span><span class="s">&quot;RCurl&quot;</span><span class="p">)</span>
+top.100 <span class="o">&lt;-</span> getURL<span class="p">(</span><span class="s">&quot;http://twittercounter.com/pages/100&quot;</span><span class="p">)</span>
+<span class="c1"># split into lines</span>
+top.100 <span class="o">&lt;-</span> unlist<span class="p">(</span>strsplit<span class="p">(</span>top.100<span class="p">,</span> <span class="s">&quot;\n&quot;</span><span class="p">))</span>
+<span class="c1"># Get only those lines with an @</span>
+top.100 <span class="o">&lt;-</span> top.100<span class="p">[</span>sapply<span class="p">(</span>top.100<span class="p">,</span> grepl<span class="p">,</span> pattern<span class="o">=</span><span class="s">&quot;@&quot;</span><span class="p">)]</span>
+<span class="c1"># Grep out anchored usernames: &lt;a ...&amp;gt;@username&lt;/a&gt;;</span>
+top.100 <span class="o">&lt;-</span> gsub<span class="p">(</span><span class="s">&quot;.*&gt;@(.+)&lt;.*&quot;</span><span class="p">,</span> <span class="s">&quot;\\1&quot;</span><span class="p">,</span> top.100<span class="p">)[</span><span class="m">2</span><span class="o">:</span><span class="m">101</span><span class="p">]</span>
+head<span class="p">(</span>top.100<span class="p">)</span>
+<span class="c1"># [1] &quot;katyperry&quot;  &quot;justinbieber&quot;  &quot;BarackObama&quot;  ...</span>
+</code></pre></div>
 <h2>R package twitteR</h2>
 
 <p>Getting data from the <a title="twitter API" href="https://dev.twitter.com/" target="_blank">twitter API</a> is made simple by the twitteR package. I made use of <a title="twitteR" href="http://davetang.org/muse/2013/04/06/using-the-r_twitter-package/" target="_blank">Dave Tang's worked example</a> for the initial OAuth setup, once that's complete the twitteR package is really easy to use.</p>
@@ -131,30 +143,24 @@ head(top.100)<br />
 <p>The difficulty getting data from the API, as ever, is to do with <a title="rate limits" href="https://dev.twitter.com/docs/rate-limiting/1.1" target="_blank">rate limits</a>. Twitter allows 15 requests for follower information per 15 minute window. (Number of followers can be queried by a much more generous 180 requests per window.) This means that to get a sample of followers for each of the top 100 twitter accounts, it'll take <em>at a minimum</em> 1 hour 40 mins to stay on the right side of the rate limit. I ended up using 90 second sleep windows between requests to be safe, making a total query time of two and a half hours!</p>
 
 <p>Another issue is possibly to do with strange characters being returned and breaking the JSON import. This error crops up a lot and meant that I had to lower the sample size of followers to avoid including these problem accounts. After some highly unscientific tests, I settled on about 1000 followers per account which seemed a good trade-off between maximising sample size but minimising failure rate.</p>
-
-<p>[code language="r" gutter="False"]<br />
-# Try to sample 3000 followers for a user:<br />
-username$getFollowers(n=3000)<br />
-# Error in twFromJSON(out) :<br />
-#  Error: Malformed response from server, was not JSON.<br />
-# The most likely cause of this error is Twitter returning<br />
-# a character which can't be properly parsed by R. Generally<br />
-# the only remedy is to wait long enough for the offending<br />
-# character to disappear from searches.<br />
-[/code]</p>
-
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Try to sample 3000 followers for a user:</span>
+username<span class="o">$</span>getFollowers<span class="p">(</span>n<span class="o">=</span><span class="m">3000</span><span class="p">)</span>
+<span class="c1"># Error in twFromJSON(out) :</span>
+<span class="c1">#  Error: Malformed response from server, was not JSON.</span>
+<span class="c1"># The most likely cause of this error is Twitter returning</span>
+<span class="c1"># a character which can&#39;t be properly parsed by R. Generally</span>
+<span class="c1"># the only remedy is to wait long enough for the offending</span>
+<span class="c1"># character to disappear from searches.</span>
+</code></pre></div>
 <h2>Gender inference</h2>
 
 <p>Here I used a relatively new R package, <a title="gender package" href="https://github.com/ropensci/gender" target="_blank">rOpenSci's gender</a> (kudos for resisting gendR and the like). This uses U.S. social security data to probabilistically link first names with genders, e.g.:</p>
-
-<p>[code language="r" gutter="False"]<br />
-devtools::install_github(&quot;ropensci/gender&quot;)<br />
-require(&quot;gender&quot;)<br />
-gender(&quot;ben&quot;)<br />
-#   name proportion_male proportion_female gender<br />
-# 1  ben          0.9962            0.0038   male<br />
-[/code]</p>
-
+<div class="highlight"><pre><code class="language-r" data-lang="r">devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">&quot;ropensci/gender&quot;</span><span class="p">)</span>
+require<span class="p">(</span><span class="s">&quot;gender&quot;</span><span class="p">)</span>
+gender<span class="p">(</span><span class="s">&quot;ben&quot;</span><span class="p">)</span>
+<span class="c1">#   name proportion_male proportion_female gender</span>
+<span class="c1"># 1  ben          0.9962            0.0038   male</span>
+</code></pre></div>
 <p>So chances are good that I'm male. But the package also returns proportional data based on the frequency of appearances in the SSA database. Naively these can be interpreted as the probability a given name is either male or female. So in terms of converting a list of 1000 first names to genders, there are a few options:</p>
 
 <ol>
@@ -188,8 +194,8 @@ gender(&quot;ben&quot;)<br />
 <h3>Caveats</h3>
 
 <ul>
-<li>A lot of the time genders can't be called from an account's first name. Maybe they haven't given a first name, maybe it's a business account or some pretty unicode symbols, maybe it's a spammy egg account. This means my realised sample size is &lt;&lt;1000, sometimes the majority of usernames had no gender (e.g. <a href="https://twitter.com/UberSoc" target="_blank">@UberSoc</a>, fake followers?).
-<p>[caption id="attachment_747" align="alignright" width="107"]<a href="http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png"><img class="size-thumbnail wp-image-747" src="img/with_missing.png?w=107" alt="This (big) chart includes % for those that couldn't be assigned (NA)" width="107" height="150" /></a> This (big) chart includes % for those that couldn't be assigned (NA)[/caption]</li>
+<li>A lot of the time genders can't be called from an account's first name. Maybe they haven't given a first name, maybe it's a business account or some pretty unicode symbols, maybe it's a spammy egg account. This means my realised sample size is <<1000, sometimes the majority of usernames had no gender (e.g. <a href="https://twitter.com/UberSoc" target="_blank">@UberSoc</a>, fake followers?).
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png"><img class="size-thumbnail wp-image-747" src="img/with_missing.png?w=107" alt="This (big) chart includes % for those that couldn't be assigned (NA)" width="107" height="150" /></a> This (big) chart includes % for those that couldn't be assigned (NA)</li>
 <li>The SSA data is heavily biased towards Western (esp. US) and non-English names are likely to not be assigned a gender throughout. This is a shame, if you know of a more international gender DB please let me know.</li>
 <li>I'm sampling most recent followers, so maybe accounts like Justin Bieber have a much higher female ratio in earlier followers than those which have only just hit the follow button.</li>
 <li>The sample size of 1000 followers per account is smaller than I'd like, especially for accounts with 50 million followers.</li>
@@ -319,36 +325,27 @@ gender(&quot;ben&quot;)<br />
 </ul>
 
 <p>The only strange part of the search was at the PLOS API end. To search by the <code>publication_year</code> field you need to supply both a beginning and end date range, in the form:</p>
-
-<p>[code gutter="False"]<br />
-publication_date:[2001-01-01T00:00:00Z TO 2013-12-31T23:59:59Z]<br />
-[/code]</p>
-
+<div class="highlight"><pre><code class="language-r" data-lang="r">publication_date<span class="o">:</span><span class="p">[</span><span class="m">2001-01-01</span>T00<span class="o">:</span><span class="m">00</span><span class="o">:</span><span class="m">00</span>Z TO <span class="m">2013-12-31</span>T23<span class="o">:</span><span class="m">59</span><span class="o">:</span><span class="m">59</span>Z<span class="p">]</span>
+</code></pre></div>
 <p>A tad verbose, right? I can't imagine wanting to search for things published at a particular time of day. A full PLOS API query using the rplos package looks something like this:</p>
-
-<p>[code gutter="False" language="r"]<br />
-searchplos(<br />
-  # Query: publication date in 2012<br />
-  q  = 'publication_date:[2012-01-01T00:00:00Z TO 2012-12-31T23:59:59Z]', </p>
-
-<p>  # Fields to return: id (doi) and author list<br />
-  fl = &quot;id,author&quot;, </p>
-
-<p>  # Filter: only actual articles in journal PLOS ONE<br />
-  fq = list(&quot;doc_type:full&quot;,<br />
-            &quot;cross_published_journal_key:PLoSONE&quot;), </p>
-
-<p>  # 500 results (max 1000 per query)<br />
-  start=0, limit=500, sleep=6)<br />
-[/code]</p>
-
+<div class="highlight"><pre><code class="language-r" data-lang="r">searchplos<span class="p">(</span>
+  <span class="c1"># Query: publication date in 2012</span>
+  q  <span class="o">=</span> <span class="s">&#39;publication_date:[2012-01-01T00:00:00Z TO 2012-12-31T23:59:59Z]&#39;</span><span class="p">,</span>
+  <span class="c1"># Fields to return: id (doi) and author list</span>
+  fl <span class="o">=</span> <span class="s">&quot;id,author&quot;</span><span class="p">,</span>
+  <span class="c1"># Filter: only actual articles in journal PLOS ONE</span>
+  fq <span class="o">=</span> list<span class="p">(</span><span class="s">&quot;doc_type:full&quot;</span><span class="p">,</span>
+            <span class="s">&quot;cross_published_journal_key:PLoSONE&quot;</span><span class="p">),</span>
+  <span class="c1"># 500 results (max 1000 per query)</span>
+  start<span class="o">=</span><span class="m">0</span><span class="p">,</span> limit<span class="o">=</span><span class="m">500</span><span class="p">,</span> sleep<span class="o">=</span><span class="m">6</span><span class="p">)</span>
+</code></pre></div>
 <p>A downside of using the PLOS API is that the set of journals are quite recent, PLOS ONE started in 2006 and PLOS Biology was only a few years before in 2003, so it'll only give us a limited window into any long-term trends.</p>
 
 <h2>Distribution of author counts</h2>
 
 <p>Before looking at inflation we can compare the distribution of author counts per paper between the journals:</p>
 
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png"><img class="aligncenter size-large wp-image-605" src="img/beans_overall.png?w=500" alt="Distribution of author counts" width="500" height="500" /></a><br />
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png"><img class="aligncenter size-large wp-image-605" src="img/beans_overall.png?w=500" alt="Distribution of author counts" width="500" height="500" /></a>
 <a href="http://benjaminlmoore.files.wordpress.com/2014/04/journal_ecdf.png"><img class="alignright size-medium wp-image-608" src="img/journal_ecdf.png?w=300" alt="ECDF per journal" width="300" height="300" /></a></p>
 
 <p>Possibly more usefully — but less pretty — the same data be plotted as empirical cumulative distribution functions (ECDF). From these we can see that PLOS Biology had the highest proportion of single-author papers in my sample (n = ~22,500 articles overall) followed by PLOS Medicine, with PLOS Genetics showing more high-author papers at the long-tail of the distribution, including the paper with the most authors in the sample (<a title="couch" href="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003212" target="_blank">Couch et al., 2013</a> with 270 authors).</p>
@@ -403,9 +400,7 @@ searchplos(<br />
 
 <hr />
 
-<h4>Full code to reproduce analysis</h4>
-
-<p>https://gist.github.com/blmoore/9998523</p>
+<p style="text-align:right;">The full code to reproduce this analysis is <a href="https://gist.github.com/blmoore/9998523" target="_blank">here</a>.</p>
 
   </div>
   
@@ -685,9 +680,6 @@ $(function() {<br />
     <a href="https://creativecommons.org/licenses/by/4.0/"
     target="_blank">CC-BY 4.0</a> 2014.
   -->
-  <a href="https://twitter.com/benjaminlmoore" class="twitter-follow-button"
-  data-show-count="false">Follow @benjaminlmoore</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </p>
   </div>
   </div>
