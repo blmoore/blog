@@ -421,14 +421,16 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
+  font-size: 1.2rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
-  display: block;
+  display: inline;
   padding: 1rem;
   border: 1px solid #eee;
 }
