@@ -35,14 +35,14 @@ author:
 </ol>
 <p>(<strong>N.B.</strong> This wasn't my idea but one from a post in the API forums, unfortunately didn't save the link.)</p>
 <p>In theory this grows your set of films at a reasonable pace, but in reality the number of unique films being returned was significantly lower (<em>shown below</em>). I guess this was due to pulling in "<a title="Walled garden wikipedia" href="https://en.wikipedia.org/wiki/Wikipedia:Walled_garden" target="_blank">walled gardens</a>" to my dataset, e.g. if a Harry Potter film was hit, each further round would pull in the 5 other films as most similar.</p>
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png"><img class="aligncenter size-medium wp-image-689" src="{{ site.baseurl }}/img/rottentomatohits.png" alt="Films returned" width="300" height="300" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png"><img class="imgwhite" src="{{ site.baseurl }}/img/rottentomatohits.png" alt="Films returned" width="300" height="300" /></a></p>
 
 <h2>Results</h2>
 <p>Here's an overview of the critic and audience scores I collected through the Rotten Tomatoes API, with some outliers labelled.</p>
 <p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png"><img class="aligncenter size-large wp-image-697" src="{{ site.baseurl }}/img/rt_plot.png" alt="Most over- and underrated films" width="500" height="533" /></a></p>
 <p>On the whole it should be noted that critics and audience agree most of the time, as shown by the Pearson correlation coefficient between the two scores (0.71 across &gt;1200 films).</p>
 
-<a href="http://blm.io/movies"><img class="wp-image-712" src="{{ site.baseurl }}/img/screen-shot-2014-05-08-at-02-11-47.png" alt="" width="187" height="176" /></a>
+<a href="http://blm.io/movies"><img class="imgwhite" src="{{ site.baseurl }}/img/screen-shot-2014-05-08-at-02-11-47.png" alt="" width="187" height="176" /></a>
 
 <h3>Update:</h3>
 <p>I've put together an interactive version of the same plot <a href="http://blm.io/movies" target="_blank">here</a> using the <a title="rCharts" href="https://github.com/ramnathv/rCharts" target="_blank">rCharts</a> R package. It'll show film title and review scores when you hover over a point so you know what you're looking at. Also I've more than doubled the size of the film dataset by repeating the above method for a couple more iterations — <a title="rCharts" href="http://blm.io/movies" target="_blank">take a look</a>!</p>
@@ -50,7 +50,7 @@ author:
 <h2>Most underrated films</h2>
 <p>Using our earlier definition it's easy to build a table of those films where the audience ending up really liking a film that was panned by critics.</p>
 
-<a href="http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png"><img class="wp-image-691 size-large" src="{{ site.baseurl }}/img/under_table.png" alt="Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes." width="500" height="366" /></a>
+<a href="http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png"><img class="imgwhite" src="{{ site.baseurl }}/img/under_table.png" alt="Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes." width="500" height="366" /></a>
 
 <p>Somewhat surprisingly, the top of the table is <a title="Facing the Giants" href="http://www.rottentomatoes.com/m/facing_the_giants/" target="_blank">Facing the Giants (2006)</a>, an evangelical Christian film. I guess non-Christians might have stayed away, and presumably it struck a chord within its target demographic — but after watching <a title="Facing the Giants" href="https://www.youtube.com/watch?v=4xneiV7Ru6Q" target="_blank">the trailer</a>, I'd probably agree with the critics on this one.</p>
 <p>This showed that some weighting of the difference might be needed, at the very least weighting by number of reviews, but the Rotten Tomatoes API doesn't provide that data.</p>
