@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>blm.io</title>
- <link href="http://blmoore.github.ioatom.xml" rel="self"/>
- <link href="http://blmoore.github.io"/>
- <updated>2014-06-13T22:20:14+01:00</updated>
+ <link href="http://blmoore.github.io/blogatom.xml" rel="self"/>
+ <link href="http://blmoore.github.io/blog"/>
+ <updated>2014-06-13T22:30:37+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
@@ -14,11 +14,11 @@
  
  <entry>
    <title>Hollywood action heroes</title>
-   <link href="http://blmoore.github.io/r/movies/2014/06/07/hollywood-action-heroes/"/>
+   <link href="http://blmoore.github.io/blog/r/movies/2014/06/07/hollywood-action-heroes/"/>
    <updated>2014-06-07T00:00:00+01:00</updated>
    <id>http://blmoore.github.io/r/movies/2014/06/07/hollywood-action-heroes</id>
    <content type="html">&lt;div style=&quot;float:right;width: 20%&quot;&gt;
-&lt;img src=&quot;/img/arnie10.jpg&quot; width=80% style=&quot;border:2px solid #cccccc; display:block; margin-right: auto; margin-left: auto;&quot;/&gt;
+&lt;img src=&quot;/blog/img/arnie10.jpg&quot; width=80% style=&quot;border:2px solid #cccccc; display:block; margin-right: auto; margin-left: auto;&quot;/&gt;
 &lt;figcaption&gt;
 &lt;p style=&quot;font-size:smaller&quot;&gt;Arnie 2010 (&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:SchwarzeneggerJan2010.jpg&quot; target=&quot;_blank&quot;&gt;source&lt;/a&gt;)&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -43,7 +43,7 @@ happened over the last few decades. After some
 scraping of IMDb data, this is what I came up with:
 &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/img/arnie.png&quot;&gt;&lt;img src=&quot;/img/arnie_thumb.png&quot; width=100% /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;/blog/img/arnie.png&quot;&gt;&lt;img src=&quot;/blog/img/arnie_thumb.png&quot; width=100% /&gt;&lt;/a&gt;
 &lt;p&gt;
 It&amp;#39;s interesting to see the trajectory from back-to-back hits in low
 budget action films (Terminator, Predator, Commando) to a peak of a $200 million
@@ -68,8 +68,8 @@ stars?
 &lt;div class=&quot;gallery&quot;&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/sly.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/sly_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/sly.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/sly_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Sylvester Stallone&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -77,8 +77,8 @@ stars?
 &lt;/figure&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/bruce.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/bruce_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/bruce.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/bruce_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Bruce Willis&lt;/h5&gt;
 &lt;/figcaption&gt;  &lt;/a&gt;
@@ -87,8 +87,8 @@ stars?
 &lt;br clear=&quot;all&quot; /&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/li.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/li_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/li.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/li_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Jet Li&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -96,8 +96,8 @@ stars?
 &lt;/figure&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/chan.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/chan_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/chan.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/chan_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Jackie Chan&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -107,8 +107,8 @@ stars?
 &lt;br clear=&quot;all&quot; /&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/statham.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/statham_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/statham.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/statham_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Jason Statham&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -116,8 +116,8 @@ stars?
 &lt;/figure&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/vin.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/vin_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/vin.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/vin_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Vin Diesel&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -127,8 +127,8 @@ stars?
 &lt;br clear=&quot;all&quot; /&gt;
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/seagal.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/seagal_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/seagal.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/seagal_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Steven Seagal&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -137,8 +137,8 @@ stars?
 
 
 &lt;figure class=&quot;gallery-item&quot;&gt;
-&lt;a href=&quot;/img/rock.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/rock_thumb.png&quot;&gt;
+&lt;a href=&quot;/blog/img/rock.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/rock_thumb.png&quot;&gt;
 &lt;figcaption class=&quot;img-title&quot;&gt;
 &lt;h5&gt;Dwayne Johnson&lt;/h5&gt;
 &lt;/figcaption&gt;
@@ -147,8 +147,8 @@ stars?
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;/img/clint.png&quot; target=&quot;_blank&quot;&gt;
-&lt;img src=&quot;/img/clint_bigthumb.png&quot; width=100%&gt;
+&lt;p&gt;&lt;a href=&quot;/blog/img/clint.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/blog/img/clint_bigthumb.png&quot; width=100%&gt;
 &lt;/a&gt;
 &lt;p&gt;
 So we&amp;#39;ve learnt that &lt;a href=&quot;http://www.imdb.com/name/nm0000246&quot; target=&quot;_blank&quot;&gt;Bruce Willis&lt;/a&gt;
@@ -157,7 +157,7 @@ jumping from big-money blockbusters and low-budget action flicks.
 &lt;/p&gt;
 &lt;p&gt;
 &lt;div style=&quot;float:right;width: 50%&quot;&gt;
-&lt;img src=&quot;/img/roi.png&quot; width=95% style=&quot;border:2px solid #cccccc; display:block; margin-right: auto; margin-left: auto;&quot; /&gt;
+&lt;img src=&quot;/blog/img/roi.png&quot; width=95% style=&quot;border:2px solid #cccccc; display:block; margin-right: auto; margin-left: auto;&quot; /&gt;
 &lt;figcaption&gt;
 &lt;p style=&quot;font-size:smaller&quot;&gt;Fancy a gamble? Pick Sly or Jackie as your lead.&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -180,7 +180,7 @@ Another (possibly fairer) way to compare these guys is by total budgets
 and grosses over their careers. It&#39;s &lt;a href=&quot;http://www.imdb.com/help/show_leaf?infosource&quot; target=&quot;_blank&quot;&gt;not entirely clear&lt;/a&gt;
 where IMDb gets these values from, so the absolute numbers should be taken with a pinch of salt.&lt;/p&gt;&lt;br /&gt;
 &lt;div id=&#39;actionBudget&#39; class=&quot;rChart&quot;&gt;&lt;/div&gt;
-&lt;script src=&quot;/js/action_budget.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/blog/js/action_budget.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;Here&#39;s the same graph but by box office takings. These numbers from IMDb are even &lt;em&gt;more&lt;/em&gt;
 suspect and vary according to different sources. Additionally, to convert the gross
@@ -193,7 +193,7 @@ with Arnie, there&#39;s unfortunately some missing or incomplete data on IMDb wh
 films being excluded.
 &lt;/p&gt;&lt;br /&gt;
 &lt;div id=&#39;actionGross&#39; class=&quot;rChart&quot;&gt;&lt;/div&gt;
-&lt;script src=&quot;/js/action_gross.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/blog/js/action_gross.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;
 It turns out Sly has grossed more than Arnie on smaller budgets! We can also see
@@ -203,7 +203,7 @@ Jackie Chan punches well above his weight in terms of absolute earnings, as well
 
 &lt;div id=&#39;actionBudgetVGross&#39; class=&quot;rChart&quot;&gt;&lt;/div&gt;
 
-&lt;script src=&quot;/js/action_budgetVgross.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/blog/js/action_budgetVgross.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;The python and R scripts to recreate all the above analysis are
 &lt;a href=&quot;https://github.com/blmoore/blogR&quot; target=&quot;_blank&quot;&gt;on github&lt;/a&gt;,
@@ -216,7 +216,7 @@ or actresses you might be interested in (like, say, Jean-Claude Van Damme whom
  
  <entry>
    <title>Celebrity twitter followers by gender</title>
-   <link href="http://blmoore.github.io/r/unrelated/2014/05/25/celebrity-twitter-followers-by-gender/"/>
+   <link href="http://blmoore.github.io/blog/r/unrelated/2014/05/25/celebrity-twitter-followers-by-gender/"/>
    <updated>2014-05-25T00:00:00+01:00</updated>
    <id>http://blmoore.github.io/r/unrelated/2014/05/25/celebrity-twitter-followers-by-gender</id>
    <content type="html">&lt;p&gt;The most popular accounts on twitter have millions of followers, but what are their demographics like? Twitter doesn&#39;t collect or release this kind of information, and even things like name and location are only voluntarily added to people&#39;s profiles. Unlike Google+ and Facebook, twitter has no real name policy, &lt;a href=&quot;https://gigaom.com/2011/09/16/why-twitter-doesnt-care-what-your-real-name-is/&quot; target=&quot;_blank&quot;&gt;they don&#39;t care&lt;/a&gt; what you call yourself, because they can still divine out useful information from your account activity.&lt;/p&gt;
@@ -314,7 +314,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
  
  <entry>
    <title>What are the most overrated films?</title>
-   <link href="http://blmoore.github.io/r/unrelated/2014/05/05/what-are-the-most-overrated-films/"/>
+   <link href="http://blmoore.github.io/blog/r/unrelated/2014/05/05/what-are-the-most-overrated-films/"/>
    <updated>2014-05-05T00:00:00+01:00</updated>
    <id>http://blmoore.github.io/r/unrelated/2014/05/05/what-are-the-most-overrated-films</id>
    <content type="html">&lt;p style=&quot;text-align:left;&quot;&gt;&quot;Overrated&quot; and &quot;underrated&quot; are slippery terms to try to quantify. An interesting way of looking at this, I thought, would be to compare the reviews of film critics with those of Joe Public, reasoning that a film which is roundly-lauded by the Hollywood press but proved disappointing for the real audience would be &quot;overrated&quot; and &lt;em&gt;vice versa&lt;/em&gt;.&lt;/p&gt;
@@ -339,17 +339,17 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;In theory this grows your set of films at a reasonable pace, but in reality the number of unique films being returned was significantly lower (&lt;em&gt;shown below&lt;/em&gt;). I guess this was due to pulling in &quot;&lt;a title=&quot;Walled garden wikipedia&quot; href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Walled_garden&quot; target=&quot;_blank&quot;&gt;walled gardens&lt;/a&gt;&quot; to my dataset, e.g. if a Harry Potter film was hit, each further round would pull in the 5 other films as most similar.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/img/rottentomatohits.png&quot; alt=&quot;Films returned&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/blog/img/rottentomatohits.png&quot; alt=&quot;Films returned&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Results&lt;/h2&gt;
 
 &lt;p&gt;Here&#39;s an overview of the critic and audience scores I collected through the Rotten Tomatoes API, with some outliers labelled.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-697&quot; src=&quot;/img/rt_plot.png&quot; alt=&quot;Most over- and underrated films&quot; width=&quot;500&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-697&quot; src=&quot;/blog/img/rt_plot.png&quot; alt=&quot;Most over- and underrated films&quot; width=&quot;500&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;On the whole it should be noted that critics and audience agree most of the time, as shown by the Pearson correlation coefficient between the two scores (0.71 across &amp;gt;1200 films).&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://blm.io/movies&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/img/screen-shot-2014-05-08-at-02-11-47.png&quot; alt=&quot;&quot; width=&quot;187&quot; height=&quot;176&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blm.io/movies&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/blog/img/screen-shot-2014-05-08-at-02-11-47.png&quot; alt=&quot;&quot; width=&quot;187&quot; height=&quot;176&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;Update:&lt;/h3&gt;
 
@@ -359,7 +359,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;Using our earlier definition it&#39;s easy to build a table of those films where the audience ending up really liking a film that was panned by critics.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/img/under_table.png&quot; alt=&quot;Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.&quot; width=&quot;500&quot; height=&quot;366&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/blog/img/under_table.png&quot; alt=&quot;Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.&quot; width=&quot;500&quot; height=&quot;366&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Somewhat surprisingly, the top of the table is &lt;a title=&quot;Facing the Giants&quot; href=&quot;http://www.rottentomatoes.com/m/facing_the_giants/&quot; target=&quot;_blank&quot;&gt;Facing the Giants (2006)&lt;/a&gt;, an evangelical Christian film. I guess non-Christians might have stayed away, and presumably it struck a chord within its target demographic — but after watching &lt;a title=&quot;Facing the Giants&quot; href=&quot;https://www.youtube.com/watch?v=4xneiV7Ru6Q&quot; target=&quot;_blank&quot;&gt;the trailer&lt;/a&gt;, I&#39;d probably agree with the critics on this one.&lt;/p&gt;
 
@@ -367,7 +367,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;In addition the Rotten Tomatoes &lt;a href=&quot;http://www.rottentomatoes.com/m/facing_the_giants/&quot; target=&quot;_blank&quot;&gt;page&lt;/a&gt; for the film, shows a &quot;want to see&quot; percentage, rather than an audience score. This came up a few times and I&#39;ve seen no explanation for it, presumably &quot;want to see&quot; rating is for unreleased films, but the API returns a separate (and undisclosed?) audience score for these films also.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_films.png&quot;&gt;&lt;img class=&quot;size-large wp-image-693&quot; src=&quot;/img/rt_films.png&quot; alt=&quot;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below&quot; width=&quot;500&quot; height=&quot;355&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_films.png&quot;&gt;&lt;img class=&quot;size-large wp-image-693&quot; src=&quot;/blog/img/rt_films.png&quot; alt=&quot;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below&quot; width=&quot;500&quot; height=&quot;355&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below. Note: these screenshots from RottenTomatoes.com are not CC licensed and is shown here under a claim of Fair Use, reproduced for comment/criticism.&lt;/p&gt;
 
@@ -377,7 +377,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;Here we&#39;re looking at those films which the critics loved, but paying audiences were then less enthused.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/over_table.png&quot;&gt;&lt;img class=&quot;size-large wp-image-696&quot; src=&quot;/img/over_table.png&quot; alt=&quot;As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.&quot; width=&quot;500&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/over_table.png&quot;&gt;&lt;img class=&quot;size-large wp-image-696&quot; src=&quot;/blog/img/over_table.png&quot; alt=&quot;As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.&quot; width=&quot;500&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Strangely the top 15 (by difference) contains both the original 2001 &lt;a title=&quot;Spy Kids&quot; href=&quot;http://www.rottentomatoes.com/m/spy_kids/&quot; target=&quot;_blank&quot;&gt;Spy Kids&lt;/a&gt; and the sequel &lt;a title=&quot;Spy Kids 2&quot; href=&quot;http://www.rottentomatoes.com/m/spy_kids_2_island_of_lost_dreams/&quot; target=&quot;_blank&quot;&gt;Spy Kids 2&lt;/a&gt;: The Island of Lost Dreams (2002). What did critics see in these films that the public didn&#39;t? A possibility is bias in the audience reviews collected, the target audience is young children for these films and they probably are underrepresented amongst Rotten Tomatoes reviewers. Maybe there&#39;s even an enrichment for disgruntled parent chaperones.&lt;/p&gt;
 
@@ -403,7 +403,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
  
  <entry>
    <title>Author inflation in academic literature</title>
-   <link href="http://blmoore.github.io/r/2014/04/06/author-inflation-in-academic-literature/"/>
+   <link href="http://blmoore.github.io/blog/r/2014/04/06/author-inflation-in-academic-literature/"/>
    <updated>2014-04-06T00:00:00+01:00</updated>
    <id>http://blmoore.github.io/r/2014/04/06/author-inflation-in-academic-literature</id>
    <content type="html">&lt;p&gt;There seems to be a general consensus that author lists in academic articles are growing. Wikipedia &lt;a href=&quot;https://en.wikipedia.org/wiki/Academic_authorship#Growing_number_of_authors_per_paper&quot; target=&quot;_blank&quot;&gt;says so&lt;/a&gt;, and I&#39;ve also come across a &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1002/asi.21438/abstract&quot; target=&quot;_blank&quot;&gt;published letter&lt;/a&gt; and short &lt;a href=&quot;http://www.nature.com/nature/history/full/nature06243.html&quot; target=&quot;_blank&quot;&gt;Nature article&lt;/a&gt; which accept this is the case and discuss ways of mitigating the issue. Recently there was an interesting discussion on &lt;a href=&quot;http://academia.stackexchange.com/questions/16759/is-there-an-inflation-in-the-number-of-authors-per-paper&quot; target=&quot;_blank&quot;&gt;academia.stackexchange&lt;/a&gt; on the subject but again without much quantification. Luckily given the array of literature database APIs and language bindings available, it should be pretty easy to investigate with some statistical analysis in R.&lt;/p&gt;
@@ -440,8 +440,8 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;Before looking at inflation we can compare the distribution of author counts per paper between the journals:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-605&quot; src=&quot;/img/beans_overall.png&quot; alt=&quot;Distribution of author counts&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/journal_ecdf.png&quot;&gt;&lt;img class=&quot;alignright size-medium wp-image-608&quot; src=&quot;/img/journal_ecdf.png&quot; alt=&quot;ECDF per journal&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/beans_overall.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-605&quot; src=&quot;/blog/img/beans_overall.png&quot; alt=&quot;Distribution of author counts&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/journal_ecdf.png&quot;&gt;&lt;img class=&quot;alignright size-medium wp-image-608&quot; src=&quot;/blog/img/journal_ecdf.png&quot; alt=&quot;ECDF per journal&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Possibly more usefully — but less pretty — the same data be plotted as empirical cumulative distribution functions (ECDF). From these we can see that PLOS Biology had the highest proportion of single-author papers in my sample (n = ~22,500 articles overall) followed by PLOS Medicine, with PLOS Genetics showing more high-author papers at the long-tail of the distribution, including the paper with the most authors in the sample (&lt;a title=&quot;couch&quot; href=&quot;http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003212&quot; target=&quot;_blank&quot;&gt;Couch et al., 2013&lt;/a&gt; with 270 authors).&lt;/p&gt;
 
@@ -449,23 +449,23 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;So, in these 6 different journals published by PLOS, how has the mean number of authors per paper varied across the past 7 years?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/alltrends.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-603&quot; src=&quot;/img/alltrends.png&quot; alt=&quot;PLOS author inflation&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/alltrends.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-603&quot; src=&quot;/blog/img/alltrends.png&quot; alt=&quot;PLOS author inflation&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Above I&#39;ve shown yearly means plus their 95% confidence intervals, as estimated by a non-parametric bootstrap method implemented in &lt;a title=&quot;ggplot2&quot; href=&quot;http://ggplot2.org/&quot; target=&quot;_blank&quot;&gt;ggplot2&lt;/a&gt;. Generally from this graph it does look like there&#39;s a slight upward trend on average, though arguably the mean is not the best summary statistic to use for this data, which I&#39;ve shown is not normally distributed, and may better fit an extreme value distribution.&lt;/p&gt;
 
 &lt;p&gt;The relationship between publication date and number of authors per paper become clearer if it&#39;s broken down by journal:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/plot_lm.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-621&quot; src=&quot;/img/plot_lm.png&quot; alt=&quot;Author inflation regression&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/plot_lm.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-621&quot; src=&quot;/blog/img/plot_lm.png&quot; alt=&quot;Author inflation regression&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Here linear regression reveals a significant positive coefficient for year against mean author count per paper, as high as .52 extra authors per year on average, down to just .06 a year for PLOS ONE. Surprisingly the mega-journal which published around 80,000 papers over this time period seems least susceptible to author inflation.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/authinflation_bars.png&quot;&gt;&lt;img class=&quot;alignleft size-medium wp-image-661&quot; src=&quot;/img/authinflation_bars.png&quot; alt=&quot;Author inflation per journal&quot; width=&quot;214&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;The explained variance in mean number of authors per paper (per year) ranges from .28 (PLOS ONE) up to an impressive .87 for PLOS Medicine, with PLOS Computational Biology not far behind on .83. However, PLOS Computational Biology had the second lowest regression coefficient, and the lowest average number of authors of the six journals — maybe us introverted computer types should be collaborating more widely!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/authinflation_bars.png&quot;&gt;&lt;img class=&quot;alignleft size-medium wp-image-661&quot; src=&quot;/blog/img/authinflation_bars.png&quot; alt=&quot;Author inflation per journal&quot; width=&quot;214&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;The explained variance in mean number of authors per paper (per year) ranges from .28 (PLOS ONE) up to an impressive .87 for PLOS Medicine, with PLOS Computational Biology not far behind on .83. However, PLOS Computational Biology had the second lowest regression coefficient, and the lowest average number of authors of the six journals — maybe us introverted computer types should be collaborating more widely!&lt;/p&gt;
 
 &lt;h2&gt;Journal effects&lt;/h2&gt;
 
 &lt;p&gt;It&#39;s interesting to speculate on what drives the observed differences in author inflation between journals. A possible covariate is the roundly-condemned &quot;Impact Factor&quot; journal-level metric — are &quot;high impact&quot; journals seeing more author creep than lesser publications?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/corr_authif.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-665&quot; src=&quot;/img/corr_authif.png&quot; alt=&quot;Correlation of author inflation and impact factor&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/04/corr_authif.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-665&quot; src=&quot;/blog/img/corr_authif.png&quot; alt=&quot;Correlation of author inflation and impact factor&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If estimate of author inflation is plotted against respective journals&#39; recent impact factors, there does indeed appear to be a positive correlation. However, this comparison only has 6 data points so there&#39;s not enough evidence to reject the null hypothesis that there is no relationship between these two variables (p = 0.18).&lt;/p&gt;
 
@@ -501,7 +501,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
  
  <entry>
    <title>Guardian data blog — UK general election analysis in R</title>
-   <link href="http://blmoore.github.io/r/2014/03/18/guardian-data-blog-uk-elections/"/>
+   <link href="http://blmoore.github.io/blog/r/2014/03/18/guardian-data-blog-uk-elections/"/>
    <updated>2014-03-18T00:00:00+00:00</updated>
    <id>http://blmoore.github.io/r/2014/03/18/guardian-data-blog-uk-elections</id>
    <content type="html">&lt;p&gt;The Guardian newspaper has for a few years been running a &lt;a title=&quot;guardian data blog&quot; href=&quot;http://www.theguardian.com/data&quot; target=&quot;_blank&quot;&gt;data blog&lt;/a&gt; and has built up a massive repository of (often) well-curated datasets on a huge number of topics. They even have an &lt;a title=&quot;list of data sets made available by the guardian&quot; href=&quot;http://www.theguardian.com/news/datablog/interactive/2013/jan/14/all-our-datasets-index&quot; target=&quot;_blank&quot;&gt;indexed list&lt;/a&gt; of all data sets they&#39;ve put together or reused in their articles.&lt;/p&gt;
@@ -562,7 +562,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
  
  <entry>
    <title>What are the most common RNG seeds used in R scripts on Github?</title>
-   <link href="http://blmoore.github.io/r/comp%20sci/2014/03/06/most-common-rng-seeds-r-github/"/>
+   <link href="http://blmoore.github.io/blog/r/comp%20sci/2014/03/06/most-common-rng-seeds-r-github/"/>
    <updated>2014-03-06T00:00:00+00:00</updated>
    <id>http://blmoore.github.io/r/comp%20sci/2014/03/06/most-common-rng-seeds-r-github</id>
    <content type="html">&lt;p&gt;In the R programming language, the random number generator (RNG) is seeded each session using the current time and process ID. Via the magic of the popular &lt;a href=&quot;https://en.wikipedia.org/wiki/Mersenne_twister&quot; target=&quot;_blank&quot;&gt;Mersenne Twister PRNG&lt;/a&gt;, the values stored in &lt;code&gt;.Random.seed&lt;/code&gt; are used sequentially each time &quot;randomness&quot; is invoked in a function. This means, of course, that the same function run in different R sessions can produce varying results, and in the case of modelling a system sensitive to initial conditions the observed differences could be huge. &lt;/p&gt;
@@ -577,7 +577,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;One way of building a list is through &lt;a href=&quot;http://www.githubarchive.org/&quot; title=&quot;Github archive&quot; target=&quot;_blank&quot;&gt;Github archive&lt;/a&gt;. The dev (&lt;a href=&quot;http://www.igvita.com/&quot; title=&quot;Ilya Grigorik&quot; target=&quot;_blank&quot;&gt;Ilya Grigorik&lt;/a&gt;) has put up a public dataset with &lt;a href=&quot;https://developers.google.com/bigquery/&quot; title=&quot;BigQuery&quot; target=&quot;_blank&quot;&gt;Google BigQuery&lt;/a&gt;, which is a neat cloud-based platform for querying huge datasets. My SQL isn&#39;t all that, but the Google BigQuery interface is really functional (e.g. it autocompletes table fields) and makes it easy to get the data you&#39;re looking for.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/screen-shot-2014-03-06-at-12-21-52.png&quot; alt=&quot;Fishing for prolific R users via Google BigQuery.&quot; width=&quot;500&quot; height=&quot;499&quot; class=&quot;size-large wp-image-500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/screen-shot-2014-03-06-at-12-21-52.png&quot; alt=&quot;Fishing for prolific R users via Google BigQuery.&quot; width=&quot;500&quot; height=&quot;499&quot; class=&quot;size-large wp-image-500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this case I pulled out R code repositories ordered by repo pushes (as a heuristic for codebase size and activity, I guess) with their owner&#39;s username. It was this list of names I then used for the API query.&lt;/p&gt;
 
@@ -614,7 +614,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;Despite the harsh search limitations I ended up with 27 users who owned the top 100 R repositories, and of those 15 used &lt;code&gt;set.seed()&lt;/code&gt; somewhere (or at least something like it). However the regex fails in some cases &amp;mdash; where a variable is being passed to the function instead of an integer, for one. Long story short, I scraped together 187 lines of &lt;code&gt;set.seed(\d+)&lt;/code&gt; from some of the big names in the R community and here&#39;s how the counts looked:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/prng.png&quot;&gt;&lt;img src=&quot;/img/prng.png&quot; alt=&quot;RNG seeds&quot; width=&quot;500&quot; height=&quot;833&quot; class=&quot;aligncenter size-large wp-image-514&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/prng.png&quot;&gt;&lt;img src=&quot;/blog/img/prng.png&quot; alt=&quot;RNG seeds&quot; width=&quot;500&quot; height=&quot;833&quot; class=&quot;aligncenter size-large wp-image-514&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So plain old &lt;strong&gt;1&lt;/strong&gt; is the stand-out winner! &lt;/p&gt;
 
@@ -624,7 +624,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;Here&#39;s one of those awful wordle / wordcloud things too.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/wordle_crop.png&quot;&gt;&lt;img src=&quot;/img/wordle_crop.png&quot; alt=&quot;wordle_crop&quot; width=&quot;300&quot; height=&quot;287&quot; class=&quot;aligncenter size-medium wp-image-516&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/wordle_crop.png&quot;&gt;&lt;img src=&quot;/blog/img/wordle_crop.png&quot; alt=&quot;wordle_crop&quot; width=&quot;300&quot; height=&quot;287&quot; class=&quot;aligncenter size-medium wp-image-516&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Hopefully as the roll-out of the v3 Github API progresses the current search restriction will be lifted, still this was a fun glimpse at other programmer&#39;s conventions!&lt;/p&gt;
 
@@ -636,12 +636,12 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
  
  <entry>
    <title>Slidify: Modern, simple presentations written in R Markdown</title>
-   <link href="http://blmoore.github.io/r/2014/02/24/slidify-presentations-in-r-markdown/"/>
+   <link href="http://blmoore.github.io/blog/r/2014/02/24/slidify-presentations-in-r-markdown/"/>
    <updated>2014-02-24T00:00:00+00:00</updated>
    <id>http://blmoore.github.io/r/2014/02/24/slidify-presentations-in-r-markdown</id>
    <content type="html">&lt;p&gt;As a LaTeX fan I&#39;m used to using Beamer for presentations, but the built-in &lt;a href=&quot;http://www.hartwork.org/beamer-theme-matrix/&quot; target=&quot;_blank&quot;&gt;themes&lt;/a&gt; are definitely starting to show their age --- and writing a custom &lt;code&gt;.sty&lt;/code&gt; file looks like a nightmare --- so for a while I&#39;ve been looking at trying out an HTML5 framework.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_442&quot; align=&quot;alignright&quot; width=&quot;150&quot;]&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-442&quot; alt=&quot;Reveal.js is a great looking HTML presentation framework from Hakim El Hattab.&quot; src=&quot;//img/screen-shot-2014-02-24-at-19-55-11.png&quot; width=&quot;150&quot; height=&quot;102&quot; /&gt;&lt;/a&gt; Reveal.js is a great looking HTML presentation framework from &lt;a href=&quot;http://hakim.se/&quot; target=&quot;_blank&quot;&gt;Hakim El Hattab&lt;/a&gt;.[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_442&quot; align=&quot;alignright&quot; width=&quot;150&quot;]&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-442&quot; alt=&quot;Reveal.js is a great looking HTML presentation framework from Hakim El Hattab.&quot; src=&quot;/blog//img/screen-shot-2014-02-24-at-19-55-11.png&quot; width=&quot;150&quot; height=&quot;102&quot; /&gt;&lt;/a&gt; Reveal.js is a great looking HTML presentation framework from &lt;a href=&quot;http://hakim.se/&quot; target=&quot;_blank&quot;&gt;Hakim El Hattab&lt;/a&gt;.[/caption]&lt;/p&gt;
 
 &lt;p&gt;The first nice option I noticed was &lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot; target=&quot;_blank&quot;&gt;reveal.js&lt;/a&gt; which seems to find a solid balance between looking sleek and modern, but not generating a prezi-like rollercoaster of a talk. Another project I came across, &lt;a href=&quot;http://bartaz.github.io/impress.js/&quot; target=&quot;_blank&quot;&gt;impress.js&lt;/a&gt;, probably leans towards the latter, and needs a decent array of web-dev skills to really customise.&lt;/p&gt;
 
@@ -673,7 +673,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;A PDF is a nice security blanket to have if you&#39;re worried about unforeseeable display issues on presentation day — it&#39;s a format designed to be environment independent after all. With the io2012 theme, this can be done natively from chrome using the print dialogue, &lt;em&gt;however &lt;/em&gt;I&lt;em&gt; &lt;/em&gt;consistently found that for my presentation at least, the active slide you are viewing and and sometimes an adjacent slide is glitched in the PDF output.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_473&quot; align=&quot;alignleft&quot; width=&quot;240&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png&quot;&gt;&lt;img class=&quot; wp-image-473 &quot; alt=&quot;Chrome print PDF reproducibly bugs out on the active slide each time.&quot; src=&quot;/img/screen-shot-2014-02-24-at-22-37-58.png&quot; width=&quot;240&quot; height=&quot;118&quot; /&gt;&lt;/a&gt; Chrome print PDF reproducibly bugs out on the active slide, for my presentation at least.[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_473&quot; align=&quot;alignleft&quot; width=&quot;240&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png&quot;&gt;&lt;img class=&quot; wp-image-473 &quot; alt=&quot;Chrome print PDF reproducibly bugs out on the active slide each time.&quot; src=&quot;/blog/img/screen-shot-2014-02-24-at-22-37-58.png&quot; width=&quot;240&quot; height=&quot;118&quot; /&gt;&lt;/a&gt; Chrome print PDF reproducibly bugs out on the active slide, for my presentation at least.[/caption]&lt;/p&gt;
 
 &lt;p&gt;The hacky fix for this was to go to the final slide of the talk, print all but the last slide to PDF, then go back to an earlier slide and only print to file that remaining last slide. Then &lt;a href=&quot;http://support.apple.com/kb/ht4075&quot; target=&quot;_blank&quot;&gt;stitch these files together&lt;/a&gt; in Preview (assuming OS X), or &lt;code&gt;Imagemagick&lt;/code&gt; or whatever.&lt;/p&gt;
 
@@ -741,13 +741,13 @@ $(function() {&lt;br /&gt;
 
 &lt;p&gt;I found slidify to be a great package and I ended up with, what I consider to be, the cleanest and nicest-looking presentation I&#39;ve made to date. Also I&#39;ve learnt a bit of web-programming along the way! I expect I&#39;ll be switching from beamer to slidify for future talks too.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_472&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png&quot;&gt;&lt;img class=&quot;size-large wp-image-472&quot; alt=&quot;The final(ish) presentation in all its glory. Link may not work for long.&quot; src=&quot;/img/screen-shot-2014-02-24-at-22-20-531.png&quot; width=&quot;500&quot; height=&quot;318&quot; /&gt;&lt;/a&gt; The final(ish) presentation in all its glory. Link may not work for long.[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_472&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png&quot;&gt;&lt;img class=&quot;size-large wp-image-472&quot; alt=&quot;The final(ish) presentation in all its glory. Link may not work for long.&quot; src=&quot;/blog/img/screen-shot-2014-02-24-at-22-20-531.png&quot; width=&quot;500&quot; height=&quot;318&quot; /&gt;&lt;/a&gt; The final(ish) presentation in all its glory. Link may not work for long.[/caption]&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Meticulously recreating bitmap plots in R</title>
-   <link href="http://blmoore.github.io/r/wikipedia/2014/02/03/meticulously-recreating-bitmap-plots-in-r/"/>
+   <link href="http://blmoore.github.io/blog/r/wikipedia/2014/02/03/meticulously-recreating-bitmap-plots-in-r/"/>
    <updated>2014-02-03T00:00:00+00:00</updated>
    <id>http://blmoore.github.io/r/wikipedia/2014/02/03/meticulously-recreating-bitmap-plots-in-r</id>
    <content type="html">&lt;p&gt;There&#39;s a hard-fought drive on Wikimedia commons to convert those images that should be in vector format (i.e. graphs, diagrams) from their current bitmap form. At the time of writing, the relevant category has over &lt;a href=&quot;https://commons.wikimedia.org/wiki/Category:Images_that_should_use_vector_graphics&quot; target=&quot;_blank&quot;&gt;7000&lt;/a&gt; images in the category &quot;Images that should use vector graphics&quot;.&lt;/p&gt;
@@ -756,7 +756,7 @@ $(function() {&lt;br /&gt;
 
 &lt;h2&gt;The original&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/original.png&quot;&gt;&lt;img class=&quot;size-large wp-image-400&quot; alt=&quot;This is the original bitmap plot I wanted to recreate.&quot; src=&quot;/img/original.png&quot; width=&quot;500&quot; height=&quot;343&quot; /&gt;&lt;/a&gt; This is the original bitmap plot I wanted to recreate.
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/original.png&quot;&gt;&lt;img class=&quot;size-large wp-image-400&quot; alt=&quot;This is the original bitmap plot I wanted to recreate.&quot; src=&quot;/blog/img/original.png&quot; width=&quot;500&quot; height=&quot;343&quot; /&gt;&lt;/a&gt; This is the original bitmap plot I wanted to recreate.
 &lt;em&gt;(Courtesy of &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:US_EmpStatsBLS_Jan09-Feb13.png&quot; target=&quot;_blank&quot;&gt;Wikimedia Commons&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The file that first caught my eye was this nice graph of US employment stats, currently used on the highly-trafficked &lt;a href=&quot;https://en.wikipedia.org/wiki/Barack_Obama&quot; target=&quot;_blank&quot;&gt;Obama article&lt;/a&gt;. I&#39;m not sure what drew this originally, it doesn&#39;t look like Excel because of the broken axis and annotations, but maybe it is. It&#39;s currently a png at about 700 × 500 so should be an easy target for improvement.&lt;/p&gt;
@@ -765,7 +765,7 @@ $(function() {&lt;br /&gt;
 
 &lt;p&gt;The two raw data files are available &lt;a href=&quot;http://data.bls.gov/timeseries/LNS14000000&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://data.bls.gov/timeseries/CES0000000001?output_view=net_1mth&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; as Excel spreadsheets. They have some weird unnecessary formatting so the various xls parsers for R won&#39;t work; save the tables from Excel as csv. I won&#39;t talk through the code as it wasn&#39;t too taxing (or clean) but it&#39;ll be at the end of the post. Here&#39;s what I came up with:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg&quot;&gt;&lt;img class=&quot;size-large wp-image-427 &quot; alt=&quot;I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&quot; src=&quot;/img/recre_v5.png&quot; width=&quot;500&quot; height=&quot;349&quot; /&gt;&lt;/a&gt; I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg&quot;&gt;&lt;img class=&quot;size-large wp-image-427 &quot; alt=&quot;I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&quot; src=&quot;/blog/img/recre_v5.png&quot; width=&quot;500&quot; height=&quot;349&quot; /&gt;&lt;/a&gt; I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&lt;/p&gt;
 
 &lt;p&gt;I expanded my plot to include the 2013 data, so it inescapably has slightly different proportions to the original. And I was working on a single monitor at the time so I didn&#39;t have a constant comparison. I can see now a few things are still off, the fonts are different sized for one and I ditched the broken axis, but overall I think it&#39;s a decent similarity!&lt;/p&gt;
 
@@ -775,13 +775,13 @@ $(function() {&lt;br /&gt;
 
 &lt;p&gt;This is what I ended up with, I still think it&#39;s a reasonable alternative to the above, and the loess fitted model nicely shows the unemployment rate trend without the seasonality effects:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-413&quot; alt=&quot;ggplot_bitmap&quot; src=&quot;/img/ggplot_bitmap.png&quot; width=&quot;500&quot; height=&quot;432&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-413&quot; alt=&quot;ggplot_bitmap&quot; src=&quot;/blog/img/ggplot_bitmap.png&quot; width=&quot;500&quot; height=&quot;432&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Article version&lt;/h2&gt;
 
 &lt;p&gt;While mimicking the original exactly was fun (for me at least), I tried to improve upon it for the actual final figure for use on Wikipedia. For instance, it now uses unambiguous month abbreviations, and I swapped the legend for colour-coded text labels. It still has some of the original&#39;s charm though. Looks like after a bit of a rough patch, your employment statistics are starting to look pretty good Mr. President.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-431&quot; alt=&quot;new_v2&quot; src=&quot;/img/new_v2.png&quot; width=&quot;500&quot; height=&quot;332&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-431&quot; alt=&quot;new_v2&quot; src=&quot;/blog/img/new_v2.png&quot; width=&quot;500&quot; height=&quot;332&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Next up, the other &lt;em&gt;much&lt;/em&gt; less attractive figures on that page ([&lt;a href=&quot;https://en.wikipedia.org/wiki/File:U.S._Total_Deficits_vs._National_Debt_Increases_2001-2010.png&quot; target=&quot;_blank&quot;&gt;1&lt;/a&gt;], [&lt;a href=&quot;https://en.wikipedia.org/wiki/File:PPACA_Premium_Chart.jpg&quot; target=&quot;_blank&quot;&gt;2&lt;/a&gt;]).&lt;/p&gt;
 
@@ -793,20 +793,20 @@ $(function() {&lt;br /&gt;
  
  <entry>
    <title>Wikipedia is dead, long live the 'pedia</title>
-   <link href="http://blmoore.github.io/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia/"/>
+   <link href="http://blmoore.github.io/blog/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia/"/>
    <updated>2014-01-09T00:00:00+00:00</updated>
    <id>http://blmoore.github.io/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia</id>
    <content type="html">&lt;p&gt;I was a bit surprised when looking at the Wikipedia pageviews for 2013 (nicely presented &lt;a href=&quot;http://reportcard.wmflabs.org/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;). After 5 years of consistent and reasonably stable growth, over 2013 monthly pageviews actually dropped, and to the tune of 2 *billion* views  (10%) from their peak early in the year.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-378&quot; alt=&quot;pviews&quot; src=&quot;/img/pviews.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;This was surprising to me. The problem Wikipedia has attracting new editors has been &lt;a href=&quot;http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/&quot; target=&quot;_blank&quot;&gt;well-publicised&lt;/a&gt;, but it&#39;s never had trouble with PageRank or increasing its reach to casual viewers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-378&quot; alt=&quot;pviews&quot; src=&quot;/blog/img/pviews.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;This was surprising to me. The problem Wikipedia has attracting new editors has been &lt;a href=&quot;http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/&quot; target=&quot;_blank&quot;&gt;well-publicised&lt;/a&gt;, but it&#39;s never had trouble with PageRank or increasing its reach to casual viewers.&lt;/p&gt;
 
 &lt;p&gt;Well, it turns out one area seeing consistent and healthy growth is, as you would guess, mobile views, which are showing gains of about 150k pageviews a month on English Wikipedia. This makes up for almost half a billion of those lost over 2013 in the graph above, but still leaves some explaining to do.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-383&quot; alt=&quot;mobile&quot; src=&quot;/img/mobile1.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-383&quot; alt=&quot;mobile&quot; src=&quot;/blog/img/mobile1.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Interestingly, another useful metric of web traffic, unique visitors per month, continues to &lt;a href=&quot;http://reportcard.wmflabs.org/&quot; target=&quot;_blank&quot;&gt;grow considerably&lt;/a&gt;. Maybe this reflects how mobile visitors use the site differently, just looking something up (e.g. to settle an argument) and closing their browser as opposed to a few hours going from topic to topic and ending up admiring a &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Eiffel_Tower_replicas&quot; target=&quot;_blank&quot;&gt;list of Eiffel tower replicates&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;alignright  wp-image-386&quot; alt=&quot;mvvu&quot; src=&quot;/img/mvvu.png&quot; width=&quot;360&quot; height=&quot;254&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignright  wp-image-386&quot; alt=&quot;mvvu&quot; src=&quot;/blog/img/mvvu.png&quot; width=&quot;360&quot; height=&quot;254&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A quick graph of mean monthly pageviews per visitor gives this theory some support, but the data seems pretty noisy and has varied a lot over the past few years.&lt;/p&gt;
 

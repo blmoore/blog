@@ -19,15 +19,15 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/blog/public/css/syntax.css">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/public/apple-touch.png">
+  <link rel="shortcut icon" href="/blog/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/blogatom.xml">
 
   <!-- add this -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5398cddd3691288f"></script>
@@ -81,7 +81,7 @@
 
   <div class="masthead">
   <h3 class="masthead-title">
-  <a href="" title="Home">blm.io</a>
+  <a href="/blog" title="Home">blm.io</a>
   <small></small>
 </h3>
 </div>
@@ -92,7 +92,7 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/r/wikipedia/2014/02/03/meticulously-recreating-bitmap-plots-in-r/">
+      <a href="/blog/r/wikipedia/2014/02/03/meticulously-recreating-bitmap-plots-in-r/">
         Meticulously recreating bitmap plots in R
       </a>
     </h1>
@@ -105,7 +105,7 @@
 
 <h2>The original</h2>
 
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/original.png"><img class="size-large wp-image-400" alt="This is the original bitmap plot I wanted to recreate." src="/img/original.png" width="500" height="343" /></a> This is the original bitmap plot I wanted to recreate.
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/original.png"><img class="size-large wp-image-400" alt="This is the original bitmap plot I wanted to recreate." src="/blog/img/original.png" width="500" height="343" /></a> This is the original bitmap plot I wanted to recreate.
 <em>(Courtesy of <a href="https://commons.wikimedia.org/wiki/File:US_EmpStatsBLS_Jan09-Feb13.png" target="_blank">Wikimedia Commons</a>)</em></p>
 
 <p>The file that first caught my eye was this nice graph of US employment stats, currently used on the highly-trafficked <a href="https://en.wikipedia.org/wiki/Barack_Obama" target="_blank">Obama article</a>. I'm not sure what drew this originally, it doesn't look like Excel because of the broken axis and annotations, but maybe it is. It's currently a png at about 700 × 500 so should be an easy target for improvement.</p>
@@ -114,7 +114,7 @@
 
 <p>The two raw data files are available <a href="http://data.bls.gov/timeseries/LNS14000000" target="_blank">here</a> and <a href="http://data.bls.gov/timeseries/CES0000000001?output_view=net_1mth" target="_blank">here</a> as Excel spreadsheets. They have some weird unnecessary formatting so the various xls parsers for R won't work; save the tables from Excel as csv. I won't talk through the code as it wasn't too taxing (or clean) but it'll be at the end of the post. Here's what I came up with:</p>
 
-<p><a href="https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg"><img class="size-large wp-image-427 " alt="I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG." src="/img/recre_v5.png" width="500" height="349" /></a> I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.</p>
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg"><img class="size-large wp-image-427 " alt="I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG." src="/blog/img/recre_v5.png" width="500" height="349" /></a> I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.</p>
 
 <p>I expanded my plot to include the 2013 data, so it inescapably has slightly different proportions to the original. And I was working on a single monitor at the time so I didn't have a constant comparison. I can see now a few things are still off, the fonts are different sized for one and I ditched the broken axis, but overall I think it's a decent similarity!</p>
 
@@ -124,13 +124,13 @@
 
 <p>This is what I ended up with, I still think it's a reasonable alternative to the above, and the loess fitted model nicely shows the unemployment rate trend without the seasonality effects:</p>
 
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png"><img class="aligncenter size-large wp-image-413" alt="ggplot_bitmap" src="/img/ggplot_bitmap.png" width="500" height="432" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png"><img class="aligncenter size-large wp-image-413" alt="ggplot_bitmap" src="/blog/img/ggplot_bitmap.png" width="500" height="432" /></a></p>
 
 <h2>Article version</h2>
 
 <p>While mimicking the original exactly was fun (for me at least), I tried to improve upon it for the actual final figure for use on Wikipedia. For instance, it now uses unambiguous month abbreviations, and I swapped the legend for colour-coded text labels. It still has some of the original's charm though. Looks like after a bit of a rough patch, your employment statistics are starting to look pretty good Mr. President.</p>
 
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png"><img class="aligncenter size-large wp-image-431" alt="new_v2" src="/img/new_v2.png" width="500" height="332" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png"><img class="aligncenter size-large wp-image-431" alt="new_v2" src="/blog/img/new_v2.png" width="500" height="332" /></a></p>
 
 <p>Next up, the other <em>much</em> less attractive figures on that page ([<a href="https://en.wikipedia.org/wiki/File:U.S._Total_Deficits_vs._National_Debt_Increases_2001-2010.png" target="_blank">1</a>], [<a href="https://en.wikipedia.org/wiki/File:PPACA_Premium_Chart.jpg" target="_blank">2</a>]).</p>
 
@@ -142,7 +142,7 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia/">
+      <a href="/blog/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia/">
         Wikipedia is dead, long live the 'pedia
       </a>
     </h1>
@@ -151,15 +151,15 @@
 
     <p>I was a bit surprised when looking at the Wikipedia pageviews for 2013 (nicely presented <a href="http://reportcard.wmflabs.org/" target="_blank">here</a>). After 5 years of consistent and reasonably stable growth, over 2013 monthly pageviews actually dropped, and to the tune of 2 *billion* views  (10%) from their peak early in the year.</p>
 
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png"><img class="aligncenter size-full wp-image-378" alt="pviews" src="/img/pviews.png" width="500" height="352" /></a>This was surprising to me. The problem Wikipedia has attracting new editors has been <a href="http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/" target="_blank">well-publicised</a>, but it's never had trouble with PageRank or increasing its reach to casual viewers.</p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png"><img class="aligncenter size-full wp-image-378" alt="pviews" src="/blog/img/pviews.png" width="500" height="352" /></a>This was surprising to me. The problem Wikipedia has attracting new editors has been <a href="http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/" target="_blank">well-publicised</a>, but it's never had trouble with PageRank or increasing its reach to casual viewers.</p>
 
 <p>Well, it turns out one area seeing consistent and healthy growth is, as you would guess, mobile views, which are showing gains of about 150k pageviews a month on English Wikipedia. This makes up for almost half a billion of those lost over 2013 in the graph above, but still leaves some explaining to do.</p>
 
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png"><img class="aligncenter size-full wp-image-383" alt="mobile" src="/img/mobile1.png" width="500" height="352" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png"><img class="aligncenter size-full wp-image-383" alt="mobile" src="/blog/img/mobile1.png" width="500" height="352" /></a></p>
 
 <p>Interestingly, another useful metric of web traffic, unique visitors per month, continues to <a href="http://reportcard.wmflabs.org/" target="_blank">grow considerably</a>. Maybe this reflects how mobile visitors use the site differently, just looking something up (e.g. to settle an argument) and closing their browser as opposed to a few hours going from topic to topic and ending up admiring a <a href="https://en.wikipedia.org/wiki/List_of_Eiffel_Tower_replicas" target="_blank">list of Eiffel tower replicates</a>.</p>
 
-<p><img class="alignright  wp-image-386" alt="mvvu" src="/img/mvvu.png" width="360" height="254" /></p>
+<p><img class="alignright  wp-image-386" alt="mvvu" src="/blog/img/mvvu.png" width="360" height="254" /></p>
 
 <p>A quick graph of mean monthly pageviews per visitor gives this theory some support, but the data seems pretty noisy and has varied a lot over the past few years.</p>
 
@@ -183,7 +183,7 @@
   
   
     
-      <a class="pagination-item newer" href="">Newer</a>
+      <a class="pagination-item newer" href="/blog">Newer</a>
     
   
 </div>
