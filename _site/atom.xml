@@ -4,7 +4,7 @@
  <title>blm.io</title>
  <link href="http://blmoore.github.ioatom.xml" rel="self"/>
  <link href="http://blmoore.github.io"/>
- <updated>2014-06-12T23:04:15+01:00</updated>
+ <updated>2014-06-13T10:27:35+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
@@ -150,17 +150,17 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;In theory this grows your set of films at a reasonable pace, but in reality the number of unique films being returned was significantly lower (&lt;em&gt;shown below&lt;/em&gt;). I guess this was due to pulling in &quot;&lt;a title=&quot;Walled garden wikipedia&quot; href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Walled_garden&quot; target=&quot;_blank&quot;&gt;walled gardens&lt;/a&gt;&quot; to my dataset, e.g. if a Harry Potter film was hit, each further round would pull in the 5 other films as most similar.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-689&quot; src=&quot;img/rottentomatohits.png&quot; alt=&quot;Films returned&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rottentomatohits.png&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/img/rottentomatohits.png&quot; alt=&quot;Films returned&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Results&lt;/h2&gt;
 
 &lt;p&gt;Here&#39;s an overview of the critic and audience scores I collected through the Rotten Tomatoes API, with some outliers labelled.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-697&quot; src=&quot;img/rt_plot.png&quot; alt=&quot;Most over- and underrated films&quot; width=&quot;500&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_plot.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-697&quot; src=&quot;/img/rt_plot.png&quot; alt=&quot;Most over- and underrated films&quot; width=&quot;500&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;On the whole it should be noted that critics and audience agree most of the time, as shown by the Pearson correlation coefficient between the two scores (0.71 across &amp;gt;1200 films).&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://blm.io/movies&quot;&gt;&lt;img class=&quot;wp-image-712&quot; src=&quot;img/screen-shot-2014-05-08-at-02-11-47.png&quot; alt=&quot;&quot; width=&quot;187&quot; height=&quot;176&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blm.io/movies&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/img/screen-shot-2014-05-08-at-02-11-47.png&quot; alt=&quot;&quot; width=&quot;187&quot; height=&quot;176&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;Update:&lt;/h3&gt;
 
@@ -170,7 +170,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;Using our earlier definition it&#39;s easy to build a table of those films where the audience ending up really liking a film that was panned by critics.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png&quot;&gt;&lt;img class=&quot;wp-image-691 size-large&quot; src=&quot;img/under_table.png&quot; alt=&quot;Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.&quot; width=&quot;500&quot; height=&quot;366&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/under_table.png&quot;&gt;&lt;img class=&quot;imgwhite&quot; src=&quot;/img/under_table.png&quot; alt=&quot;Scores are shown out of 100 for both aggregated critics and members of Rotten Tomatoes.&quot; width=&quot;500&quot; height=&quot;366&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Somewhat surprisingly, the top of the table is &lt;a title=&quot;Facing the Giants&quot; href=&quot;http://www.rottentomatoes.com/m/facing_the_giants/&quot; target=&quot;_blank&quot;&gt;Facing the Giants (2006)&lt;/a&gt;, an evangelical Christian film. I guess non-Christians might have stayed away, and presumably it struck a chord within its target demographic — but after watching &lt;a title=&quot;Facing the Giants&quot; href=&quot;https://www.youtube.com/watch?v=4xneiV7Ru6Q&quot; target=&quot;_blank&quot;&gt;the trailer&lt;/a&gt;, I&#39;d probably agree with the critics on this one.&lt;/p&gt;
 
@@ -178,7 +178,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;In addition the Rotten Tomatoes &lt;a href=&quot;http://www.rottentomatoes.com/m/facing_the_giants/&quot; target=&quot;_blank&quot;&gt;page&lt;/a&gt; for the film, shows a &quot;want to see&quot; percentage, rather than an audience score. This came up a few times and I&#39;ve seen no explanation for it, presumably &quot;want to see&quot; rating is for unreleased films, but the API returns a separate (and undisclosed?) audience score for these films also.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_films.png&quot;&gt;&lt;img class=&quot;size-large wp-image-693&quot; src=&quot;img/rt_films.png&quot; alt=&quot;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below&quot; width=&quot;500&quot; height=&quot;355&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/rt_films.png&quot;&gt;&lt;img class=&quot;size-large wp-image-693&quot; src=&quot;/img/rt_films.png&quot; alt=&quot;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below&quot; width=&quot;500&quot; height=&quot;355&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Above shows a &amp;quot;want to see&amp;quot; rating, different to the &amp;quot;liked it&amp;quot; rating returned by the API and shown below. Note: these screenshots from RottenTomatoes.com are not CC licensed and is shown here under a claim of Fair Use, reproduced for comment/criticism.&lt;/p&gt;
 
@@ -188,7 +188,7 @@ gender&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;
 
 &lt;p&gt;Here we&#39;re looking at those films which the critics loved, but paying audiences were then less enthused.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/over_table.png&quot;&gt;&lt;img class=&quot;size-large wp-image-696&quot; src=&quot;img/over_table.png?w=500&quot; alt=&quot;As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.&quot; width=&quot;500&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/05/over_table.png&quot;&gt;&lt;img class=&quot;size-large wp-image-696&quot; src=&quot;/img/over_table.png&quot; alt=&quot;As before, scores are out of 100 and they&#39;re ranked by difference between audience and critic scores.&quot; width=&quot;500&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Strangely the top 15 (by difference) contains both the original 2001 &lt;a title=&quot;Spy Kids&quot; href=&quot;http://www.rottentomatoes.com/m/spy_kids/&quot; target=&quot;_blank&quot;&gt;Spy Kids&lt;/a&gt; and the sequel &lt;a title=&quot;Spy Kids 2&quot; href=&quot;http://www.rottentomatoes.com/m/spy_kids_2_island_of_lost_dreams/&quot; target=&quot;_blank&quot;&gt;Spy Kids 2&lt;/a&gt;: The Island of Lost Dreams (2002). What did critics see in these films that the public didn&#39;t? A possibility is bias in the audience reviews collected, the target audience is young children for these films and they probably are underrepresented amongst Rotten Tomatoes reviewers. Maybe there&#39;s even an enrichment for disgruntled parent chaperones.&lt;/p&gt;
 
@@ -388,7 +388,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;One way of building a list is through &lt;a href=&quot;http://www.githubarchive.org/&quot; title=&quot;Github archive&quot; target=&quot;_blank&quot;&gt;Github archive&lt;/a&gt;. The dev (&lt;a href=&quot;http://www.igvita.com/&quot; title=&quot;Ilya Grigorik&quot; target=&quot;_blank&quot;&gt;Ilya Grigorik&lt;/a&gt;) has put up a public dataset with &lt;a href=&quot;https://developers.google.com/bigquery/&quot; title=&quot;BigQuery&quot; target=&quot;_blank&quot;&gt;Google BigQuery&lt;/a&gt;, which is a neat cloud-based platform for querying huge datasets. My SQL isn&#39;t all that, but the Google BigQuery interface is really functional (e.g. it autocompletes table fields) and makes it easy to get the data you&#39;re looking for.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;img/screen-shot-2014-03-06-at-12-21-52.png&quot; alt=&quot;Fishing for prolific R users via Google BigQuery.&quot; width=&quot;500&quot; height=&quot;499&quot; class=&quot;size-large wp-image-500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/screen-shot-2014-03-06-at-12-21-52.png&quot; alt=&quot;Fishing for prolific R users via Google BigQuery.&quot; width=&quot;500&quot; height=&quot;499&quot; class=&quot;size-large wp-image-500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this case I pulled out R code repositories ordered by repo pushes (as a heuristic for codebase size and activity, I guess) with their owner&#39;s username. It was this list of names I then used for the API query.&lt;/p&gt;
 
@@ -425,7 +425,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;Despite the harsh search limitations I ended up with 27 users who owned the top 100 R repositories, and of those 15 used &lt;code&gt;set.seed()&lt;/code&gt; somewhere (or at least something like it). However the regex fails in some cases &amp;mdash; where a variable is being passed to the function instead of an integer, for one. Long story short, I scraped together 187 lines of &lt;code&gt;set.seed(\d+)&lt;/code&gt; from some of the big names in the R community and here&#39;s how the counts looked:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/prng.png&quot;&gt;&lt;img src=&quot;img/prng.png?w=500&quot; alt=&quot;RNG seeds&quot; width=&quot;500&quot; height=&quot;833&quot; class=&quot;aligncenter size-large wp-image-514&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/prng.png&quot;&gt;&lt;img src=&quot;/img/prng.png&quot; alt=&quot;RNG seeds&quot; width=&quot;500&quot; height=&quot;833&quot; class=&quot;aligncenter size-large wp-image-514&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So plain old &lt;strong&gt;1&lt;/strong&gt; is the stand-out winner! &lt;/p&gt;
 
@@ -435,7 +435,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;Here&#39;s one of those awful wordle / wordcloud things too.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/wordle_crop.png&quot;&gt;&lt;img src=&quot;img/wordle_crop.png?w=300&quot; alt=&quot;wordle_crop&quot; width=&quot;300&quot; height=&quot;287&quot; class=&quot;aligncenter size-medium wp-image-516&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/03/wordle_crop.png&quot;&gt;&lt;img src=&quot;/img/wordle_crop.png&quot; alt=&quot;wordle_crop&quot; width=&quot;300&quot; height=&quot;287&quot; class=&quot;aligncenter size-medium wp-image-516&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Hopefully as the roll-out of the v3 Github API progresses the current search restriction will be lifted, still this was a fun glimpse at other programmer&#39;s conventions!&lt;/p&gt;
 
@@ -452,7 +452,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
    <id>http://blmoore.github.io/r/2014/02/24/slidify-presentations-in-r-markdown</id>
    <content type="html">&lt;p&gt;As a LaTeX fan I&#39;m used to using Beamer for presentations, but the built-in &lt;a href=&quot;http://www.hartwork.org/beamer-theme-matrix/&quot; target=&quot;_blank&quot;&gt;themes&lt;/a&gt; are definitely starting to show their age --- and writing a custom &lt;code&gt;.sty&lt;/code&gt; file looks like a nightmare --- so for a while I&#39;ve been looking at trying out an HTML5 framework.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_442&quot; align=&quot;alignright&quot; width=&quot;150&quot;]&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-442&quot; alt=&quot;Reveal.js is a great looking HTML presentation framework from Hakim El Hattab.&quot; src=&quot;img/screen-shot-2014-02-24-at-19-55-11.png?w=150&quot; width=&quot;150&quot; height=&quot;102&quot; /&gt;&lt;/a&gt; Reveal.js is a great looking HTML presentation framework from &lt;a href=&quot;http://hakim.se/&quot; target=&quot;_blank&quot;&gt;Hakim El Hattab&lt;/a&gt;.[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_442&quot; align=&quot;alignright&quot; width=&quot;150&quot;]&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-442&quot; alt=&quot;Reveal.js is a great looking HTML presentation framework from Hakim El Hattab.&quot; src=&quot;//img/screen-shot-2014-02-24-at-19-55-11.png&quot; width=&quot;150&quot; height=&quot;102&quot; /&gt;&lt;/a&gt; Reveal.js is a great looking HTML presentation framework from &lt;a href=&quot;http://hakim.se/&quot; target=&quot;_blank&quot;&gt;Hakim El Hattab&lt;/a&gt;.[/caption]&lt;/p&gt;
 
 &lt;p&gt;The first nice option I noticed was &lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot; target=&quot;_blank&quot;&gt;reveal.js&lt;/a&gt; which seems to find a solid balance between looking sleek and modern, but not generating a prezi-like rollercoaster of a talk. Another project I came across, &lt;a href=&quot;http://bartaz.github.io/impress.js/&quot; target=&quot;_blank&quot;&gt;impress.js&lt;/a&gt;, probably leans towards the latter, and needs a decent array of web-dev skills to really customise.&lt;/p&gt;
 
@@ -484,7 +484,7 @@ sop[,2:5] &amp;lt;- sop[,2:5] / sop$rsum&lt;/p&gt;
 
 &lt;p&gt;A PDF is a nice security blanket to have if you&#39;re worried about unforeseeable display issues on presentation day — it&#39;s a format designed to be environment independent after all. With the io2012 theme, this can be done natively from chrome using the print dialogue, &lt;em&gt;however &lt;/em&gt;I&lt;em&gt; &lt;/em&gt;consistently found that for my presentation at least, the active slide you are viewing and and sometimes an adjacent slide is glitched in the PDF output.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_473&quot; align=&quot;alignleft&quot; width=&quot;240&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png&quot;&gt;&lt;img class=&quot; wp-image-473 &quot; alt=&quot;Chrome print PDF reproducibly bugs out on the active slide each time.&quot; src=&quot;img/screen-shot-2014-02-24-at-22-37-58.png?w=300&quot; width=&quot;240&quot; height=&quot;118&quot; /&gt;&lt;/a&gt; Chrome print PDF reproducibly bugs out on the active slide, for my presentation at least.[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_473&quot; align=&quot;alignleft&quot; width=&quot;240&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png&quot;&gt;&lt;img class=&quot; wp-image-473 &quot; alt=&quot;Chrome print PDF reproducibly bugs out on the active slide each time.&quot; src=&quot;/img/screen-shot-2014-02-24-at-22-37-58.png&quot; width=&quot;240&quot; height=&quot;118&quot; /&gt;&lt;/a&gt; Chrome print PDF reproducibly bugs out on the active slide, for my presentation at least.[/caption]&lt;/p&gt;
 
 &lt;p&gt;The hacky fix for this was to go to the final slide of the talk, print all but the last slide to PDF, then go back to an earlier slide and only print to file that remaining last slide. Then &lt;a href=&quot;http://support.apple.com/kb/ht4075&quot; target=&quot;_blank&quot;&gt;stitch these files together&lt;/a&gt; in Preview (assuming OS X), or &lt;code&gt;Imagemagick&lt;/code&gt; or whatever.&lt;/p&gt;
 
@@ -552,7 +552,7 @@ $(function() {&lt;br /&gt;
 
 &lt;p&gt;I found slidify to be a great package and I ended up with, what I consider to be, the cleanest and nicest-looking presentation I&#39;ve made to date. Also I&#39;ve learnt a bit of web-programming along the way! I expect I&#39;ll be switching from beamer to slidify for future talks too.&lt;/p&gt;
 
-&lt;p&gt;[caption id=&quot;attachment_472&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png&quot;&gt;&lt;img class=&quot;size-large wp-image-472&quot; alt=&quot;The final(ish) presentation in all its glory. Link may not work for long.&quot; src=&quot;img/screen-shot-2014-02-24-at-22-20-531.png?w=500&quot; width=&quot;500&quot; height=&quot;318&quot; /&gt;&lt;/a&gt; The final(ish) presentation in all its glory. Link may not work for long.[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_472&quot; align=&quot;aligncenter&quot; width=&quot;500&quot;]&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png&quot;&gt;&lt;img class=&quot;size-large wp-image-472&quot; alt=&quot;The final(ish) presentation in all its glory. Link may not work for long.&quot; src=&quot;/img/screen-shot-2014-02-24-at-22-20-531.png&quot; width=&quot;500&quot; height=&quot;318&quot; /&gt;&lt;/a&gt; The final(ish) presentation in all its glory. Link may not work for long.[/caption]&lt;/p&gt;
 </content>
  </entry>
  
@@ -567,7 +567,7 @@ $(function() {&lt;br /&gt;
 
 &lt;h2&gt;The original&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/original.png&quot;&gt;&lt;img class=&quot;size-large wp-image-400&quot; alt=&quot;This is the original bitmap plot I wanted to recreate.&quot; src=&quot;img/original.png?w=500&quot; width=&quot;500&quot; height=&quot;343&quot; /&gt;&lt;/a&gt; This is the original bitmap plot I wanted to recreate.
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/original.png&quot;&gt;&lt;img class=&quot;size-large wp-image-400&quot; alt=&quot;This is the original bitmap plot I wanted to recreate.&quot; src=&quot;/img/original.png&quot; width=&quot;500&quot; height=&quot;343&quot; /&gt;&lt;/a&gt; This is the original bitmap plot I wanted to recreate.
 &lt;em&gt;(Courtesy of &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:US_EmpStatsBLS_Jan09-Feb13.png&quot; target=&quot;_blank&quot;&gt;Wikimedia Commons&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The file that first caught my eye was this nice graph of US employment stats, currently used on the highly-trafficked &lt;a href=&quot;https://en.wikipedia.org/wiki/Barack_Obama&quot; target=&quot;_blank&quot;&gt;Obama article&lt;/a&gt;. I&#39;m not sure what drew this originally, it doesn&#39;t look like Excel because of the broken axis and annotations, but maybe it is. It&#39;s currently a png at about 700 × 500 so should be an easy target for improvement.&lt;/p&gt;
@@ -576,7 +576,7 @@ $(function() {&lt;br /&gt;
 
 &lt;p&gt;The two raw data files are available &lt;a href=&quot;http://data.bls.gov/timeseries/LNS14000000&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://data.bls.gov/timeseries/CES0000000001?output_view=net_1mth&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; as Excel spreadsheets. They have some weird unnecessary formatting so the various xls parsers for R won&#39;t work; save the tables from Excel as csv. I won&#39;t talk through the code as it wasn&#39;t too taxing (or clean) but it&#39;ll be at the end of the post. Here&#39;s what I came up with:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg&quot;&gt;&lt;img class=&quot;size-large wp-image-427 &quot; alt=&quot;I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&quot; src=&quot;img/recre_v5.png?w=500&quot; width=&quot;500&quot; height=&quot;349&quot; /&gt;&lt;/a&gt; I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/2/25/US_Employment_Statistics.svg&quot;&gt;&lt;img class=&quot;size-large wp-image-427 &quot; alt=&quot;I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&quot; src=&quot;/img/recre_v5.png&quot; width=&quot;500&quot; height=&quot;349&quot; /&gt;&lt;/a&gt; I realise the irony in having to upload a bitmap version for wordpress, but click for the SVG.&lt;/p&gt;
 
 &lt;p&gt;I expanded my plot to include the 2013 data, so it inescapably has slightly different proportions to the original. And I was working on a single monitor at the time so I didn&#39;t have a constant comparison. I can see now a few things are still off, the fonts are different sized for one and I ditched the broken axis, but overall I think it&#39;s a decent similarity!&lt;/p&gt;
 
@@ -586,13 +586,13 @@ $(function() {&lt;br /&gt;
 
 &lt;p&gt;This is what I ended up with, I still think it&#39;s a reasonable alternative to the above, and the loess fitted model nicely shows the unemployment rate trend without the seasonality effects:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-413&quot; alt=&quot;ggplot_bitmap&quot; src=&quot;img/ggplot_bitmap.png&quot; width=&quot;500&quot; height=&quot;432&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/ggplot_bitmap.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-413&quot; alt=&quot;ggplot_bitmap&quot; src=&quot;/img/ggplot_bitmap.png&quot; width=&quot;500&quot; height=&quot;432&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2&gt;Article version&lt;/h2&gt;
 
 &lt;p&gt;While mimicking the original exactly was fun (for me at least), I tried to improve upon it for the actual final figure for use on Wikipedia. For instance, it now uses unambiguous month abbreviations, and I swapped the legend for colour-coded text labels. It still has some of the original&#39;s charm though. Looks like after a bit of a rough patch, your employment statistics are starting to look pretty good Mr. President.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-431&quot; alt=&quot;new_v2&quot; src=&quot;img/new_v2.png?w=500&quot; width=&quot;500&quot; height=&quot;332&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/02/new_v2.png&quot;&gt;&lt;img class=&quot;aligncenter size-large wp-image-431&quot; alt=&quot;new_v2&quot; src=&quot;/img/new_v2.png&quot; width=&quot;500&quot; height=&quot;332&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Next up, the other &lt;em&gt;much&lt;/em&gt; less attractive figures on that page ([&lt;a href=&quot;https://en.wikipedia.org/wiki/File:U.S._Total_Deficits_vs._National_Debt_Increases_2001-2010.png&quot; target=&quot;_blank&quot;&gt;1&lt;/a&gt;], [&lt;a href=&quot;https://en.wikipedia.org/wiki/File:PPACA_Premium_Chart.jpg&quot; target=&quot;_blank&quot;&gt;2&lt;/a&gt;]).&lt;/p&gt;
 
@@ -609,15 +609,15 @@ $(function() {&lt;br /&gt;
    <id>http://blmoore.github.io/wikipedia/2014/01/09/wikipedia-is-dead-long-live-the-pedia</id>
    <content type="html">&lt;p&gt;I was a bit surprised when looking at the Wikipedia pageviews for 2013 (nicely presented &lt;a href=&quot;http://reportcard.wmflabs.org/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;). After 5 years of consistent and reasonably stable growth, over 2013 monthly pageviews actually dropped, and to the tune of 2 *billion* views  (10%) from their peak early in the year.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-378&quot; alt=&quot;pviews&quot; src=&quot;img/pviews.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;This was surprising to me. The problem Wikipedia has attracting new editors has been &lt;a href=&quot;http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/&quot; target=&quot;_blank&quot;&gt;well-publicised&lt;/a&gt;, but it&#39;s never had trouble with PageRank or increasing its reach to casual viewers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-378&quot; alt=&quot;pviews&quot; src=&quot;/img/pviews.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;This was surprising to me. The problem Wikipedia has attracting new editors has been &lt;a href=&quot;http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/&quot; target=&quot;_blank&quot;&gt;well-publicised&lt;/a&gt;, but it&#39;s never had trouble with PageRank or increasing its reach to casual viewers.&lt;/p&gt;
 
 &lt;p&gt;Well, it turns out one area seeing consistent and healthy growth is, as you would guess, mobile views, which are showing gains of about 150k pageviews a month on English Wikipedia. This makes up for almost half a billion of those lost over 2013 in the graph above, but still leaves some explaining to do.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-383&quot; alt=&quot;mobile&quot; src=&quot;img/mobile1.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://benjaminlmoore.files.wordpress.com/2014/01/mobile1.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-383&quot; alt=&quot;mobile&quot; src=&quot;/img/mobile1.png&quot; width=&quot;500&quot; height=&quot;352&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Interestingly, another useful metric of web traffic, unique visitors per month, continues to &lt;a href=&quot;http://reportcard.wmflabs.org/&quot; target=&quot;_blank&quot;&gt;grow considerably&lt;/a&gt;. Maybe this reflects how mobile visitors use the site differently, just looking something up (e.g. to settle an argument) and closing their browser as opposed to a few hours going from topic to topic and ending up admiring a &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Eiffel_Tower_replicas&quot; target=&quot;_blank&quot;&gt;list of Eiffel tower replicates&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;alignright  wp-image-386&quot; alt=&quot;mvvu&quot; src=&quot;img/mvvu.png&quot; width=&quot;360&quot; height=&quot;254&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignright  wp-image-386&quot; alt=&quot;mvvu&quot; src=&quot;/img/mvvu.png&quot; width=&quot;360&quot; height=&quot;254&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A quick graph of mean monthly pageviews per visitor gives this theory some support, but the data seems pretty noisy and has varied a lot over the past few years.&lt;/p&gt;
 
