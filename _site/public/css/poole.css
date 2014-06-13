@@ -607,3 +607,10 @@ figcaption {
 figure {
   margin: 0;
 }
+
+.rChart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

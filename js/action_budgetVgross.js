@@ -1,4 +1,4 @@
-d3.json("javascripts/json/action.json", function(error, json) {
+d3.json("/js/json/action.json", function(error, json) {
   if (error) return console.warn(error);
   data = json;
 
