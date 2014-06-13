@@ -4,7 +4,7 @@
  <title>blm.io</title>
  <link href="http://blmoore.github.ioatom.xml" rel="self"/>
  <link href="http://blmoore.github.io"/>
- <updated>2014-06-13T10:27:35+01:00</updated>
+ <updated>2014-06-13T21:51:28+01:00</updated>
  <id>http://blmoore.github.io</id>
  <author>
    <name>Ben Moore</name>
@@ -13,15 +13,201 @@
 
  
  <entry>
-   <title>Hollywood action heroes</title>
+   <title>Hollywood Action Heroes</title>
    <link href="http://blmoore.github.io/2014/06/07/hollywood-action-heroes/"/>
    <updated>2014-06-07T00:00:00+01:00</updated>
    <id>http://blmoore.github.io/2014/06/07/hollywood-action-heroes</id>
-   <content type="html">&lt;p&gt;I&#39;ve taken a look at the movie careers of a few of the most famous Hollywood action stars: Arnie, Sly Stallone, Bruce Willis and lots more, both older and more modern. The analysis and write-up is hosted on &lt;a href=&quot;http://blm.io/action&quot; title=&quot;blm.io&quot; target=&quot;_blank&quot;&gt;my new website&lt;/a&gt;, so that I can embed the interactive charts and make use of javascript.&lt;/p&gt;
+   <content type="html">&lt;div style=&quot;float:right;width: 20%&quot;&gt;
+&lt;img src=&quot;/img/arnie10.jpg&quot; width=80% style=&quot;border:2px solid #cccccc; display:block; margin-right: auto; margin-left: auto;&quot;/&gt;
+&lt;figcaption&gt;
+&lt;p style=&quot;font-size:smaller&quot;&gt;Arnie 2010 (&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:SchwarzeneggerJan2010.jpg&quot; target=&quot;_blank&quot;&gt;source&lt;/a&gt;)&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;img class=&quot;imagewhite&quot; src=&quot;/img/arnie.png&quot; alt=&quot;Incomplete overview of Arnold Schwarzenegger&amp;#039;s movie career.&quot; width=&quot;500&quot; height=&quot;250&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;
+I recently read &lt;a href=&quot;http://www.amazon.com/gp/product/1451662440/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1451662440&amp;linkCode=as2&amp;tag=blmio-20&amp;linkId=H7MGQFNQ3X6N6UJK&quot;&gt;Arnie&#39;s autobiography&lt;/a&gt;
+(great fun) and in it he writes about the various roles he&#39;s
+had, discussing those movies that flopped or were surprise box office successes,
+but it&#39;s hard to build up an overall picture of his career from these fragments.
+Similarly the raw filmography lists at &lt;a href=&quot;http://www.imdb.com/name/nm0000216/?ref_=nv_sr_1&quot; target=&quot;_blank&quot;&gt;IMDb&lt;/a&gt;
+and &lt;a href=&quot;https://en.wikipedia.org/wiki/Arnold_Schwarzenegger#Filmography&quot; target=&quot;_blank&quot;&gt;Wikipedia&lt;/a&gt;
+are pretty uninspiring.
+&lt;/p&gt;
 
-&lt;p&gt;If you&#39;re interested in seeing the full post, &lt;a href=&quot;http://blm.io/action&quot; title=&quot;blm.io&quot; target=&quot;_blank&quot;&gt;check it out&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;
+That gave me the idea of charting his movie career over time, attempting to
+show a lot of information at once about how well the film did at box office
+relative to its budget, and at what points these successes and failures
+happened over the last few decades. After some
+&lt;a href=&quot;http://imdbpy.sourceforge.net/&quot; target=&quot;_blank&quot;&gt;python-powered&lt;/a&gt;
+scraping of IMDb data, this is what I came up with:
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/img/arnie.png&quot;&gt;&lt;img src=&quot;/img/arnie_thumb.png&quot; width=100% /&gt;&lt;/a&gt;
+&lt;p&gt;
+It&amp;#39;s interesting to see the trajectory from back-to-back hits in low
+budget action films (Terminator, Predator, Commando) to a peak of a $200 million
+budget for &lt;a href=&quot;https://en.wikipedia.org/wiki/Terminator_3:_Rise_of_the_Machines&quot; target=&quot;_blank&quot;&gt;Terminator 3&lt;/a&gt;
+(considerably more in 2014 dollars, after adjusting for
+  inflation). Of course you can then see his stretch as Governor of California
+  from 2003-11, punctuated only by a &lt;a href=&quot;https://www.youtube.com/watch?v=hrMmiUSVRRI&quot; target=&quot;_blank&quot;&gt;memorable cameo&lt;/a&gt;
+  in The Expendables &lt;sup&gt;(and an excluded minor role in The Kid &amp;amp; I)&lt;/sup&gt;.
+  &lt;/p&gt;
+  &lt;p&gt;
+  The eagle-eyed will notice some films are missing, there&amp;#39;s no
+  &lt;a href=&quot;http://www.imdb.com/title/tt0065832/&quot; target=&quot;_blank&quot;&gt;Hercules in New York&lt;/a&gt;
+  and others of his earliest films. This is down to IMDb&amp;#39;s budget and gross listings
+  being woefully incomplete, but thankfully most of his famous lead roles are shown.
+  &lt;/p&gt;
+  &lt;p&gt;
+  These next obvious step was to look at other actors that fill a similar
+  niche; how does Sly Stallone compare? What about the more recent action
+  stars?
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;gallery&quot;&gt;
+
+&lt;figure class=&quot;gallery-item&quot;&gt;
+&lt;a href=&quot;/img/sly.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/img/sly_thumb.png&quot;&gt;
+&lt;figcaption class=&quot;img-title&quot;&gt;
+&lt;h5&gt;Sylvester Stallone&lt;/h5&gt;
+&lt;/figcaption&gt;
+&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;gallery-item&quot;&gt;
+&lt;a href=&quot;/img/bruce.png&quot; target=&quot;_blank&quot;&gt;
+&lt;img src=&quot;/img/bruce_thumb.png&quot;&gt;
+&lt;figcaption class=&quot;img-title&quot;&gt;
+&lt;h5&gt;Bruce Willis&lt;/h5&gt;
+&lt;/figcaption&gt;  &lt;/a&gt;
+&lt;/figure&gt;
+
+  &lt;br clear=&quot;all&quot; /&gt;
+
+  &lt;figure class=&quot;gallery-item&quot;&gt;
+  &lt;a href=&quot;/img/li.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/li_thumb.png&quot;&gt;
+  &lt;figcaption class=&quot;img-title&quot;&gt;
+  &lt;h5&gt;Jet Li&lt;/h5&gt;
+  &lt;/figcaption&gt;
+  &lt;/a&gt;
+  &lt;/figure&gt;
+
+  &lt;figure class=&quot;gallery-item&quot;&gt;
+  &lt;a href=&quot;/img/chan.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/chan_thumb.png&quot;&gt;
+  &lt;figcaption class=&quot;img-title&quot;&gt;
+  &lt;h5&gt;Jackie Chan&lt;/h5&gt;
+  &lt;/figcaption&gt;
+  &lt;/a&gt;
+  &lt;/figure&gt;
+
+  &lt;br clear=&quot;all&quot; /&gt;
+
+  &lt;figure class=&quot;gallery-item&quot;&gt;
+  &lt;a href=&quot;/img/statham.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/statham_thumb.png&quot;&gt;
+  &lt;figcaption class=&quot;img-title&quot;&gt;
+  &lt;h5&gt;Jason Statham&lt;/h5&gt;
+  &lt;/figcaption&gt;
+  &lt;/a&gt;
+  &lt;/figure&gt;
+
+  &lt;figure class=&quot;gallery-item&quot;&gt;
+  &lt;a href=&quot;/img/vin.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/vin_thumb.png&quot;&gt;
+  &lt;figcaption class=&quot;img-title&quot;&gt;
+  &lt;h5&gt;Vin Diesel&lt;/h5&gt;
+  &lt;/figcaption&gt;
+  &lt;/a&gt;
+  &lt;/figure&gt;
+
+  &lt;br clear=&quot;all&quot; /&gt;
+
+  &lt;figure class=&quot;gallery-item&quot;&gt;
+  &lt;a href=&quot;/img/seagal.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/seagal_thumb.png&quot;&gt;
+  &lt;figcaption class=&quot;img-title&quot;&gt;
+  &lt;h5&gt;Steven Seagal&lt;/h5&gt;
+  &lt;/figcaption&gt;
+  &lt;/a&gt;
+  &lt;/figure&gt;
+
+
+  &lt;figure class=&quot;gallery-item&quot;&gt;
+  &lt;a href=&quot;/img/rock.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/rock_thumb.png&quot;&gt;
+  &lt;figcaption class=&quot;img-title&quot;&gt;
+  &lt;h5&gt;Dwayne Johnson&lt;/h5&gt;
+  &lt;/figcaption&gt;
+  &lt;/a&gt;
+  &lt;/figure&gt;
+
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;/img/clint.png&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;/img/clint_bigthumb.png&quot; width=100%&gt;
+  &lt;/a&gt;
+  &lt;p&gt;
+  So we&amp;#39;ve learnt that &lt;a href=&quot;http://www.imdb.com/name/nm0000246&quot; target=&quot;_blank&quot;&gt;Bruce Willis&lt;/a&gt;
+  is in way too many films to label clearly, and Jackie Chan doesn&amp;#39;t seem to mind frenetically
+  jumping from big-money blockbusters and low-budget action flicks.
+  &lt;/p&gt;
+  &lt;p&gt;
+  &lt;div style=&quot;float:right;width: 50%&quot;&gt;
+  &lt;img src=&quot;/img/roi.png&quot; width=95% style=&quot;border:2px solid #cccccc; display:block; margin-right: auto; margin-left: auto;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;p style=&quot;font-size:smaller&quot;&gt;Fancy a gamble? Pick Sly or Jackie as your lead.&lt;/p&gt;
+  &lt;/figcaption&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;I can use this data to look at the mean expected return on investment (ROI)
+  per leading man, by just taking the mean gross over budget. This shows that
+  &lt;a href=&quot;http://www.imdb.com/name/nm0000329/&quot; target=&quot;_blank&quot;&gt;Jackie Chan&lt;/a&gt;,
+  albeit with a pretty huge amount of variance, has the highest expected ROI of the actors
+  listed here. At the other end of the scale is
+  &lt;a href=&quot;http://www.imdb.com/name/nm0005458/&quot; target=&quot;_blank&quot;&gt;Jason Statham&lt;/a&gt;, but in fairness I haven&amp;#39;t
+  normalised for the budgets of the films they&amp;#39;re starring in &amp;mdash; if you stick to
+  $100 million films it&amp;#39;s pretty much impossible to then multiple that by ten at the box office!
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;All-time totals per actor&lt;/h3&gt;
+  &lt;p&gt;
+  Another (possibly fairer) way to compare these guys is by total budgets
+  and grosses over their careers. It&amp;#39;s &lt;a href=&quot;http://www.imdb.com/help/show_leaf?infosource&quot; target=&quot;_blank&quot;&gt;not entirely clear&lt;/a&gt;
+  where IMDb gets these values from, so the absolute numbers should be taken with a pinch of salt.&lt;/p&gt;&lt;br /&gt;
+  &lt;div id=&#39;actionBudget&#39; class=&quot;rChart&quot;&gt;&lt;/div&gt;
+  &lt;script src=&quot;/js/action_budget.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;Here&amp;#39;s the same graph but by box office takings. These numbers from IMDb are even &lt;em&gt;more&lt;/em&gt;
+  suspect and vary according to different sources. Additionally, to convert the gross
+  to 2014 dollars I used a &lt;a href=&quot;https://en.wikipedia.org/wiki/Consumer_price_index&quot; target=&quot;_blank&quot;&gt;measure of inflation&lt;/a&gt;
+  from the year the film was released in &amp;mdash; to
+  calculate this more accurately you need a breakdown of the gross over time. Unlike lists at
+  &lt;a href=&quot;http://www.boxofficemojo.com/&quot; target=&quot;_blank&quot;&gt;Box Office Mojo&lt;/a&gt;, these charts do
+  sometimes contain cameo roles (e.g. Bruce and Arnie get Expendables I credits), and as I mentioned
+  with Arnie, there&amp;#39;s unfortunately some missing or incomplete data on IMDb which has lead to some
+  films being excluded.
+  &lt;/p&gt;&lt;br /&gt;
+  &lt;div id=&#39;actionGross&#39; class=&quot;rChart&quot;&gt;&lt;/div&gt;
+  &lt;script src=&quot;/js/action_gross.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+  It turns out Sly has grossed more than Arnie on smaller budgets! We can also see
+  Jackie Chan punches well above his weight in terms of absolute earnings, as well as ROI.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;Finally here&amp;#39;s budget plotted against gross for most of the individual films used in this analysis.&lt;/p&gt;
+  &lt;div id=&#39;actionBudgetVGross&#39; class=&quot;rChart&quot;&gt;&lt;/div&gt;
+  &lt;script src=&quot;/js/action_budgetVgross.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;The python and R scripts to recreate all the above analysis are
+  &lt;a href=&quot;https://github.com/blmoore/blogR&quot; target=&quot;_blank&quot;&gt;on github&lt;/a&gt;,
+  and it should be pretty straightforward to extend this over any other actors
+  or actresses you might be interested in (like, say, Jean-Claude Van Damme whom
+    I completely forgot about).
+    &lt;/p&gt;&lt;/p&gt;
 </content>
  </entry>
  

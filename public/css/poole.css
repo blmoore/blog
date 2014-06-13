@@ -65,12 +65,12 @@ body {
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
   color: #DB961F;
-/*  color: #268bd2; */
   text-decoration: none;
 }
-/*a strong {
+
+a strong {
   color: inherit;
-}*/
+}
 
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
@@ -236,15 +236,15 @@ blockquote p:last-child {
 }
 
 img {
-  display: block;
+  display: inline;
   max-width: 100%;
-  margin: 0 0 1rem;
+  margin: 0;
   border-radius: 5px;
 }
 
 .imagewhite {
-/*  border: 2px solid #cccccc; */
-  border: 1px solid #DB961F;
+  border: 2px solid #bbbbbb;
+/*  border: 1px solid #DB961F; */
 }
 
 /* Tables */
@@ -555,4 +555,55 @@ sub {
   margin-right: auto;
   margin-left: auto;
   /*margin-bottom: 1rem;*/
+}
+
+/* onHover overlays: http://notlaura.com/show-title-hovering-image/ */
+.gallery {
+    width: 100%;
+    margin: 0;
+}
+
+.gallery-item {
+    height: auto;
+    width: 46%;
+    float: left;
+    position: relative;
+    margin: .5rem .5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+
+/* default hidden image overlay */
+.img-title {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: #444;
+}
+
+
+/* Overlay text on hover */
+.img-title h5 {
+  position: absolute;
+  color: #ececec;
+  top: 33%;
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  font-size: smaller;
+}
+
+figure {
+  margin: 0;
 }
