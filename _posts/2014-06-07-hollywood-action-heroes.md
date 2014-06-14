@@ -2,8 +2,7 @@
 layout: post
 title: Hollywood action heroes
 categories:
-- R
-- Movies
+- movies
 tags:
 - dataviz
 - arnie

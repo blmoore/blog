@@ -242,7 +242,8 @@ img {
   border-radius: 5px;
 }
 
-.imagewhite {
+.imagewhite,
+.imgwhite {
   border: 2px solid #bbbbbb;
 /*  border: 1px solid #DB961F; */
 }
@@ -615,4 +616,13 @@ figure {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+
+.imgfull {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #bbbbbb;
+/*  border: 1px solid #DB961F; */
 }

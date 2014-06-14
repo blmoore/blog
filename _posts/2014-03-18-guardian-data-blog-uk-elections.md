@@ -53,7 +53,9 @@ Then after <code>melt</code>ing the data.frame down (full code at the end of the
 <p><strong>NB</strong> Facet headers show the election year and result of the election with which the (preceding) points are plotted relative to.</p>
 
 <h2>Next election's result</h2>
+
 <p>I originally wanted to look at this data to get a feel for how things are looking before next year's (2015) general election, maybe even running some predictive models (obviously I'm no <a href="http://fivethirtyeight.com/" title="fivethirtyeight" target="_blank">fivethirtyeight.com</a>). </p>
+
 <p>However, graphing the trends of public support for the two main UK parties hints it's unlikely to be a fruitful endeavour at this point, and with the above graphs showing an ominous increasing support for "other" parties (not accidentally coloured <a href="https://www.ukip.org/" title="ukip" target="_blank">purple</a>), it looks like with about 400 days to go the 2015 general election is still all to play for.</p>
 <p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/lab_con.png"><img src="{{ site.baseurl }}/img/lab_con.png" alt="lab_con" width="500" height="607" class="imagewhite" /></a></p>
 <hr />
