@@ -2,8 +2,7 @@
 layout: post
 title: Celebrity twitter followers by gender
 categories:
-- R
-- Unrelated
+- twitter
 tags:
 - dataviz
 - demographics

@@ -2,8 +2,7 @@
 layout: post
 title: Meticulously recreating bitmap plots in R
 categories:
-- R
-- Wikipedia
+- wikipedia
 tags:
 - ggplot2
 - R

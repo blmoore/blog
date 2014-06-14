@@ -2,7 +2,7 @@
 layout: post
 title: Author inflation in academic literature
 categories:
-- R
+- academia
 tags:
 - academia
 - author inflation

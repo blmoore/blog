@@ -2,7 +2,7 @@
 layout: post
 title: 'Slidify: Modern, simple presentations written in R Markdown'
 categories:
-- R
+- r
 tags:
 - html5
 - markdown

@@ -2,8 +2,7 @@
 layout: post
 title: What are the most overrated films?
 categories:
-- R
-- Unrelated
+- movies
 tags:
 - API
 - films

@@ -2,8 +2,7 @@
 layout: post
 title: What are the most common RNG seeds used in R scripts on Github?
 categories:
-- R
-- Comp Sci
+- r
 tags:
 - BigQuery
 - Github
