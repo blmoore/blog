@@ -79,25 +79,34 @@ gender("ben")
 <p>I went with #2 here. Anecdotal evidence suggests it's reasonably accurate anyway, with twitter analytics (using bag of words, sentiment analysis and all sorts of clever tricks to unearth gender) estimating my account has 83% male followers (!), with probabilistic first name assignment estimating 79% (and that's with a smaller sample). Method #3 may correct this further but the implementation tripped me up.</p>
 
 <h2>Results</h2>
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/twittergenderdist.png"><img class="aligncenter size-large wp-image-721" src="img/twittergenderdist.png?w=500" alt="Celebrity twitter followers by gender" width="500" height="833" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/twittergenderdist.png"><img class="imgfull" src="{{ site.baseurl }}/img/twittergenderdist.png" alt="Celebrity twitter followers by gender" width="500" height="833" /></a></p>
 
 <p>So boys prefer football (soccer) and girls prefer One Direction, who knew? Interestingly Barack Obama appears to have a more male following (59%), as does Bill Gates with 67%.</p>
+
 <p>At the other end of the spectrum, below One Direction, Simon Cowell is a hit with predominantly female twitter users (70%), as is Kanye West (67%) and Khloe Kardashian (72%).</p>
+
 <p>Another surprise is that Justin Bieber, famed as teen girl heartthrob, actually has a more broad gender appeal with 41 / 59 male-female split.</p>
 <h2>Interactive charts</h2>
-<p>[caption id="attachment_723" align="alignright" width="150"]<a href="http://blm.io/twitter"><img class="size-thumbnail wp-image-723" src="img/screen-shot-2014-05-25-at-11-51-25.png?w=150" alt="Click for an interactive version." width="150" height="86" /></a> Click for an interactive version.[/caption]</p>
+
+<a href="http://blm.io/twitter"><img class="size-thumbnail wp-image-723" src="img/screen-shot-2014-05-25-at-11-51-25.png" alt="Click for an interactive version." width="150" height="86" /></a>
+
 <p>Using the fantastic <a title="rcharts" href="http://rcharts.io/" target="_blank">rCharts</a> library, I've put together some <a title="interactive charts" href="http://blm.io/twitter" target="_blank">interactive graphics</a> that let you explore the above results further. These use the <a title="NVD3" href="http://nvd3.org/" target="_blank">NVD3 graphing library</a>, as opposed to my <a href="http://rcharts.io/viewer/?6c9ed5eed37fe3c03fa5" target="_blank">previous effort</a> which used <a href="http://dimplejs.org/" target="_blank">dimple.js</a>.</p>
+
 <p>The first of these is ordered by number of followers, and the second by gender split. The eagle-eyed among you will see that one account from the top 100 is missing from all these charts due to the JSON error I discuss above, thankfully it's a boring one (sorry <a href="https://twitter.com/TwitPic" target="_blank">@TwitPic</a>).</p>
+
 <p>Where would your account be on these graphs? Somehow I end up alongside Wayne Rooney in terms of gender diversity :s</p>
 
 <h3>Caveats</h3>
+
 <ul>
 <li>A lot of the time genders can't be called from an account's first name. Maybe they haven't given a first name, maybe it's a business account or some pretty unicode symbols, maybe it's a spammy egg account. This means my realised sample size is <<1000, sometimes the majority of usernames had no gender (e.g. <a href="https://twitter.com/UberSoc" target="_blank">@UberSoc</a>, fake followers?).
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png"><img class="size-thumbnail wp-image-747" src="img/with_missing.png?w=107" alt="This (big) chart includes % for those that couldn't be assigned (NA)" width="107" height="150" /></a> This (big) chart includes % for those that couldn't be assigned (NA)</li>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png"><img class="size-thumbnail wp-image-747" src="{{ site.baseurl }}/img/with_missing.png?w=107" alt="This (big) chart includes % for those that couldn't be assigned (NA)" width="107" height="150" /></a> This (big) chart includes % for those that couldn't be assigned (NA)</li>
 <li>The SSA data is heavily biased towards Western (esp. US) and non-English names are likely to not be assigned a gender throughout. This is a shame, if you know of a more international gender DB please let me know.</li>
 <li>I'm sampling most recent followers, so maybe accounts like Justin Bieber have a much higher female ratio in earlier followers than those which have only just hit the follow button.</li>
 <li>The sample size of 1000 followers per account is smaller than I'd like, especially for accounts with 50 million followers.</li>
 </ul>
+
 <p>If you have other ideas of what to do with demographics data, or have noticed additional caveats of this study, please let me know in the comments!</p>
+
 <hr />
 <p style="text-align:right;">Full code to reproduce this analysis is <a title="Code to reproduce" href="https://github.com/blmoore/blogR/blob/master/R/twitter_followersGender.R" target="_blank">available on Github</a>.</p>
