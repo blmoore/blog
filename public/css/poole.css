@@ -242,12 +242,6 @@ img {
   border-radius: 5px;
 }
 
-.imagewhite,
-.imgwhite {
-  border: 2px solid #bbbbbb;
-/*  border: 1px solid #DB961F; */
-}
-
 /* Tables */
 table {
   margin-bottom: 1rem;
@@ -623,6 +617,22 @@ figure {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid #bbbbbb;
+/*  border: 1px solid #DB961F; */
+}
+
+.imgright {
+  display: inline;
+  float: right;
+  margin: 1em;
+  border: 2px solid #bbbbbb;
+/*  border: 1px solid #DB961F; */
+}
+
+.imgleft {
+  display: inline;
+  float: left;
+  margin: 1em;
   border: 2px solid #bbbbbb;
 /*  border: 1px solid #DB961F; */
 }

@@ -44,12 +44,12 @@ sop[,2:5] <- sop[,2:5] / sop$rsum
 
 Then after <code>melt</code>ing the data.frame down (full code at the end of the post), you can get a quick overview with <code>ggplot2</code>.
 
-<a href="http://benjaminlmoore.files.wordpress.com/2014/03/area_plot.png"><img class="size-large wp-image-549" alt="UK general election overview 1984-2014" src="{{ site.baseurl }}/img/area_plot.png" width="500" height="234" /></a>
+<a href="http://benjaminlmoore.files.wordpress.com/2014/03/area_plot.png"><img class="imgfull" alt="UK general election overview 1984-2014" src="{{ site.baseurl }}/img/area_plot.png" width="503" height="344"/></a>
 
 <h2>Election breakdown</h2>
 <p>The area plot is a nice overview but not that useful quantitatively. Given that the dataset includes general election results as well as opinion polling, it's straightforward to split the above plot by this important factor. I also found it useful to convert absolute dates to be relative to the election they precede. R has an object class, <code>difftime</code>, which makes this easy to accomplish and calling <code>as.numeric()</code> on a difftime object converts it to raw number of days (handily accounting for things like leap years).</p>
 <p>These processing steps lead to a clearer graph with more obvious stories, such as the gradual and monotonic decline of support for Labour during the Blair years. </p>
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/splitbyelection_2.png"><img src="{{ site.baseurl }}/img/splitbyelection_2.png" alt="UK general election data split by election period" width="500" height="382" class="imagewhite /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/splitbyelection_2.png"><img src="{{ site.baseurl }}/img/splitbyelection_2.png" alt="UK general election data split by election period" width="500" height="382" class="imgfull" /></a></p>
 <p><strong>NB</strong> Facet headers show the election year and result of the election with which the (preceding) points are plotted relative to.</p>
 
 <h2>Next election's result</h2>
@@ -57,6 +57,9 @@ Then after <code>melt</code>ing the data.frame down (full code at the end of the
 <p>I originally wanted to look at this data to get a feel for how things are looking before next year's (2015) general election, maybe even running some predictive models (obviously I'm no <a href="http://fivethirtyeight.com/" title="fivethirtyeight" target="_blank">fivethirtyeight.com</a>). </p>
 
 <p>However, graphing the trends of public support for the two main UK parties hints it's unlikely to be a fruitful endeavour at this point, and with the above graphs showing an ominous increasing support for "other" parties (not accidentally coloured <a href="https://www.ukip.org/" title="ukip" target="_blank">purple</a>), it looks like with about 400 days to go the 2015 general election is still all to play for.</p>
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/lab_con.png"><img src="{{ site.baseurl }}/img/lab_con.png" alt="lab_con" width="500" height="607" class="imagewhite" /></a></p>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/03/lab_con.png"><img src="{{ site.baseurl }}/img/lab_con.png" alt="lab_con" width="500" height="607" class="imgfull" /></a></p>
 <hr />
-<p>https://gist.github.com/blmoore/9631779</p>
+<p style="text-align:right; font-size:.85rem;">Reproduce and improve this analysis with help from
+<a href="https://gist.github.com/blmoore/9631779" target="_blank">this gist</a>.<br \>
+This post was originally published on my
+<a href="http://benjaminlmoore.wordpress.com/2014/03/18/guardian-data-blog-uk-elections/" target="_blank">Wordpress blog</a>.</p>

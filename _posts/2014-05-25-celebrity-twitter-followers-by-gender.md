@@ -88,7 +88,7 @@ gender("ben")
 <p>Another surprise is that Justin Bieber, famed as teen girl heartthrob, actually has a more broad gender appeal with 41 / 59 male-female split.</p>
 <h2>Interactive charts</h2>
 
-<a href="http://blm.io/twitter"><img class="size-thumbnail wp-image-723" src="img/screen-shot-2014-05-25-at-11-51-25.png" alt="Click for an interactive version." width="150" height="86" /></a>
+<a href="http://blm.io/twitter"><img class="imgright" src="{{ site.baseurl }}/img/screen-shot-2014-05-25-at-11-51-25.png" alt="Click for an interactive version." width="150" height="86" /></a>
 
 <p>Using the fantastic <a title="rcharts" href="http://rcharts.io/" target="_blank">rCharts</a> library, I've put together some <a title="interactive charts" href="http://blm.io/twitter" target="_blank">interactive graphics</a> that let you explore the above results further. These use the <a title="NVD3" href="http://nvd3.org/" target="_blank">NVD3 graphing library</a>, as opposed to my <a href="http://rcharts.io/viewer/?6c9ed5eed37fe3c03fa5" target="_blank">previous effort</a> which used <a href="http://dimplejs.org/" target="_blank">dimple.js</a>.</p>
 
@@ -100,7 +100,7 @@ gender("ben")
 
 <ul>
 <li>A lot of the time genders can't be called from an account's first name. Maybe they haven't given a first name, maybe it's a business account or some pretty unicode symbols, maybe it's a spammy egg account. This means my realised sample size is <<1000, sometimes the majority of usernames had no gender (e.g. <a href="https://twitter.com/UberSoc" target="_blank">@UberSoc</a>, fake followers?).
-<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png"><img class="size-thumbnail wp-image-747" src="{{ site.baseurl }}/img/with_missing.png?w=107" alt="This (big) chart includes % for those that couldn't be assigned (NA)" width="107" height="150" /></a> This (big) chart includes % for those that couldn't be assigned (NA)</li>
+<p><a href="http://benjaminlmoore.files.wordpress.com/2014/05/with_missing.png"><img class="imgright" src="{{ site.baseurl }}/img/with_missing.png" alt="This (big) chart includes % for those that couldn't be assigned (NA)" width="107" height="150" /></a> This (big) chart includes % for those that couldn't be assigned (NA)</li>
 <li>The SSA data is heavily biased towards Western (esp. US) and non-English names are likely to not be assigned a gender throughout. This is a shame, if you know of a more international gender DB please let me know.</li>
 <li>I'm sampling most recent followers, so maybe accounts like Justin Bieber have a much higher female ratio in earlier followers than those which have only just hit the follow button.</li>
 <li>The sample size of 1000 followers per account is smaller than I'd like, especially for accounts with 50 million followers.</li>
@@ -109,4 +109,6 @@ gender("ben")
 <p>If you have other ideas of what to do with demographics data, or have noticed additional caveats of this study, please let me know in the comments!</p>
 
 <hr />
-<p style="text-align:right;">Full code to reproduce this analysis is <a title="Code to reproduce" href="https://github.com/blmoore/blogR/blob/master/R/twitter_followersGender.R" target="_blank">available on Github</a>.</p>
+<p style="text-align:right;">Full code to reproduce this analysis is <a title="Code to reproduce" href="https://github.com/blmoore/blogR/blob/master/R/twitter_followersGender.R" target="_blank">available on Github</a>.<br />
+This post was originally published on my
+<a href="http://benjaminlmoore.wordpress.com/2014/05/25/celebrity-twitter-followers-by-gender/" target="_blank">Wordpress blog</a>.</p>

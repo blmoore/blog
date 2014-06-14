@@ -21,7 +21,8 @@ author:
 
 <p>As a LaTeX fan I'm used to using Beamer for presentations, but the built-in <a href="http://www.hartwork.org/beamer-theme-matrix/" target="_blank">themes</a> are definitely starting to show their age --- and writing a custom <code>.sty</code> file looks like a nightmare --- so for a while I've been looking at trying out an HTML5 framework.</p>
 
-<a href="http://lab.hakim.se/reveal-js/" target="_blank"><img class="size-thumbnail wp-image-442" alt="Reveal.js is a great looking HTML presentation framework from Hakim El Hattab." src="{{ site.baseurl }}//img/screen-shot-2014-02-24-at-19-55-11.png" width="150" height="102" /></a> Reveal.js is a great looking HTML presentation framework from <a href="http://hakim.se/" target="_blank">Hakim El Hattab</a>.[/caption]</p>
+<a href="http://lab.hakim.se/reveal-js/" target="_blank"><img class="imgright" alt="Reveal.js is a great looking HTML presentation framework from Hakim El Hattab." src="{{ site.baseurl }}/img/screen-shot-2014-02-24-at-19-55-11.png" width="150" height="102" /></a>
+
 <p>The first nice option I noticed was <a href="http://lab.hakim.se/reveal-js/" target="_blank">reveal.js</a> which seems to find a solid balance between looking sleek and modern, but not generating a prezi-like rollercoaster of a talk. Another project I came across, <a href="http://bartaz.github.io/impress.js/" target="_blank">impress.js</a>, probably leans towards the latter, and needs a decent array of web-dev skills to really customise.</p>
 
 <p>These are both nice solutions but require decent web development skills to take advantage of, else offer limited web UI front-ends. An ideal solution for me would be simple to write and look great from the outset, needing only minor CSS, Javascript and HTML tweaks to build a good-looking and functional slide deck.</p>
@@ -40,7 +41,8 @@ author:
 
 <p>Together with slidify these packages make writing and customising presentations a breeze, so install the library from github (using Hadley Wickham's <code>devtools</code>) per the instructions <a href="http://slidify.org/start.html" target="_blank">here</a>. It also comes with some great default themes, like Google's io2012 (my favourite) and <a href="http://imakewebthings.com/deck.js/" target="_blank">deck.js</a>. The video below shows how to get started authoring presentations much better than I could:</p>
 
-<iframe width="480" height="360" src="//www.youtube.com/embed/I95GOmLc7TA" frameborder="0" allowfullscreen></iframe>
+<div style="margin-left:auto; margin-right: auto; width:480px;">
+<iframe width="480" height="360" src="//www.youtube.com/embed/I95GOmLc7TA" frameborder="0" allowfullscreen></iframe></div>
 
 <h2>Features</h2>
 
@@ -51,7 +53,7 @@ author:
 
 <p>A PDF is a nice security blanket to have if you're worried about unforeseeable display issues on presentation day — it's a format designed to be environment independent after all. With the io2012 theme, this can be done natively from chrome using the print dialogue, <em>however </em>I<em> </em>consistently found that for my presentation at least, the active slide you are viewing and and sometimes an adjacent slide is glitched in the PDF output.</p>
 
-<a href="http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png"><img class=" wp-image-473 " alt="Chrome print PDF reproducibly bugs out on the active slide each time." src="{{ site.baseurl }}/img/screen-shot-2014-02-24-at-22-37-58.png" width="240" height="118" /></a>
+<a href="http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-37-58.png"><img class="imgright" alt="Chrome print PDF reproducibly bugs out on the active slide each time." src="{{ site.baseurl }}/img/screen-shot-2014-02-24-at-22-37-58.png" width="240" height="118" /></a>
 </p>
 
 <p>The hacky fix for this was to go to the final slide of the talk, print all but the last slide to PDF, then go back to an earlier slide and only print to file that remaining last slide. Then <a href="http://support.apple.com/kb/ht4075" target="_blank">stitch these files together</a> in Preview (assuming OS X), or <code>Imagemagick</code> or whatever.</p>
@@ -115,4 +117,4 @@ $(function() {
 
 <p>I found slidify to be a great package and I ended up with, what I consider to be, the cleanest and nicest-looking presentation I've made to date. Also I've learnt a bit of web-programming along the way! I expect I'll be switching from beamer to slidify for future talks too.</p>
 
-<a href="http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png"><img class="size-large wp-image-472" alt="The final(ish) presentation in all its glory. Link may not work for long." src="{{ site.baseurl }}/img/screen-shot-2014-02-24-at-22-20-531.png" width="500" height="318" /></a>
+<a href="http://benjaminlmoore.files.wordpress.com/2014/02/screen-shot-2014-02-24-at-22-20-531.png"><img class="imgfull" alt="The final(ish) presentation in all its glory. Link may not work for long." src="{{ site.baseurl }}/img/screen-shot-2014-02-24-at-22-20-531.png" width="500" height="318" /></a>
