@@ -1,0 +1,10 @@
+<item>
+  <title>{{ post.title }}</title>
+  <link>http://blm.io/blog{{ post.url }}</link>
+  <author>Benjamin L. Moore</author>
+  <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+  <guid>http://blm.io/blog{{ post.url }}</guid>
+  <description><![CDATA[
+     {{ post.content | expand_urls : site.url }}
+  ]]></description>
+</item>
