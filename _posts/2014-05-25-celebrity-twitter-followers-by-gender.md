@@ -21,6 +21,7 @@ meta:
   _publicize_pending: '1'
 author:
 ---
+
 <p>The most popular accounts on twitter have millions of followers, but what are their demographics like? Twitter doesn't collect or release this kind of information, and even things like name and location are only voluntarily added to people's profiles. Unlike Google+ and Facebook, twitter has no real name policy, <a href="https://gigaom.com/2011/09/16/why-twitter-doesnt-care-what-your-real-name-is/" target="_blank">they don't care</a> what you call yourself, because they can still divine out useful information from your account activity.</p>
 <p>For example, you can optionally set your location on your twitter profile. Should you choose not to, twitter can still just <a title="geolocation" href="https://en.wikipedia.org/wiki/Geolocation" target="_blank">geolocate</a> your IP. If you use an anonymiser or VPN, they could use the timing of your account activity to infer a timezone. This could then be refined to a city or town using the topics you tweet about and the locations of friends and services you mention most.</p>
 

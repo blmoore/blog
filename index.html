@@ -15,7 +15,13 @@ title: Home
     <span class="post-date-paginate">{{ post.date | date_to_string }}</span>
 
     {{ post.excerpt }}
-    <p style="text-align:right;"><a href="{{ site.baseurl }}/{{ post.url }}">[<em>continue reading</em>]</a></p>
+    <p style="text-align:right;">
+      <a href="{{ site.baseurl }}/{{ post.url }}"
+      style="
+      padding: .1rem 1rem;
+      text-shadow: 1px 1px #fff,
+      1px 2px #ccc;">[full post]</a>
+    </p>
 
   </div>
   {% endfor %}

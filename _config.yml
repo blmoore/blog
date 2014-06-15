@@ -15,3 +15,6 @@ author:
   name:           Ben Moore
   url:            https://twitter.com/benjaminlmoore
   email:          root@blm.io
+
+# Related
+lsi:              true

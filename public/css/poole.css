@@ -636,3 +636,8 @@ figure {
   border: 2px solid #bbbbbb;
 /*  border: 1px solid #DB961F; */
 }
+
+.logotext a {
+  text-shadow: 1px 1px #fff,
+              1px 2px #ccc;
+}
