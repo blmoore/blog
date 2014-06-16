@@ -5,13 +5,6 @@ categories:
 - movies
 tags:
 - dataviz
-- arnie
-- stallone
-- bruce willis
-- jackie chan
-- action
-- moviestars
-- hollywood
 - movies
 - dimplejs
 - ggplot2

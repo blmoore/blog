@@ -2,9 +2,15 @@
 layout: default
 ---
 {% if page.grouptype == 'tag' %}
-<div>
-	<h2>Tag: '{{page.tag}}'</h2>
+
+<div style="font-size: 1.5rem; margin-bottom: .5rem;">
+	<p>Tag:
+		<span class="tagbutton">
+			<a href="#">#{{page.tag}}</a>
+			</span>
+		</p>
 </div>
+
 {% elsif page.grouptype == 'category' %}
 <div style="font-size: 2rem;">
 	<p><a class="logotext">Category:</a> <strong>{{page.category}}</strong></p>
