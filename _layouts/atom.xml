@@ -1,0 +1,34 @@
+---
+title: nil
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+   {% if page.grouptype == 'tag' %}
+   	<title>blm.io - Tag: {{page.tag}}</title>
+   {% elsif page.grouptype == 'category' %}
+    <title>blm.io - Category: {{page.category}}</title>
+   {% else %}
+    <title>blm.io</title>
+   {% endif %}
+   <link>http://blm.io</link>
+   <description>Data blog from benjaminlmoore.</description>
+   <language>en-us</language>
+   <managingEditor>B.L. Moore</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+
+    {% for post in page.posts %}
+	  <item>
+        <title>{{ post.title }}</title>
+        <link>http://blm.io/blog{{ post.url }}</link>
+		<author>benjaminlmoore</author>
+		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+		<guid>http://blm.io/blog{{ post.url }}</guid>
+		<description><![CDATA[
+		   {{ post.content | expand_urls : site.url }}
+		]]></description>
+	  </item>
+    {% endfor %}
+  </channel>
+</rss>
