@@ -14,6 +14,7 @@ tags:
 status: publish
 type: post
 published: true
+permalink: action-heroes
 
 ---
 
