@@ -17,6 +17,7 @@ meta:
   _publicize_pending: '1'
   _wp_old_slug: seeds-of-randomness-github-rng-analysis-in-r
 author:
+permalink: prng-seeds
 ---
 
 <p>In the R programming language, the random number generator (RNG) is seeded each session using the current time and process ID. Via the magic of the popular <a href="https://en.wikipedia.org/wiki/Mersenne_twister" target="_blank">Mersenne Twister PRNG</a>, the values stored in <code>.Random.seed</code> are used sequentially each time "randomness" is invoked in a function. This means, of course, that the same function run in different R sessions can produce varying results, and in the case of modelling a system sensitive to initial conditions the observed differences could be huge. </p>

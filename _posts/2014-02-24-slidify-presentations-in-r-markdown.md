@@ -17,6 +17,7 @@ meta:
   _publicize_pending: '1'
   switch_like_status: '1'
 author:
+permalink: slidify
 ---
 
 <p>As a LaTeX fan I'm used to using Beamer for presentations, but the built-in <a href="http://www.hartwork.org/beamer-theme-matrix/" target="_blank">themes</a> are definitely starting to show their age --- and writing a custom <code>.sty</code> file looks like a nightmare --- so for a while I've been looking at trying out an HTML5 framework.</p>

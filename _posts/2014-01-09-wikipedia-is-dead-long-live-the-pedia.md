@@ -14,7 +14,9 @@ published: true
 meta:
   _publicize_pending: '1'
 author:
+permalink: wikipedia-is-dead
 ---
+
 <p>I was a bit surprised when looking at the Wikipedia pageviews for 2013 (nicely presented <a href="http://reportcard.wmflabs.org/" target="_blank">here</a>). After 5 years of consistent and reasonably stable growth, over 2013 monthly pageviews actually dropped, and to the tune of 2 *billion* views  (10%) from their peak early in the year.</p>
 
 <a href="http://benjaminlmoore.files.wordpress.com/2014/01/pviews.png"><img class="imgfull" alt="pviews" src="{{ site.baseurl }}/img/pviews.png" width="500" height="352" /></a>

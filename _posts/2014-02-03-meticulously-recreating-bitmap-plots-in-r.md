@@ -15,6 +15,7 @@ meta:
   _publicize_pending: '1'
   _wp_old_slug: meticulously-recreating-existing-plots-in-r
 author:
+permalink: bitmap-plot-to-vector
 ---
 <p>There's a hard-fought drive on Wikimedia commons to convert those images that should be in vector format (i.e. graphs, diagrams) from their current bitmap form. At the time of writing, the relevant category has over <a href="https://commons.wikimedia.org/wiki/Category:Images_that_should_use_vector_graphics" target="_blank">7000</a> images in the category "Images that should use vector graphics".</p>
 <p>The usual way people move between the two is by tracing over the raster, and great tools like <a href="http://www.inkscape.org/en/" target="_blank">Inkscape</a> (free open-source software) can help a lot with this. But in the case of graphs I thought it'd be fun to try and rebuild a carbon copy from scratch in R.</p>

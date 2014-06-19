@@ -19,6 +19,7 @@ meta:
   geo_public: '0'
   _publicize_pending: '1'
 author:
+permalink: overrated-underrated-films
 ---
 <p style="text-align:left;">"Overrated" and "underrated" are slippery terms to try to quantify. An interesting way of looking at this, I thought, would be to compare the reviews of film critics with those of Joe Public, reasoning that a film which is roundly-lauded by the Hollywood press but proved disappointing for the real audience would be "overrated" and <em>vice versa</em>.</p>
 <p>To get some data for this I turned to the most prominent review aggregator: <a title="Rotten Tomatoes" href="http://www.rottentomatoes.com/" target="_blank">Rotten Tomatoes</a>. All this analysis was done in the R programming language, and full code to reproduce it will be attached at the end.</p>

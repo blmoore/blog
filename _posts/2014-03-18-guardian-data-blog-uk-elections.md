@@ -18,7 +18,9 @@ meta:
   _publicize_pending: '1'
   geo_public: '0'
 author:
+permalink: uk-elections
 ---
+
 <p>The Guardian newspaper has for a few years been running a <a title="guardian data blog" href="http://www.theguardian.com/data" target="_blank">data blog</a> and has built up a massive repository of (often) well-curated datasets on a huge number of topics. They even have an <a title="list of data sets made available by the guardian" href="http://www.theguardian.com/news/datablog/interactive/2013/jan/14/all-our-datasets-index" target="_blank">indexed list</a> of all data sets they've put together or reused in their articles.</p>
 <p>It's a great repository of interesting data for exploratory analysis, and there's a low barrier to entry in terms of getting the data into a useful form. Here's an example using UK election polling data collected over the last thirty years.</p>
 

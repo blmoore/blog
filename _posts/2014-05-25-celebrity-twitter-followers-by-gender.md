@@ -20,6 +20,7 @@ meta:
   _wpas_mess: Celebrity twitter followers by gender http://wp.me/p2NHj0-bq
   _publicize_pending: '1'
 author:
+permalink: twitter-genders
 ---
 
 <p>The most popular accounts on twitter have millions of followers, but what are their demographics like? Twitter doesn't collect or release this kind of information, and even things like name and location are only voluntarily added to people's profiles. Unlike Google+ and Facebook, twitter has no real name policy, <a href="https://gigaom.com/2011/09/16/why-twitter-doesnt-care-what-your-real-name-is/" target="_blank">they don't care</a> what you call yourself, because they can still divine out useful information from your account activity.</p>

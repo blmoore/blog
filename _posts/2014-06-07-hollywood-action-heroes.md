@@ -15,7 +15,6 @@ status: publish
 type: post
 published: true
 permalink: action-heroes
-
 ---
 
 <div style="float:right;width: 20%">
