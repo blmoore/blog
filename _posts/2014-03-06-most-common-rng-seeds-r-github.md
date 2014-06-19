@@ -10,6 +10,7 @@ tags:
 - R
 - RNG
 - seed
+- rbloggers
 status: publish
 type: post
 published: true

@@ -10,8 +10,9 @@ tags:
 - movies
 - overrated
 - R
-- rotten tomatoes
+- rotten&nbsp;tomatoes
 - rstats
+- rbloggers
 status: publish
 type: post
 published: true

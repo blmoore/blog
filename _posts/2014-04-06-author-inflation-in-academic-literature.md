@@ -5,12 +5,13 @@ categories:
 - academia
 tags:
 - academia
-- author inflation
+- author&nbsp;inflation
 - ggplot2
 - PLOS
 - R
 - rplos
 - rstats
+- rbloggers
 status: publish
 type: post
 published: true

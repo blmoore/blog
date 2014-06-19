@@ -4,12 +4,13 @@ title: Guardian data blog — UK general election analysis in R
 categories:
 - politics
 tags:
-- general election
+- general&nbsp;election
 - ggplot2
-- guardian data
+- guardian&nbsp;data
 - R
 - rstats
 - UK politics
+- rbloggers
 status: publish
 type: post
 published: true

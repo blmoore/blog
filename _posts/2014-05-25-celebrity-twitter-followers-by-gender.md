@@ -11,7 +11,9 @@ tags:
 - R
 - rcharts
 - rstats
+- nvd3
 - twitter
+- rbloggers
 status: publish
 type: post
 published: true

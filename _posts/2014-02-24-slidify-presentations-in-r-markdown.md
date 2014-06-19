@@ -10,6 +10,7 @@ tags:
 - R
 - rstats
 - slidify
+- rbloggers
 status: publish
 type: post
 published: true

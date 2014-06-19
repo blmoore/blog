@@ -11,6 +11,7 @@ tags:
 - R
 - rcharts
 - rstats
+- rbloggers
 status: publish
 type: post
 published: true
