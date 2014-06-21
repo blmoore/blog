@@ -16,6 +16,7 @@ published: true
 meta:
   _publicize_pending: '1'
 author:
+permalink: wordpress-to-jekyll
 ---
 
 I think [Wordpress](http://wordpress.org/) is a great [CMS](https://en.wikipedia.org/wiki/Content_management_system) and I'm reluctant to leave it behind. While
