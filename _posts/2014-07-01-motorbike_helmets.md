@@ -26,7 +26,7 @@ spending a lot of money on your headgear. A top-of-the-line Arai can sell for
 almost four figures, particularly if you want a nice
 [race rep](http://www.revzilla.com/motorcycle/arai-corsair-v-joey-dunlop-2014-le-helmet)
  design, but what are you getting for your money and, in particular, is it
- any safer than a helmet you pickup for a tenth of that price.
+ any safer than a helmet you pickup for a tenth of that price?
 
 There are various minimum safety standards for bike helmets. The US has
 [Snell and DOT](http://www.smf.org/docs/articles/dot), whereas the UK
