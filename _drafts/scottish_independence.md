@@ -38,3 +38,13 @@ polls
 ```
 
 ## Polls over time
+
+After a bit of data ["janitor work"](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html), we can visualise the poll trends over time. Given sampling error and other sources of noise (though I think these sample sizes tend to be decent), a loess model can pick out the long-term terms.
+
+<a href="{{ site.baseurl }}/img/indyref_trends.png" target="_blank">
+<img class="imgfull" src="{{ site.baseurl }}/img/indyref_trends_thumb.png" />
+</a>
+
+## Pollster biases
+
+If we accept the above models as a reasonable estimate of the expected poll response at a given time, we can analyse the residuals of actual poll results and look for systematic biases. In theory, with a respectable sample size and a reasonably well-stratified sampling method, we might expect polls results to be roughly normally distributed around the expected polls result.
