@@ -34,11 +34,24 @@ layout: default
     {% endfor %}
   </ul>
 
+<!-- Categories -->
+<div class="tags">
+<i class="fa fa-folder-open" style="margin-right:.2rem;"></i>
+{% for tag in page.categories %}
+    <span class="tagbutton" style="margin-right:.5rem;">
+<strong>
+      <a href="{{ site.baseurl }}/category/{{ tag }}/">{{ tag }}</a>
+</strong>
+    </span>
+{% endfor %}
+</div>
+
+<!-- Tag list -->
 <div class="tags">
 <i class="fa fa-tags" style="margin-right:.2rem;"></i>
 {% for tag in page.tags %}
     <span class="tagbutton">
-      <a href="{{ site.basurl }}/blog/tag/{{ tag }}/">#{{ tag }}</a>
+      <a href="{{ site.baseurl }}/tag/{{ tag }}/">#{{ tag }}</a>
     </span>
 {% endfor %}
 </div>

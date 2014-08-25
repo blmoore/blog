@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scottish independence&#58; what do the polls say?
+title: "Scottish independence: what do the polls say?"
 categories:
 - politics
 tags:
@@ -47,4 +47,59 @@ After a bit of data ["janitor work"](http://www.nytimes.com/2014/08/18/technolog
 
 ## Pollster biases
 
-If we accept the above models as a reasonable estimate of the expected poll response at a given time, we can analyse the residuals of actual poll results and look for systematic biases. In theory, with a respectable sample size and a reasonably well-stratified sampling method, we might expect polls results to be roughly normally distributed around the expected polls result.
+If we accept the above models as a reasonable estimate of the expected poll response at a given time, we can analyse the residuals of actual poll results and look for systematic biases. In theory, with a respectable sample size (all have ~1000) and a reasonably well-stratified sampling method, we might expect polls results to be roughly normally distributed around the expected polls result &mdash; regardless of who comissioned or performed the poll.
+
+Here are the distributions per poll publisher or commisioner, note that these are only for those who commisioned more than 1 poll in this dataset, and only those that my regex has been able to pick out.
+
+<a href="{{ site.baseurl }}/img/indyref_YesBiasNewspapers.png" target="_blank">
+<img class="imgfull" src="{{ site.baseurl }}/img/indyref_YesBiasNewspapers_thumb.png" />
+</a>
+
+The sample sizes here are generally too small to claim they are polling significantly above or below expectation, save for The Sunday Times (significantly more pro-Independence than expected, p = 7 &times; 10<sup>-4</sup>) and [TNS BMRB](http://www.tns-bmrb.co.uk/home), a "think tank" with offices in London and Edinburgh who seem to both perform and publish their own polls (p < 1 &times; 10<sup>-3</sup>).
+
+```r
+# dplyr example (featuring messy subset abuse)
+group_by(subset(polls, response == "Yes" &
+         newspaper %in% ordering[ordering$count > 1,"newspaper"]),
+         newspaper) %>%
+  summarise(p=wilcox.test(residual, mu=0)$p.value)
+
+Source: local data frame [14 x 2]
+
+#              newspaper            p
+# 1             TNS BMRB 0.0009765625
+# 2             Ashcroft 0.5000000000
+# 3   Scotland on Sunday 0.2500000000
+# 4       Mail on Sunday 0.6250000000
+# 5                  Sun 0.1250000000
+# 6                Times 0.9101562500
+# 7                  STV 0.8750000000
+# 8           Daily Mail 0.5000000000
+# 9         Daily Record 0.0625000000
+# 10  Scotsman on Sunday 0.1250000000
+# 11        Sunday Times 0.0007324219
+# 12 Wings Over Scotland 0.5000000000
+# 13         YesScotland 0.5000000000
+# 14                 SNP 0.5000000000
+
+```
+
+<a href="{{ site.baseurl }}/img/indyref_YesBiasPollsters.png" target="_blank">
+<img class="imgright" src="{{ site.baseurl }}/img/indyref_YesBiasPollsters_tiny.png" />
+</a>
+
+Caveats here are that different polls have used different question sets, methods etc. so this isn't evidence for anything underhanded _per se_. We can look at the same thing per pollster, i.e. it seems reasonable to expect that while newspapers and the SNP might have reasons to publish polls in their favour, people conducting the polls should generally be more or less indifferently.
+
+The results again are hampered by a small number of datapoints per pollster, but  the pollster [Panelbase](https://www.panelbase.net/index.aspx) emerges as one providing significantly yes-skewed poll results (p < 6 &times; 10<sup>-6</sup>). Interestingly they may be the only pollster here to have a [rewards system](https://www.panelbase.net/rewards.aspx) inplace. The only other significantly non-zero biased results come again from TNS BMRB, who published most of their own polls in the above graph.
+
+## Poll breakdown
+
+Polling raw data provides a lot more information than just the proportions for or against, and some good Wikipedian has collated a set of [detailed PDFs](https://en.wikipedia.org/wiki/Opinion_polling_for_the_Scottish_independence_referendum,_2014#2014) which gives these full polls results.
+
+I notice that over the same three day period, two polls provided very different answers to the independence question:
+
+<TABLE border=1 style="font-size: smaller;">
+<TR> <TH> Date </TH> <TH> Pollster </TH> <TH> Client </TH> <TH> Sample</TH> <TH> Yes % </TH> <TH> No % </TH> <TH> Unsure % </TH> <TH> Spread </TH>  </TR>
+  <TR> <TD> 2014-09-15 </TD> <TD> YouGov </TD> <TD> The Times </TD> <TD align="right"> 1085 </TD> <TD align="right"> 38 </TD> <TD align="right"> 51 </TD> <TD align="right"> 11 </TD> <TD align="right"> 13 </TD> </TR>
+  <TR> <TD> 2014-09-15 </TD> <TD> Panelbase </TD> <TD> Yes Scotland </TD> <TD align="right"> 1026 </TD> <TD align="right"> 42 </TD> <TD align="right"> 46 </TD> <TD align="right"> 12 </TD> <TD align="right"> 4 </TD> </TR>
+   </TABLE>
