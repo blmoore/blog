@@ -94,7 +94,7 @@ The results again are hampered by a small number of datapoints per pollster, but
 
 ## Conclusion
 
-What do the polls say? Well, the majority of Scots have been against independence for the last couple of years (and much longer before this), however the trends have been more variable in recent months and the outcome of the referendum is expected to be close.
+What do the polls say? Well, the majority of Scots have been against independence for the last couple of years (and beyond), however polls appear to have been more variable in recent months and the outcome of the referendum is expected to be close.
 
 <a href="{{ site.baseurl }}/img/indyref_yesPercent.png" target="_blank">
 <img class="imgleft" src="{{ site.baseurl }}/img/indyref_yesPercent_tiny.png" />
