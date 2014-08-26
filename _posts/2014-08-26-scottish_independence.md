@@ -22,7 +22,7 @@ Over the last couple of years there's been a good amount of media coverage and &
 
 ## The data
 
-Anthony Wells ([@anthonyjwells](https://twitter.com/anthonyjwells)) of YouGov has put together [a table](http://ukpollingreport.co.uk/scottish-independence-referendum) of survey results dating back to January 2012. Without too much hassle we can build a messy `data.frame` from this in R via the `XML` package:
+Anthony Wells (@[anthonyjwells](https://twitter.com/anthonyjwells)) of YouGov has put together [a table](http://ukpollingreport.co.uk/scottish-independence-referendum) of survey results dating back to January 2012. Without too much hassle we can build a messy `data.frame` from this in R via the `XML` package:
 
 ```r
 polls <- readHTMLTable("http://ukpollingreport.co.uk/scottish-independence-referendum", skip.rows=1)[[1]]
