@@ -16,7 +16,7 @@ published: true
 permalink: scottish-independence-polls
 ---
 
-Living in Edinburgh it's been hard to avoid the build-up to Scotland's referendum on independence. On September 8<sup>th</sup> 2014, less than a month away as I write this, people living in Scotland will go to the polls to answer the question: Should Scotland be an independent country?
+Living in Edinburgh it's been hard to avoid the build-up to Scotland's referendum on independence. On September 18<sup>th</sup> 2014, less than a month away as I write this, people living in Scotland will go to the polls to answer the question: Should Scotland be an independent country?
 
 Over the last couple of years there's been a good amount of media coverage and &mdash; more interestingly, from my point of view &mdash; repeat polls to gauge opinion by various newspapers and tv stations. This invites an obvious question: how has the mood in Scotland varied over time with respect to a yes/no vote? Can we detect any biases among those publishing polls.
 
@@ -92,14 +92,20 @@ Caveats here are that different polls have used different question sets, methods
 
 The results again are hampered by a small number of datapoints per pollster, but  the pollster [Panelbase](https://www.panelbase.net/index.aspx) emerges as one providing significantly yes-skewed poll results (p < 6 &times; 10<sup>-6</sup>). Interestingly they may be the only pollster here to have a [rewards system](https://www.panelbase.net/rewards.aspx) inplace. The only other significantly non-zero biased results come again from TNS BMRB, who published most of their own polls in the above graph.
 
-## Poll breakdown
+## Conclusion
 
-Polling raw data provides a lot more information than just the proportions for or against, and some good Wikipedian has collated a set of [detailed PDFs](https://en.wikipedia.org/wiki/Opinion_polling_for_the_Scottish_independence_referendum,_2014#2014) which gives these full polls results.
+What do the polls say? Well, the majority of Scots have been against independence for the last couple of years (and much longer before this), however the trends have been more variable in recent months and the outcome of the referendum is expected to be close.
 
-I notice that over the same three day period, two polls provided very different answers to the independence question:
+<a href="{{ site.baseurl }}/img/indyref_yesPercent.png" target="_blank">
+<img class="imgleft" src="{{ site.baseurl }}/img/indyref_yesPercent_tiny.png" />
+</a>
 
-<TABLE border=1 style="font-size: smaller;">
-<TR> <TH> Date </TH> <TH> Pollster </TH> <TH> Client </TH> <TH> Sample</TH> <TH> Yes % </TH> <TH> No % </TH> <TH> Unsure % </TH> <TH> Spread </TH>  </TR>
-  <TR> <TD> 2014-09-15 </TD> <TD> YouGov </TD> <TD> The Times </TD> <TD align="right"> 1085 </TD> <TD align="right"> 38 </TD> <TD align="right"> 51 </TD> <TD align="right"> 11 </TD> <TD align="right"> 13 </TD> </TR>
-  <TR> <TD> 2014-09-15 </TD> <TD> Panelbase </TD> <TD> Yes Scotland </TD> <TD align="right"> 1026 </TD> <TD align="right"> 42 </TD> <TD align="right"> 46 </TD> <TD align="right"> 12 </TD> <TD align="right"> 4 </TD> </TR>
-   </TABLE>
+Since we have a (poorly fitting) linear model here we can &mdash; I must stress this is tongue-in-cheek &mdash; extrapolate to referendum day and get a prediction of the referendum result:
+
+<p style="font-size: larger; text-align:center">42.9% Yes</p>
+<p style="font-size: smaller; text-align:center;">(99% confidence interval: 40.9 < <i>x</i> < 45.0)</p>
+
+<hr />
+
+<p style="text-align:right; font-size: .85rem;">R code to reproduce this analysis is available on
+<a href="https://github.com/blmoore/blogR" target="_blank">Github</a>.</p>
