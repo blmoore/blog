@@ -18,7 +18,7 @@ permalink: scottish-independence-polls
 
 Living in Edinburgh it's been hard to avoid the build-up to Scotland's referendum on independence. On September 18<sup>th</sup> 2014, less than a month away as I write this, people living in Scotland will go to the polls to answer the question: Should Scotland be an independent country?
 
-Over the last couple of years there's been a good amount of media coverage and &mdash; more interestingly, from my point of view &mdash; repeat polls to gauge opinion by various newspapers and tv stations. This invites an obvious question: how has the mood in Scotland varied over time with respect to a yes/no vote? Can we detect any biases among those publishing polls.
+Over the last couple of years there's been a good amount of media coverage and &mdash; more interestingly, from my point of view &mdash; repeat polls to gauge opinion by various newspapers and tv stations. This invites an obvious question: how has the mood in Scotland varied over time with respect to a yes/no vote? And can we detect any biases among those publishing polls?
 
 ## The data
 
@@ -39,7 +39,7 @@ polls
 
 ## Polls over time
 
-After a bit of data ["janitor work"](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html), we can visualise the poll trends over time. Given sampling error and other sources of noise (though I think these sample sizes tend to be decent), a loess model can pick out the long-term terms.
+After a bit of data ["janitor work"](http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html), we can visualise the poll trends over time. Given sampling error and other sources of noise (though I think these sample sizes tend to be decent), a loess model can pick out the long-term trends.
 
 <a href="{{ site.baseurl }}/img/indyref_trends.png" target="_blank">
 <img class="imgfull" src="{{ site.baseurl }}/img/indyref_trends_thumb.png" />
