@@ -5,6 +5,7 @@ categories:
 - politics
 tags:
 - rstats
+- rbloggers
 - ggplot2
 - dplyr
 - indyref

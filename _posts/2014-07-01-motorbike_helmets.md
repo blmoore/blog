@@ -5,6 +5,7 @@ categories:
 - r
 tags:
 - rstats
+- rbloggers
 - ggplot2
 - dplyr
 - motorcycle
