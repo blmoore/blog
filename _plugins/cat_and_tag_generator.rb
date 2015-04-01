@@ -1,7 +1,7 @@
 module Jekyll
 
   class CatsAndTags < Generator
-  
+
     safe true
 
     def generate(site)
@@ -14,8 +14,8 @@ module Jekyll
       end
     end
 
-    def build_subpages(site, type, posts) 
-      posts[1] = posts[1].sort_by { |p| -p.date.to_f }     
+    def build_subpages(site, type, posts)
+      posts[1] = posts[1].sort_by { |p| -p.date.to_f }
       atomize(site, type, posts)
       paginate(site, type, posts)
     end
@@ -27,16 +27,16 @@ module Jekyll
     end
 
     def paginate(site, type, posts)
-      pages = Pager.calculate_pages(posts[1], site.config['paginate'].to_i)
+      pages = Jekyll::Paginate::Pager.calculate_pages(posts[1], site.config['paginate'].to_i)
       (1..pages).each do |num_page|
-        pager = Pager.new(site, num_page, posts[1], pages)
+        pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
         path = "/#{type}/#{posts[0]}"
         if num_page > 1
           path = path + "/page#{num_page}"
         end
         newpage = GroupSubPage.new(site, site.source, path, type, posts[0])
         newpage.pager = pager
-        site.pages << newpage 
+        site.pages << newpage
 
       end
     end
@@ -55,7 +55,7 @@ module Jekyll
       self.data[type] = val
     end
   end
-  
+
   class AtomPage < Page
     def initialize(site, base, dir, type, val, posts)
       @site = site
